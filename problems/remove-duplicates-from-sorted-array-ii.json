@@ -1,0 +1,30 @@
+{
+  "id": "remove-duplicates-from-sorted-array-ii",
+  "leetcode_number": 80,
+  "leetcode_url": "https://leetcode.com/problems/remove-duplicates-from-sorted-array-ii/",
+  "title": "Remove Duplicates from Sorted Array II",
+  "difficulty": "Medium",
+  "pattern": "Two Pointers",
+  "statement_short": "Given a sorted integer array, remove excess duplicates in-place such that each unique element appears at most twice while preserving relative order. Return the updated array length.",
+  "constraints": "1 <= nums.length <= 3 * 10^4, -10^4 <= nums[i] <= 10^4",
+  "hint": "Input size up to 3 * 10^4 requires O(n) time, and pre-sorted order permits fixed-offset duplicate checks.",
+  "keywords": [
+    "appears at most twice",
+    "in-place",
+    "-10^4 <= nums[i] <= 10^4"
+  ],
+  "options": [
+    "1D DP",
+    "Sliding Window",
+    "HashMap / Hash Set",
+    "Two Pointers"
+  ],
+  "answer": "Two Pointers",
+  "why_not": "Right: Two Pointers compare the reader element against writer-2 to allow at most two copies in-place in O(n) time. Not 1D DP: Dynamic programming transitions are unnecessary for simple conditional array overwrite. Not Sliding Window: The problem asks for modifying sequence elements, not finding a max/min subsegment window. Not HashMap / Hash Set: Tracking element frequencies in a hash map uses O(n) auxiliary space.",
+  "complexity": "O(n) time, O(1) space",
+  "solution_link": "https://github.com/han73r/algorithmic-interview-prep/solutions/remove-duplicates-from-sorted-array-ii.cs",
+  "tags": [
+    "array",
+    "two-pointers"
+  ]
+}

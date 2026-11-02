@@ -1,0 +1,30 @@
+{
+  "id": "remove-duplicates-from-sorted-array",
+  "leetcode_number": 26,
+  "leetcode_url": "https://leetcode.com/problems/remove-duplicates-from-sorted-array/",
+  "title": "Remove Duplicates from Sorted Array",
+  "difficulty": "Easy",
+  "pattern": "Two Pointers",
+  "statement_short": "Given an integer array sorted in non-decreasing order, remove duplicates in-place so that each unique element appears only once while keeping their relative order. Return the count of unique elements.",
+  "constraints": "1 <= nums.length <= 3 * 10^4, -100 <= nums[i] <= 100",
+  "hint": "Input length up to 3 * 10^4 requires an O(n) time solution, while sorted order enables linear in-place tracking.",
+  "keywords": [
+    "sorted in non-decreasing order",
+    "appears only once",
+    "1 <= nums.length <= 3 * 10^4"
+  ],
+  "options": [
+    "HashMap / Hash Set",
+    "Binary Search",
+    "Two Pointers",
+    "Monotonic Stack"
+  ],
+  "answer": "Two Pointers",
+  "why_not": "Right: Two Pointers exploit sorted order to overwrite adjacent duplicates in-place in O(n) time. Not HashMap / Hash Set: A hash set identifies unique items but uses unnecessary O(n) space. Not Binary Search: Binary search locates values in logarithmic time but cannot perform in-place array compaction. Not Monotonic Stack: Stack tracking is unnecessary because the input array is already sorted.",
+  "complexity": "O(n) time, O(1) space",
+  "solution_link": "https://github.com/han73r/algorithmic-interview-prep/solutions/remove-duplicates-from-sorted-array.cs",
+  "tags": [
+    "array",
+    "two-pointers"
+  ]
+}

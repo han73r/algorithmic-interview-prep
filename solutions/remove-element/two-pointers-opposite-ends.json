@@ -1,0 +1,10 @@
+{
+    "file": "two-pointers-opposite-ends.cs",
+    "pattern": "two-pointers",
+    "specification": "two-pointers-opposite-ends",
+    "from_the_list": true,
+    "time": "O(n)",
+    "space": "O(1)",
+    "optimal": true,
+    "note": "Uses two pointers from opposite ends to swap matching elements to the back, minimizing unnecessary writes."
+}

@@ -1,0 +1,30 @@
+{
+  "id": "merge-sorted-array",
+  "leetcode_number": 88,
+  "leetcode_url": "https://leetcode.com/problems/merge-sorted-array/",
+  "title": "Merge Sorted Array",
+  "difficulty": "Easy",
+  "pattern": "Two Pointers",
+  "statement_short": "Given two integer arrays sorted in non-decreasing order, merge the second array into the first array as a single sorted array in-place. The first array has additional empty space at the end to accommodate all elements.",
+  "constraints": "0 <= m, n <= 200, 1 <= m + n <= 200, -10^9 <= nums1[i], nums2[j] <= 10^9",
+  "hint": "Small n and m do not restrict time complexity, but in-place merging requires O(1) extra space.",
+  "keywords": [
+    "non-decreasing order",
+    "in-place",
+    "0 <= m, n <= 200"
+  ],
+  "options": [
+    "Two Pointers",
+    "Sorting",
+    "Heap / Priority Queue",
+    "HashMap / Hash Set"
+  ],
+  "answer": "Two Pointers",
+  "why_not": "Right: Two Pointers iterating backward from the ends of both arrays merge elements in-place in O(m+n) time. Not Sorting: Concatenating and sorting takes O((m+n) log(m+n)) time. Not Heap / Priority Queue: Inserting all elements into a min-heap takes O((m+n) log(m+n)) time and extra space. Not HashMap / Hash Set: Hash tables do not preserve order and incur unnecessary space overhead.",
+  "complexity": "O(m + n) time, O(1) space",
+  "solution_link": "https://github.com/han73r/algorithmic-interview-prep/solutions/merge-sorted-array.cs",
+  "tags": [
+    "array",
+    "two-pointers"
+  ]
+}

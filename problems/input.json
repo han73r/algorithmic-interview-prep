@@ -1,0 +1,152 @@
+[
+    {
+        "id": "merge-sorted-array",
+        "leetcode_number": 88,
+        "leetcode_url": "https://leetcode.com/problems/merge-sorted-array/",
+        "title": "Merge Sorted Array",
+        "difficulty": "Easy",
+        "pattern": "Two Pointers",
+        "statement_short": "Given two integer arrays sorted in non-decreasing order, merge the second array into the first array as a single sorted array in-place. The first array has additional empty space at the end to accommodate all elements.",
+        "constraints": "0 <= m, n <= 200, 1 <= m + n <= 200, -10^9 <= nums1[i], nums2[j] <= 10^9",
+        "hint": "Small n and m do not restrict time complexity, but in-place merging requires O(1) extra space.",
+        "keywords": [
+            "non-decreasing order",
+            "in-place",
+            "0 <= m, n <= 200"
+        ],
+        "options": [
+            "Two Pointers",
+            "Sorting",
+            "Heap / Priority Queue",
+            "HashMap / Hash Set"
+        ],
+        "answer": "Two Pointers",
+        "why_not": "Right: Two Pointers iterating backward from the ends of both arrays merge elements in-place in O(m+n) time. Not Sorting: Concatenating and sorting takes O((m+n) log(m+n)) time. Not Heap / Priority Queue: Inserting all elements into a min-heap takes O((m+n) log(m+n)) time and extra space. Not HashMap / Hash Set: Hash tables do not preserve order and incur unnecessary space overhead.",
+        "complexity": "O(m + n) time, O(1) space",
+        "solution_link": "https://github.com/han73r/algorithmic-interview-prep/solutions/merge-sorted-array.cs",
+        "tags": [
+            "array",
+            "two-pointers"
+        ]
+    },
+    {
+        "id": "remove-element",
+        "leetcode_number": 27,
+        "leetcode_url": "https://leetcode.com/problems/remove-element/",
+        "title": "Remove Element",
+        "difficulty": "Easy",
+        "pattern": "Two Pointers",
+        "statement_short": "Given an integer array and a target value, remove all occurrences of that target value in-place. Return the number of elements remaining after placing valid elements in the front of the array.",
+        "constraints": "0 <= nums.length <= 50, 0 <= nums[i] <= 50, 0 <= val <= 100",
+        "hint": "Small array size places no time restriction, but elements must be overwritten in-place with O(1) space.",
+        "keywords": [
+            "remove all occurrences",
+            "in-place",
+            "0 <= nums.length <= 50"
+        ],
+        "options": [
+            "Sliding Window",
+            "Two Pointers",
+            "HashMap / Hash Set",
+            "Stack"
+        ],
+        "answer": "Two Pointers",
+        "why_not": "Right: Two Pointers (read and write indices) overwrite target values in a single O(n) pass in-place. Not Sliding Window: The task requires modifying array elements across the entire array, not identifying an optimal continuous window. Not HashMap / Hash Set: Using a hash set requires O(n) auxiliary space, violating the in-place constraint. Not Stack: Pushing valid elements to a stack consumes O(n) extra memory.",
+        "complexity": "O(n) time, O(1) space",
+        "solution_link": "https://github.com/han73r/algorithmic-interview-prep/solutions/remove-element.cs",
+        "tags": [
+            "array",
+            "two-pointers"
+        ]
+    },
+    {
+        "id": "remove-duplicates-from-sorted-array",
+        "leetcode_number": 26,
+        "leetcode_url": "https://leetcode.com/problems/remove-duplicates-from-sorted-array/",
+        "title": "Remove Duplicates from Sorted Array",
+        "difficulty": "Easy",
+        "pattern": "Two Pointers",
+        "statement_short": "Given an integer array sorted in non-decreasing order, remove duplicates in-place so that each unique element appears only once while keeping their relative order. Return the count of unique elements.",
+        "constraints": "1 <= nums.length <= 3 * 10^4, -100 <= nums[i] <= 100",
+        "hint": "Input length up to 3 * 10^4 requires an O(n) time solution, while sorted order enables linear in-place tracking.",
+        "keywords": [
+            "sorted in non-decreasing order",
+            "appears only once",
+            "1 <= nums.length <= 3 * 10^4"
+        ],
+        "options": [
+            "HashMap / Hash Set",
+            "Binary Search",
+            "Two Pointers",
+            "Monotonic Stack"
+        ],
+        "answer": "Two Pointers",
+        "why_not": "Right: Two Pointers exploit sorted order to overwrite adjacent duplicates in-place in O(n) time. Not HashMap / Hash Set: A hash set identifies unique items but uses unnecessary O(n) space. Not Binary Search: Binary search locates values in logarithmic time but cannot perform in-place array compaction. Not Monotonic Stack: Stack tracking is unnecessary because the input array is already sorted.",
+        "complexity": "O(n) time, O(1) space",
+        "solution_link": "https://github.com/han73r/algorithmic-interview-prep/solutions/remove-duplicates-from-sorted-array.cs",
+        "tags": [
+            "array",
+            "two-pointers"
+        ]
+    },
+    {
+        "id": "remove-duplicates-from-sorted-array-ii",
+        "leetcode_number": 80,
+        "leetcode_url": "https://leetcode.com/problems/remove-duplicates-from-sorted-array-ii/",
+        "title": "Remove Duplicates from Sorted Array II",
+        "difficulty": "Medium",
+        "pattern": "Two Pointers",
+        "statement_short": "Given a sorted integer array, remove excess duplicates in-place such that each unique element appears at most twice while preserving relative order. Return the updated array length.",
+        "constraints": "1 <= nums.length <= 3 * 10^4, -10^4 <= nums[i] <= 10^4",
+        "hint": "Input size up to 3 * 10^4 requires O(n) time, and pre-sorted order permits fixed-offset duplicate checks.",
+        "keywords": [
+            "appears at most twice",
+            "in-place",
+            "-10^4 <= nums[i] <= 10^4"
+        ],
+        "options": [
+            "1D DP",
+            "Sliding Window",
+            "HashMap / Hash Set",
+            "Two Pointers"
+        ],
+        "answer": "Two Pointers",
+        "why_not": "Right: Two Pointers compare the reader element against writer-2 to allow at most two copies in-place in O(n) time. Not 1D DP: Dynamic programming transitions are unnecessary for simple conditional array overwrite. Not Sliding Window: The problem asks for modifying sequence elements, not finding a max/min subsegment window. Not HashMap / Hash Set: Tracking element frequencies in a hash map uses O(n) auxiliary space.",
+        "complexity": "O(n) time, O(1) space",
+        "solution_link": "https://github.com/han73r/algorithmic-interview-prep/solutions/remove-duplicates-from-sorted-array-ii.cs",
+        "tags": [
+            "array",
+            "two-pointers"
+        ]
+    },
+    {
+        "id": "majority-element",
+        "leetcode_number": 169,
+        "leetcode_url": "https://leetcode.com/problems/majority-element/",
+        "title": "Majority Element",
+        "difficulty": "Easy",
+        "pattern": "Boyer-Moore Voting",
+        "statement_short": "Given an array of size n, find the element that appears more than floor(n / 2) times. You may assume that the majority element always exists in the input array.",
+        "constraints": "1 <= n <= 5 * 10^4, -10^9 <= nums[i] <= 10^9",
+        "hint": "Input size up to 5 * 10^4 requires O(n) time, and the guaranteed majority property enables O(1) space element cancellation.",
+        "keywords": [
+            "appears more than",
+            "majority element always exists",
+            "1 <= n <= 5 * 10^4"
+        ],
+        "options": [
+            "Sorting",
+            "Boyer-Moore Voting",
+            "HashMap / Hash Set",
+            "Bit Manipulation"
+        ],
+        "answer": "Boyer-Moore Voting",
+        "why_not": "Right: Boyer-Moore Voting pairs majority and minority items to cancel non-majority elements in O(n) time and O(1) space. Not Sorting: Sorting puts the majority element at index n/2 but costs O(n log n) time. Not HashMap / Hash Set: Frequency counting takes O(n) time but requires O(n) extra space. Not Bit Manipulation: Bitwise counting takes O(32n) time, which is slower than linear voting.",
+        "complexity": "O(n) time, O(1) space",
+        "solution_link": "https://github.com/han73r/algorithmic-interview-prep/solutions/majority-element.cs",
+        "tags": [
+            "array",
+            "counting"
+        ]
+    }
+]

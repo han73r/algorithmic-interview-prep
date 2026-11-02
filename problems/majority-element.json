@@ -1,0 +1,30 @@
+{
+  "id": "majority-element",
+  "leetcode_number": 169,
+  "leetcode_url": "https://leetcode.com/problems/majority-element/",
+  "title": "Majority Element",
+  "difficulty": "Easy",
+  "pattern": "Boyer-Moore Voting",
+  "statement_short": "Given an array of size n, find the element that appears more than floor(n / 2) times. You may assume that the majority element always exists in the input array.",
+  "constraints": "1 <= n <= 5 * 10^4, -10^9 <= nums[i] <= 10^9",
+  "hint": "Input size up to 5 * 10^4 requires O(n) time, and the guaranteed majority property enables O(1) space element cancellation.",
+  "keywords": [
+    "appears more than",
+    "majority element always exists",
+    "1 <= n <= 5 * 10^4"
+  ],
+  "options": [
+    "Sorting",
+    "Boyer-Moore Voting",
+    "HashMap / Hash Set",
+    "Bit Manipulation"
+  ],
+  "answer": "Boyer-Moore Voting",
+  "why_not": "Right: Boyer-Moore Voting pairs majority and minority items to cancel non-majority elements in O(n) time and O(1) space. Not Sorting: Sorting puts the majority element at index n/2 but costs O(n log n) time. Not HashMap / Hash Set: Frequency counting takes O(n) time but requires O(n) extra space. Not Bit Manipulation: Bitwise counting takes O(32n) time, which is slower than linear voting.",
+  "complexity": "O(n) time, O(1) space",
+  "solution_link": "https://github.com/han73r/algorithmic-interview-prep/solutions/majority-element.cs",
+  "tags": [
+    "array",
+    "counting"
+  ]
+}

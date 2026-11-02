@@ -1,0 +1,10 @@
+{
+    "file": "boyer-moore-voting.cs",
+    "pattern": "boyer-moore-voting",
+    "specification": null,
+    "from_the_list": true,
+    "time": "O(n)",
+    "space": "O(1)",
+    "optimal": true,
+    "note": "Uses Boyer-Moore Voting Algorithm to find the majority element in linear time with constant extra space."
+}

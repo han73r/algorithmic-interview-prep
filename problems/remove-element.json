@@ -1,0 +1,30 @@
+{
+  "id": "remove-element",
+  "leetcode_number": 27,
+  "leetcode_url": "https://leetcode.com/problems/remove-element/",
+  "title": "Remove Element",
+  "difficulty": "Easy",
+  "pattern": "Two Pointers",
+  "statement_short": "Given an integer array and a target value, remove all occurrences of that target value in-place. Return the number of elements remaining after placing valid elements in the front of the array.",
+  "constraints": "0 <= nums.length <= 50, 0 <= nums[i] <= 50, 0 <= val <= 100",
+  "hint": "Small array size places no time restriction, but elements must be overwritten in-place with O(1) space.",
+  "keywords": [
+    "remove all occurrences",
+    "in-place",
+    "0 <= nums.length <= 50"
+  ],
+  "options": [
+    "Sliding Window",
+    "Two Pointers",
+    "HashMap / Hash Set",
+    "Stack"
+  ],
+  "answer": "Two Pointers",
+  "why_not": "Right: Two Pointers (read and write indices) overwrite target values in a single O(n) pass in-place. Not Sliding Window: The task requires modifying array elements across the entire array, not identifying an optimal continuous window. Not HashMap / Hash Set: Using a hash set requires O(n) auxiliary space, violating the in-place constraint. Not Stack: Pushing valid elements to a stack consumes O(n) extra memory.",
+  "complexity": "O(n) time, O(1) space",
+  "solution_link": "https://github.com/han73r/algorithmic-interview-prep/solutions/remove-element.cs",
+  "tags": [
+    "array",
+    "two-pointers"
+  ]
+}

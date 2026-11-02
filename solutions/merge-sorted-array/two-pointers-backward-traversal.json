@@ -1,0 +1,10 @@
+{
+    "file": "two-pointers-backward-traversal.cs",
+    "pattern": "two-pointers",
+    "specification": "two-pointers-backward-traversal",
+    "from_the_list": true,
+    "time": "O(m + n)",
+    "space": "O(1)",
+    "optimal": true,
+    "note": "Merges two sorted arrays in-place from back to front to avoid overwriting existing elements in nums1."
+}

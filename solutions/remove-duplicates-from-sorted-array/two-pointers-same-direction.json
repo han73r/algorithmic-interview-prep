@@ -1,0 +1,10 @@
+{
+    "file": "two-pointers-same-direction.cs",
+    "pattern": "two-pointers",
+    "specification": "two-pointers-same-direction",
+    "from_the_list": true,
+    "time": "O(n)",
+    "space": "O(1)",
+    "optimal": true,
+    "note": "Uses two pointers moving in the same direction to overwrite duplicates in-place and return the new length."
+}
