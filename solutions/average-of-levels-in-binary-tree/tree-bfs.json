@@ -1,0 +1,10 @@
+{
+  "file": "tree-bfs.cs",
+  "pattern": "tree-bfs",
+  "specification": null,
+  "from_the_list": true,
+  "time": "O(n)",
+  "space": "O(n)",
+  "optimal": true,
+  "note": "Computes the arithmetic mean of node values at each tree level using breadth-first search."
+}

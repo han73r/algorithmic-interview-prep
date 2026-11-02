@@ -1,0 +1,30 @@
+{
+  "id": "two-sum-ii-input-array-is-sorted",
+  "leetcode_number": 167,
+  "leetcode_url": "[suspicious link removed]",
+  "title": "Two Sum II - Input Array Is Sorted",
+  "difficulty": "Medium",
+  "pattern": "Two Pointers",
+  "statement_short": "Given a 1-indexed array of integers numbers that is already sorted in non-decreasing order, find two numbers that add up to a specific target number. Return their indices using 1-based indexing.",
+  "constraints": "2 &lt;= numbers.length &lt;= 3 \\* 10^4, -1000 &lt;= numbers[i] &lt;= 1000, numbers is sorted in non-decreasing order, exactly one solution",
+  "hint": "Sorted input with n up to 3 \\* 10^4 mandates an O(n) solution using opposite-end pointers with O(1) space.",
+  "keywords": [
+    "sorted in non-decreasing order",
+    "1-based indexing",
+    "2 &lt;= numbers.length &lt;= 3 \\* 10^4"
+  ],
+  "options": [
+    "Two Pointers",
+    "HashMap / Hash Set",
+    "Binary Search",
+    "Prefix Sum"
+  ],
+  "answer": "Two Pointers",
+  "why_not": "Right: Two Pointers shrink inward from opposite ends based on sum comparison in O(n) time and O(1) space. Not HashMap / Hash Set: Storing values in a hash map solves Two Sum in O(n) time but consumes unnecessary O(n) auxiliary space. Not Binary Search: Binary searching the complement for each element takes O(n log n) time, which is slower than two pointers. Not Prefix Sum: Prefix sums calculate cumulative range totals, not target pair sums.",
+  "complexity": "O(n) time, O(1) space",
+  "solution_link": "[suspicious link removed]",
+  "tags": [
+    "two-pointers",
+    "array"
+  ]
+}

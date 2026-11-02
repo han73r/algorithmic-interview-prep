@@ -1,0 +1,10 @@
+{
+  "file": "2d-dp.cs",
+  "pattern": "2d-dp",
+  "specification": null,
+  "from_the_list": true,
+  "time": "O(m * n)",
+  "space": "O(n)",
+  "optimal": true,
+  "note": "Computes the Levenshtein distance between two strings using 1D space optimization."
+}

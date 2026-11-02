@@ -1,0 +1,31 @@
+{
+  "id": "word-ladder",
+  "leetcode_number": 127,
+  "leetcode_url": "[suspicious link removed]",
+  "title": "Word Ladder",
+  "difficulty": "Hard",
+  "pattern": "Graph BFS",
+  "statement_short": "Given two words beginWord and endWord, and a dictionary wordList, return the number of words in the shortest transformation sequence from beginWord to endWord such that each adjacent word differs by single letter.",
+  "constraints": "1 &lt;= beginWord.length &lt;= 10, endWord.length == beginWord.length, 1 &lt;= wordList.length &lt;= 5000, wordList[i].length == beginWord.length",
+  "hint": "Dictionary size up to 5000 permits finding the shortest path in an unweighted word graph using level-order queue search.",
+  "keywords": [
+    "shortest transformation sequence",
+    "differs by single letter",
+    "1 &lt;= wordList.length &lt;= 5000"
+  ],
+  "options": [
+    "Graph BFS",
+    "Graph DFS",
+    "Trie",
+    "1D DP"
+  ],
+  "answer": "Graph BFS",
+  "why_not": "Right: Graph BFS finds the shortest path level by level in an unweighted word transition graph in O(N \\* M^2) time. Not Graph DFS: DFS explores deep paths first, requiring searching the entire state space to guarantee shortest path length. Not Trie: Prefix trees speed up single-character word dictionary lookups but do not manage shortest path level traversal queues. Not 1D DP: Word transformations form general graph edges rather than linear DAG state transitions.",
+  "complexity": "O(N \\* M^2) time, O(N \\* M) space",
+  "solution_link": "[suspicious link removed]",
+  "tags": [
+    "hash-table",
+    "string",
+    "breadth-first-search"
+  ]
+}

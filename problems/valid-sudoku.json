@@ -1,0 +1,31 @@
+{
+  "id": "valid-sudoku",
+  "leetcode_number": 36,
+  "leetcode_url": "https://leetcode.com/problems/valid-sudoku/",
+  "title": "Valid Sudoku",
+  "difficulty": "Medium",
+  "pattern": "HashMap / Hash Set",
+  "statement_short": "Determine if a 9x9 Sudoku board is valid. Only the filled cells must be validated according to the rules: each row, column, and 3x3 sub-box must contain digits 1-9 without repetition.",
+  "constraints": "board.length == 9, board[i].length == 9, board[i][j] is a digit '1'-'9' or '.'",
+  "hint": "Fixed 9x9 board size implies constant time verification using hash sets for rows, columns, and sub-boxes.",
+  "keywords": [
+    "filled cells must be validated",
+    "without repetition",
+    "board.length == 9"
+  ],
+  "options": [
+    "HashMap / Hash Set",
+    "Backtracking",
+    "Bit Manipulation",
+    "2D DP"
+  ],
+  "answer": "HashMap / Hash Set",
+  "why_not": "Right: HashMap / Hash Set tracks seen digits for each row, column, and 3x3 sub-box in a single pass in O(1) time and space. Not Backtracking: Backtracking solves/fills the Sudoku board recursively, whereas validation requires only checking existing entries once. Not Bit Manipulation: Bitmasks can track seen digits in O(1) space, but Hash Sets are the primary standard data structure. Not 2D DP: Dynamic programming is designed for optimization/counting subproblems, not set membership validation.",
+  "complexity": "O(1) time, O(1) space",
+  "solution_link": "[suspicious link removed]",
+  "tags": [
+    "array",
+    "hash-table",
+    "matrix"
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "id": "convert-sorted-array-to-binary-search-tree",
+  "leetcode_number": 108,
+  "leetcode_url": "[suspicious link removed]",
+  "title": "Convert Sorted Array to Binary Search Tree",
+  "difficulty": "Easy",
+  "pattern": "Tree DFS",
+  "statement_short": "Given an integer array nums where the elements are sorted in ascending order, convert it to a height-balanced binary search tree. A height-balanced tree is one in which the depth of the two subtrees of every node never differs by more than 1.",
+  "constraints": "1 &lt;= nums.length &lt;= 10^4, -10^4 &lt;= nums[i] &lt;= 10^4, nums is sorted in strictly increasing order",
+  "hint": "Sorted array with length up to 10^4 allows recursively picking the middle element as root to build subtrees.",
+  "keywords": [
+    "sorted in ascending order",
+    "height-balanced binary search tree",
+    "1 &lt;= nums.length &lt;= 10^4"
+  ],
+  "options": [
+    "Tree DFS",
+    "Binary Search",
+    "Two Pointers",
+    "Tree BFS"
+  ],
+  "answer": "Tree DFS",
+  "why_not": "Right: Tree DFS recursively picks middle array elements as roots and constructs left/right subtrees in O(n) time and O(log n) space. Not Binary Search: Binary search locates target values in arrays, but building a BST structure uses recursive divide-and-conquer DFS. Not Two Pointers: Array pointers define subsegment bounds, but the tree construction backbone is recursive DFS. Not Tree BFS: Level-order building using queues requires complex index range tracking compared to top-down DFS.",
+  "complexity": "O(n) time, O(log n) space",
+  "solution_link": "[suspicious link removed]",
+  "tags": [
+    "array",
+    "tree",
+    "binary-search-tree",
+    "binary-tree",
+    "divide-and-conquer"
+  ]
+}

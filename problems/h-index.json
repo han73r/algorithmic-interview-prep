@@ -1,0 +1,30 @@
+{
+  "id": "h-index",
+  "leetcode_number": 274,
+  "leetcode_url": "[suspicious link removed]",
+  "title": "H-Index",
+  "difficulty": "Medium",
+  "pattern": "Sorting",
+  "statement_short": "Given an array of citations for a researcher's papers, compute the researcher's h-index. The h-index is the maximum value h such that the researcher has published at least h papers that have each been cited at least h times.",
+  "constraints": "1 &lt;= citations.length &lt;= 5000, 0 &lt;= citations[i] &lt;= 1000",
+  "hint": "Array length up to 5000 allows O(n log n) sorting or O(n) bucket counting to locate the citation threshold.",
+  "keywords": [
+    "at least h papers",
+    "maximum value h",
+    "1 &lt;= citations.length &lt;= 5000"
+  ],
+  "options": [
+    "Binary Search on Answer",
+    "Sorting",
+    "HashMap / Hash Set",
+    "Heap / Priority Queue"
+  ],
+  "answer": "Sorting",
+  "why_not": "Right: Sorting citations in descending order allows finding the largest index i where citations[i] &gt;= i + 1 in O(n log n) time. Not Binary Search on Answer: Binary search on h from 0 to n works in O(n log n) time but is more complex than sorting directly. Not HashMap / Hash Set: Using a bucket array works in O(n) space, but general hash maps add unneeded hashing overhead. Not Heap / Priority Queue: Maintaining a min-heap of size h takes O(n log h) time and O(n) auxiliary space.",
+  "complexity": "O(n log n) time, O(1) space",
+  "solution_link": "[suspicious link removed]",
+  "tags": [
+    "array",
+    "sorting"
+  ]
+}

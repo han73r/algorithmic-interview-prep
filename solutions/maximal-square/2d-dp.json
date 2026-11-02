@@ -1,0 +1,10 @@
+{
+  "file": "2d-dp.cs",
+  "pattern": "2d-dp",
+  "specification": null,
+  "from_the_list": true,
+  "time": "O(m * n)",
+  "space": "O(n)",
+  "optimal": true,
+  "note": "Finds the largest square of ones in a binary matrix using space-optimized DP."
+}

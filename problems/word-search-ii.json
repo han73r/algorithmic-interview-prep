@@ -1,0 +1,33 @@
+{
+  "id": "word-search-ii",
+  "leetcode_number": 212,
+  "leetcode_url": "[suspicious link removed]",
+  "title": "Word Search II",
+  "difficulty": "Hard",
+  "pattern": "Trie",
+  "statement_short": "Given an m x n board of characters and a list of strings words, return all words on the board. Each word must be constructed from sequentially adjacent cells horizontally or vertically, without reusing any cell.",
+  "constraints": "m == board.length, n == board[i].length, 1 &lt;= m, n &lt;= 12, 1 &lt;= words.length &lt;= 3 \\* 10^4, 1 &lt;= words[i].length &lt;= 10",
+  "hint": "Grid up to 12x12 and 3 \\* 10^4 target words mandate storing words in a Trie to prune DFS backtracking paths early.",
+  "keywords": [
+    "sequentially adjacent cells",
+    "without reusing any cell",
+    "1 &lt;= words.length &lt;= 3 \\* 10^4"
+  ],
+  "options": [
+    "Trie",
+    "Backtracking",
+    "Graph BFS",
+    "HashMap / Hash Set"
+  ],
+  "answer": "Trie",
+  "why_not": "Right: Trie coupled with 2D grid DFS backtracking prunes invalid prefix paths instantly in O(M \\* N \\* 4^L) worst-case time. Not Backtracking: Pure backtracking without a Trie searches for each of the 30,000 words independently on the grid, causing severe TLE. Not Graph BFS: Level-order grid traversal requires storing full path histories per queue item, taking excessive memory. Not HashMap / Hash Set: Hash sets check complete words, but cannot prune grid search paths at non-matching prefixes.",
+  "complexity": "O(M \\* N \\* 4^L) time, O(W \\* L) space",
+  "solution_link": "[suspicious link removed]",
+  "tags": [
+    "array",
+    "string",
+    "backtracking",
+    "trie",
+    "matrix"
+  ]
+}

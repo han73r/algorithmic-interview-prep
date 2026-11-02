@@ -1,0 +1,33 @@
+{
+  "id": "word-break",
+  "leetcode_number": 139,
+  "leetcode_url": "[suspicious link removed]",
+  "title": "Word Break",
+  "difficulty": "Medium",
+  "pattern": "1D DP",
+  "statement_short": "Given a string s and a dictionary of strings wordDict, return true if s can be segmented into a space-separated sequence of one or more dictionary words. The same word in the dictionary may be reused multiple times.",
+  "constraints": "1 &lt;= s.length &lt;= 300, 1 &lt;= wordDict.length &lt;= 1000, 1 &lt;= wordDict[i].length &lt;= 20, s and wordDict[i] consist of lowercase English letters, all strings of wordDict are unique",
+  "hint": "String length up to 300 permits checking if prefix s[0..i] is breakable using subproblem boolean state dp[j].",
+  "keywords": [
+    "segmented into a space-separated sequence",
+    "reused multiple times",
+    "1 &lt;= s.length &lt;= 300"
+  ],
+  "options": [
+    "1D DP",
+    "Trie",
+    "Backtracking",
+    "Sliding Window"
+  ],
+  "answer": "1D DP",
+  "why_not": "Right: 1D DP records whether prefix s[0..i] can be segmented into valid words using dp[j] &amp;&amp; wordDict.contains(s[j..i]) in O(n^2 \\* k) time. Not Trie: Trie speeds up dictionary word match checks, but verifying full string segmentation relies on dynamic programming state transitions. Not Backtracking: Recursive partitioning without memoization leads to TLE with O(2^n) exponential time. Not Sliding Window: Word lengths in the sequence vary, preventing fixed/monotonic sliding window movement.",
+  "complexity": "O(n^2 \\* k) time, O(n) space",
+  "solution_link": "[suspicious link removed]",
+  "tags": [
+    "hash-table",
+    "string",
+    "dynamic-programming",
+    "trie",
+    "memoization"
+  ]
+}

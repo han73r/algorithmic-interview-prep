@@ -1,0 +1,10 @@
+{
+  "file": "stack.cs",
+  "pattern": "stack",
+  "specification": null,
+  "from_the_list": true,
+  "time": "O(n)",
+  "space": "O(n)",
+  "optimal": true,
+  "note": "Parses arithmetic expressions with parentheses and signs using a stack to maintain context."
+}

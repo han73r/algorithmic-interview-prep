@@ -1,0 +1,10 @@
+{
+  "file": "math-geometry.cs",
+  "pattern": "math-geometry",
+  "specification": null,
+  "from_the_list": true,
+  "time": "O(n)",
+  "space": "O(n)",
+  "optimal": true,
+  "note": "Simulates the zigzag traversal by tracking rows and direction changes."
+}

@@ -1,0 +1,32 @@
+{
+  "id": "kth-smallest-element-in-a-bst",
+  "leetcode_number": 230,
+  "leetcode_url": "https://leetcode.com/problems/kth-smallest-element-in-a-bst/",
+  "title": "Kth Smallest Element in a BST",
+  "difficulty": "Medium",
+  "pattern": "Tree DFS",
+  "statement_short": "Given the root of a binary search tree and an integer k, return the k-th smallest value (1-indexed) of all the values of the nodes in the tree.",
+  "constraints": "1 &lt;= k &lt;= n &lt;= 10^4, 0 &lt;= Node.val &lt;= 10^4",
+  "hint": "In-order traversal of a BST visits nodes in strictly increasing order, allowing stopping at the k-th node in O(k) time.",
+  "keywords": [
+    "k-th smallest value",
+    "binary search tree",
+    "1 &lt;= k &lt;= n &lt;= 10^4"
+  ],
+  "options": [
+    "Tree DFS",
+    "Heap / Priority Queue",
+    "Binary Search",
+    "Two Pointers"
+  ],
+  "answer": "Tree DFS",
+  "why_not": "Right: Tree DFS performs in-order traversal to count visited nodes, returning immediately at the k-th element in O(h + k) time and O(h) space. Not Heap / Priority Queue: Storing node values in a max-heap takes O(n log k) time, ignoring the BST sorted property. Not Binary Search: Counting left subtree node size takes O(h^2) time unless node counts are stored in tree nodes. Not Two Pointers: Linear scanning pointers require indexed array access rather than BST node link traversal.",
+  "complexity": "O(h + k) time, O(h) space",
+  "solution_link": "[suspicious link removed]",
+  "tags": [
+    "tree",
+    "depth-first-search",
+    "binary-search-tree",
+    "binary-tree"
+  ]
+}

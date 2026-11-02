@@ -1,0 +1,32 @@
+{
+  "id": "ipo",
+  "leetcode_number": 502,
+  "leetcode_url": "[suspicious link removed]",
+  "title": "IPO",
+  "difficulty": "Hard",
+  "pattern": "Heap / Priority Queue",
+  "statement_short": "Suppose LeetCode is going to start its IPO. Given w initial capital, k maximum projects to complete, and arrays for profits and capital requirements of each project, pick at most k distinct projects to maximize final capital.",
+  "constraints": "1 &lt;= k &lt;= 10^5, 0 &lt;= w &lt;= 10^9, n == profits.length == capital.length, 1 &lt;= n &lt;= 10^5, 0 &lt;= profits[i], capital[i] &lt;= 10^4",
+  "hint": "Limit k and n up to 10^5 dictates greedily picking max profit projects from a max-heap of currently affordable projects.",
+  "keywords": [
+    "maximize final capital",
+    "k maximum projects to complete",
+    "1 &lt;= k &lt;= 10^5"
+  ],
+  "options": [
+    "Heap / Priority Queue",
+    "Greedy",
+    "1D DP",
+    "Sorting"
+  ],
+  "answer": "Heap / Priority Queue",
+  "why_not": "Right: Heap / Priority Queue paired with sorting by capital dynamically yields the maximum available profit project in O(n log n + k log n) time. Not Greedy: Pure greedy search without a priority queue scans all affordable projects repeatedly in O(k \\* n) time. Not 1D DP: Dynamic programming state caching does not apply due to large capital bounds up to 10^9\\. Not Sorting: Sorting alone orders projects statically by capital, but dynamic capital increases require heap-based max profit extraction.",
+  "complexity": "O(n log n + k log n) time, O(n) space",
+  "solution_link": "[suspicious link removed]",
+  "tags": [
+    "array",
+    "greedy",
+    "sorting",
+    "heap-priority-queue"
+  ]
+}

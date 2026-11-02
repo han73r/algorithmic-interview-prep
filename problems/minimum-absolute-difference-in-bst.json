@@ -1,0 +1,32 @@
+{
+  "id": "minimum-absolute-difference-in-bst",
+  "leetcode_number": 530,
+  "leetcode_url": "https://leetcode.com/problems/minimum-absolute-difference-in-bst/",
+  "title": "Minimum Absolute Difference in BST",
+  "difficulty": "Easy",
+  "pattern": "Tree DFS",
+  "statement_short": "Given the root of a Binary Search Tree (BST), return the minimum absolute difference between the values of any two different nodes in the tree.",
+  "constraints": "2 &lt;= number of nodes in tree &lt;= 10^4, 0 &lt;= Node.val &lt;= 10^5",
+  "hint": "BST in-order traversal yields a sorted sequence, allowing single-pass adjacent value difference checks in O(n) time.",
+  "keywords": [
+    "minimum absolute difference",
+    "Binary Search Tree (BST)",
+    "2 &lt;= number of nodes in tree &lt;= 10^4"
+  ],
+  "options": [
+    "Tree DFS",
+    "Binary Search",
+    "Two Pointers",
+    "Sorting"
+  ],
+  "answer": "Tree DFS",
+  "why_not": "Right: Tree DFS performs in-order traversal to visit BST nodes in sorted order, keeping track of previous value in O(n) time and O(h) space. Not Binary Search: Binary searching for closest values per node takes O(n log n) time, which is slower than in-order DFS. Not Two Pointers: Array two pointers require copying all nodes into a sorted array first, using extra O(n) memory. Not Sorting: Extracting node values and sorting costs O(n log n) time, ignoring the pre-sorted BST property.",
+  "complexity": "O(n) time, O(h) space",
+  "solution_link": "[suspicious link removed]",
+  "tags": [
+    "tree",
+    "depth-first-search",
+    "binary-search-tree",
+    "binary-tree"
+  ]
+}

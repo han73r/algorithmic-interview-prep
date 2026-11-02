@@ -1,0 +1,10 @@
+{
+  "file": "heap-priority-queue.cs",
+  "pattern": "heap-priority-queue",
+  "specification": null,
+  "from_the_list": true,
+  "time": "O(N log k)",
+  "space": "O(k)",
+  "optimal": false,
+  "note": "Merges k sorted linked lists using an efficient divide-and-conquer strategy."
+}

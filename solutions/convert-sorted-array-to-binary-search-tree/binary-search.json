@@ -1,0 +1,10 @@
+{
+  "file": "binary-search.cs",
+  "pattern": "binary-search",
+  "specification": null,
+  "from_the_list": true,
+  "time": "O(n)",
+  "space": "O(log n)",
+  "optimal": true,
+  "note": "Constructs a height-balanced binary search tree from a sorted array recursively."
+}

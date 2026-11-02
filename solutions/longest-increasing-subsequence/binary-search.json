@@ -1,0 +1,10 @@
+{
+  "file": "binary-search.cs",
+  "pattern": "binary-search",
+  "specification": null,
+  "from_the_list": true,
+  "time": "O(n log n)",
+  "space": "O(n)",
+  "optimal": true,
+  "note": "Maintains a patience-sorting tail array using binary search to find the LIS length."
+}

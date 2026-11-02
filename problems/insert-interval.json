@@ -1,0 +1,29 @@
+{
+  "id": "insert-interval",
+  "leetcode_number": 57,
+  "leetcode_url": "[suspicious link removed]",
+  "title": "Insert Interval",
+  "difficulty": "Medium",
+  "pattern": "Intervals",
+  "statement_short": "Given an array of non-overlapping intervals sorted by their start times and a newInterval, insert newInterval into intervals such that intervals is still sorted and non-overlapping, merging overlapping intervals if necessary.",
+  "constraints": "0 &lt;= intervals.length &lt;= 10^4, intervals[i].length == 2, 0 &lt;= start_i &lt;= end_i &lt;= 10^5, newInterval.length == 2",
+  "hint": "Pre-sorted non-overlapping input allows an O(n) linear single pass to collect left, merged, and right intervals.",
+  "keywords": [
+    "non-overlapping intervals sorted by their start times",
+    "merging overlapping intervals if necessary",
+    "0 &lt;= intervals.length &lt;= 10^4"
+  ],
+  "options": [
+    "Intervals",
+    "Binary Search",
+    "Two Pointers",
+    "Heap / Priority Queue"
+  ],
+  "answer": "Intervals",
+  "why_not": "Right: Intervals single-pass linear insertion merges overlapping ranges with newInterval in O(n) time and O(n) space. Not Binary Search: Binary search locates the insertion position in O(log n) time, but merging/rebuilding the output array still requires O(n) time. Not Two Pointers: Scanning from both ends is unnecessary since intervals are already sorted by start time. Not Heap / Priority Queue: Inserting into a min-heap costs O(n log n) time, which is less optimal than linear insertion.",
+  "complexity": "O(n) time, O(n) space",
+  "solution_link": "[suspicious link removed]",
+  "tags": [
+    "array"
+  ]
+}

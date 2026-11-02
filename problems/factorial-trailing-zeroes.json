@@ -1,0 +1,29 @@
+{
+  "id": "factorial-trailing-zeroes",
+  "leetcode_number": 172,
+  "leetcode_url": "[suspicious link removed]",
+  "title": "Factorial Trailing Zeroes",
+  "difficulty": "Medium",
+  "pattern": "Math / Geometry",
+  "statement_short": "Given an integer n, return the number of trailing zeroes in n!. Follow up: Could you write a solution that works in logarithmic time complexity?",
+  "constraints": "0 &lt;= n &lt;= 10^4",
+  "hint": "Logarithmic time follow-up requires counting factors of 5 by repeatedly dividing n by 5.",
+  "keywords": [
+    "trailing zeroes in n!",
+    "logarithmic time complexity",
+    "0 &lt;= n &lt;= 0^4"
+  ],
+  "options": [
+    "Math / Geometry",
+    "1D DP",
+    "Binary Search",
+    "Bit Manipulation"
+  ],
+  "answer": "Math / Geometry",
+  "why_not": "Right: Math / Geometry counts factors of 5 in n! using n/5 + n/25 + ... in O(log n) time and O(1) space. Not 1D DP: Dynamic programming subproblem state caching is unnecessary for direct factor counting. Not Binary Search: The solution calculates exact factor multiples rather than searching a sorted array range. Not Bit Manipulation: Trailing zeroes in decimal factorials depend on factors of 10 (2\\*5) rather than bitwise shifts.",
+  "complexity": "O(log n) time, O(1) space",
+  "solution_link": "[suspicious link removed]",
+  "tags": [
+    "math"
+  ]
+}

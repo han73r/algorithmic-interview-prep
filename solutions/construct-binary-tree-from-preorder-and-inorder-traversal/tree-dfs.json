@@ -1,0 +1,10 @@
+{
+  "file": "tree-dfs.cs",
+  "pattern": "tree-dfs",
+  "specification": "tree-dfs",
+  "from_the_list": true,
+  "time": "O(n)",
+  "space": "O(n)",
+  "optimal": true,
+  "note": "Constructs a binary tree from preorder and inorder traversal arrays using a hash map for index lookups."
+}

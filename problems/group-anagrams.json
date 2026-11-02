@@ -1,0 +1,32 @@
+{
+  "id": "group-anagrams",
+  "leetcode_number": 49,
+  "leetcode_url": "https://leetcode.com/problems/group-anagrams/",
+  "title": "Group Anagrams",
+  "difficulty": "Medium",
+  "pattern": "HashMap / Hash Set",
+  "statement_short": "Given an array of strings strs, group the anagrams together in any order. An anagram is a word formed by rearranging the letters of another word using all original letters exactly once.",
+  "constraints": "1 &lt;= strs.length &lt;= 10^4, 0 &lt;= strs[i].length &lt;= 100, strs[i] consists of lowercase English letters",
+  "hint": "Array length up to 10^4 requires O(N \\* K) time by hashing character frequency tuple keys.",
+  "keywords": [
+    "group the anagrams together",
+    "rearranging the letters",
+    "1 &lt;= strs.length &lt;= 10^4"
+  ],
+  "options": [
+    "HashMap / Hash Set",
+    "Trie",
+    "Sorting",
+    "Two Pointers"
+  ],
+  "answer": "HashMap / Hash Set",
+  "why_not": "Right: HashMap / Hash Set maps character count keys (or sorted strings) to lists of anagrams in O(N \\* K) time. Not Trie: Prefix trees organize prefix sequences rather than grouping unordered character counts into hash buckets. Not Sorting: Sorting each word individually takes O(N \\* K log K) time, which is slightly slower than tuple key counting. Not Two Pointers: Scanning pointer pairs cannot group arbitrary string buckets across an unsorted list.",
+  "complexity": "O(N \\* K) time, O(N \\* K) space",
+  "solution_link": "[suspicious link removed]",
+  "tags": [
+    "array",
+    "hash-table",
+    "string",
+    "sorting"
+  ]
+}

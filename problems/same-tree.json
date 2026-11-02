@@ -1,0 +1,31 @@
+{
+  "id": "same-tree",
+  "leetcode_number": 100,
+  "leetcode_url": "[suspicious link removed]",
+  "title": "Same Tree",
+  "difficulty": "Easy",
+  "pattern": "Tree DFS",
+  "statement_short": "Given the roots of two binary trees p and q, write a function to check if they are the same or not. Two binary trees are considered the same if they are structurally identical and the nodes have the same value.",
+  "constraints": "0 &lt;= number of nodes in both trees &lt;= 100, -10^4 &lt;= Node.val &lt;= 10^4",
+  "hint": "Small node count (&lt;= 100) allows simultaneous pre-order recursion to verify structure and values in O(n) time.",
+  "keywords": [
+    "structurally identical",
+    "nodes have the same value",
+    "0 &lt;= number of nodes in both trees &lt;= 100"
+  ],
+  "options": [
+    "Tree BFS",
+    "Tree DFS",
+    "HashMap / Hash Set",
+    "Two Pointers"
+  ],
+  "answer": "Tree DFS",
+  "why_not": "Right: Tree DFS recursively compares current node values and recursively checks left and right subtrees in O(n) time and O(h) space. Not Tree BFS: Simultaneous level-order queue comparison works in O(n) time but requires extra queue memory overhead. Not HashMap / Hash Set: Hash tables do not preserve hierarchical parent-child structural relationships natively. Not Two Pointers: Scanning node pointer pairs directly is non-trivial without recursive or queue-based tree traversal.",
+  "complexity": "O(n) time, O(h) space",
+  "solution_link": "[suspicious link removed]",
+  "tags": [
+    "tree",
+    "depth-first-search",
+    "binary-tree"
+  ]
+}

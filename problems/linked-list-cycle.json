@@ -1,0 +1,30 @@
+{
+  "id": "linked-list-cycle",
+  "leetcode_number": 141,
+  "leetcode_url": "[suspicious link removed]",
+  "title": "Linked List Cycle",
+  "difficulty": "Easy",
+  "pattern": "Linked List (Fast &amp; Slow)",
+  "statement_short": "Given head, the head of a linked list, determine if the linked list has a cycle in it. A cycle exists if there is some node in the list that can be reached again by continuously following the next pointer.",
+  "constraints": "0 &lt;= number of nodes &lt;= 10^4, -10^5 &lt;= Node.val &lt;= 10^5",
+  "hint": "Node count up to 10^4 dictates an O(n) time solution, while O(1) space requires fast and slow pointer traversal.",
+  "keywords": [
+    "continuously following the next pointer",
+    "node in the list that can be reached again",
+    "0 &lt;= number of nodes &lt;= 10^4"
+  ],
+  "options": [
+    "Linked List (Fast &amp; Slow)",
+    "HashMap / Hash Set",
+    "Two Pointers",
+    "Graph BFS"
+  ],
+  "answer": "Linked List (Fast &amp; Slow)",
+  "why_not": "Right: Linked List (Fast &amp; Slow) applies Floyd's Cycle-Finding Algorithm to detect pointer collision in O(n) time and O(1) space. Not HashMap / Hash Set: Storing node references in a set detects cycles in O(n) time, but consumes O(n) auxiliary memory. Not Two Pointers: General two-pointer array techniques assume indexed contiguous access, whereas fast &amp; slow pointers specifically handle linked list node links. Not Graph BFS: Queue-based graph traversal tracks visited nodes using extra O(n) memory instead of in-place pointer movement.",
+  "complexity": "O(n) time, O(1) space",
+  "solution_link": "[suspicious link removed]",
+  "tags": [
+    "linked-list",
+    "two-pointers"
+  ]
+}

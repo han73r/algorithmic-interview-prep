@@ -1,0 +1,31 @@
+{
+  "id": "median-of-two-sorted-arrays",
+  "leetcode_number": 4,
+  "leetcode_url": "[suspicious link removed]",
+  "title": "Median of Two Sorted Arrays",
+  "difficulty": "Hard",
+  "pattern": "Binary Search",
+  "statement_short": "Given two sorted arrays nums1 and nums2 of size m and n respectively, return the median of the two sorted arrays. The overall run time complexity should be O(log (m+n)).",
+  "constraints": "nums1.length == m, nums2.length == n, 0 &lt;= m &lt;= 1000, 0 &lt;= n &lt;= 1000, 1 &lt;= m + n &lt;= 2000, -10^6 &lt;= nums1[i], nums2[j] &lt;= 10^6",
+  "hint": "Strict O(log(m+n)) runtime complexity on two sorted arrays requires binary searching the partition position on the smaller array.",
+  "keywords": [
+    "median of the two sorted arrays",
+    "O(log (m+n))",
+    "0 &lt;= m &lt;= 1000"
+  ],
+  "options": [
+    "Binary Search",
+    "Two Pointers",
+    "Sorting",
+    "Heap / Priority Queue"
+  ],
+  "answer": "Binary Search",
+  "why_not": "Right: Binary Search partitions the smaller array such that left combined elements equal right combined elements in O(log(min(m, n))) time. Not Two Pointers: Merging arrays with two pointers takes O(m + n) time, violating the O(log(m+n)) mandate. Not Sorting: Concatenating and re-sorting costs O((m+n) log(m+n)) time and extra memory. Not Heap / Priority Queue: Maintaining min/max heaps takes O((m+n) log(m+n)) time.",
+  "complexity": "O(log(min(m, n))) time, O(1) space",
+  "solution_link": "[suspicious link removed]",
+  "tags": [
+    "array",
+    "binary-search",
+    "divide-and-conquer"
+  ]
+}

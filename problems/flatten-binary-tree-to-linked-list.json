@@ -1,0 +1,31 @@
+{
+  "id": "flatten-binary-tree-to-linked-list",
+  "leetcode_number": 114,
+  "leetcode_url": "https://leetcode.com/problems/flatten-binary-tree-to-linked-list/",
+  "title": "Flatten Binary Tree to Linked List",
+  "difficulty": "Medium",
+  "pattern": "Tree DFS",
+  "statement_short": "Given the root of a binary tree, flatten the tree into a single right-skewed linked list in-place. The linked list should use the same TreeNode class where right pointer points to the next node and left pointer is always null, following preorder traversal order.",
+  "constraints": "0 &lt;= number of nodes in tree &lt;= 2000, -100 &lt;= Node.val &lt;= 100",
+  "hint": "Small node count (&lt;= 2000) permits reverse post-order recursion or Morris traversal for O(1) space flattening.",
+  "keywords": [
+    "flatten the tree into a single right-skewed linked list in-place",
+    "following preorder traversal order",
+    "0 &lt;= number of nodes in tree &lt;= 2000"
+  ],
+  "options": [
+    "Tree DFS",
+    "Tree BFS",
+    "Stack",
+    "Two Pointers"
+  ],
+  "answer": "Tree DFS",
+  "why_not": "Right: Tree DFS (reverse post-order: right, left, root) rewires left and right pointers into a preorder list in O(n) time and O(h) space (or Morris traversal for O(1) space). Not Tree BFS: Level-order traversal produces breadth-first ordering rather than the required preorder node sequence. Not Stack: Explicit stack iteration works, but recursive post-order DFS provides the standard topological rewiring logic. Not Two Pointers: Linear scanning pointers cannot navigate unflattened binary tree branches natively.",
+  "complexity": "O(n) time, O(h) space",
+  "solution_link": "[suspicious link removed]",
+  "tags": [
+    "tree",
+    "depth-first-search",
+    "binary-tree"
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "id": "minimum-window-substring",
+  "leetcode_number": 76,
+  "leetcode_url": "https://leetcode.com/problems/minimum-window-substring/",
+  "title": "Minimum Window Substring",
+  "difficulty": "Hard",
+  "pattern": "Sliding Window",
+  "statement_short": "Given two strings s and t, return the minimum window substring of s such that every character in t (including duplicates) is included in the window. Return an empty string if no such window exists.",
+  "constraints": "1 &lt;= s.length, t.length &lt;= 10^5, s and t consist of uppercase and lowercase English letters",
+  "hint": "Lengths up to 10^5 mandate an O(n) sliding window that expands right to satisfy frequency and contracts left to minimize length.",
+  "keywords": [
+    "minimum window substring",
+    "included in the window",
+    "1 &lt;= s.length, t.length &lt;= 10^5"
+  ],
+  "options": [
+    "Sliding Window",
+    "Two Pointers",
+    "Binary Search on Answer",
+    "Monotonic Stack"
+  ],
+  "answer": "Sliding Window",
+  "why_not": "Right: Sliding Window tracks required character counts, expanding right to cover t and shrinking left to minimize window size in O(n) time. Not Two Pointers: Inward scanning from opposite ends cannot locate localized minimum subsegments containing specific frequencies. Not Binary Search on Answer: Binary searching window length takes O(n log n) time, which is less optimal than linear sliding window. Not Monotonic Stack: Monotonic order tracking does not handle multi-character frequency matching.",
+  "complexity": "O(n + m) time, O(1) space",
+  "solution_link": "[suspicious link removed]",
+  "tags": [
+    "string",
+    "sliding-window",
+    "hash-table"
+  ]
+}

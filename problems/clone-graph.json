@@ -1,0 +1,32 @@
+{
+  "id": "clone-graph",
+  "leetcode_number": 133,
+  "leetcode_url": "https://leetcode.com/problems/clone-graph/",
+  "title": "Clone Graph",
+  "difficulty": "Medium",
+  "pattern": "Graph BFS",
+  "statement_short": "Given a reference of a node in a connected undirected graph, return a deep copy of the graph. Each node contains a value and a list of its neighbors.",
+  "constraints": "0 &lt;= number of nodes &lt;= 100, 1 &lt;= Node.val &lt;= 100, no repeated edges or self-loops",
+  "hint": "Small node count (&lt;= 100) allows level-by-level queue traversal while mapping original nodes to cloned nodes.",
+  "keywords": [
+    "deep copy of the graph",
+    "connected undirected graph",
+    "0 &lt;= number of nodes &lt;= 100"
+  ],
+  "options": [
+    "Graph BFS",
+    "HashMap / Hash Set",
+    "Union-Find",
+    "Tree DFS"
+  ],
+  "answer": "Graph BFS",
+  "why_not": "Right: Graph BFS traverses connected graph nodes using a queue and map to create node clones in O(V + E) time and O(V) space. Not HashMap / Hash Set: Using a hash map stores original-to-clone node mappings, but requires graph traversal (BFS/DFS) to explore all edges. Not Union-Find: Disjoint sets partition connected components rather than deep copying graph nodes and edges. Not Tree DFS: Tree recursion assumes hierarchical acyclic parent-child links, whereas arbitrary graphs require handling cycles.",
+  "complexity": "O(V + E) time, O(V) space",
+  "solution_link": "[suspicious link removed]",
+  "tags": [
+    "hash-table",
+    "depth-first-search",
+    "breadth-first-search",
+    "graph"
+  ]
+}

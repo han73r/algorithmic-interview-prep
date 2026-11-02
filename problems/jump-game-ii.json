@@ -1,0 +1,30 @@
+{
+  "id": "jump-game-ii",
+  "leetcode_number": 45,
+  "leetcode_url": "[suspicious link removed]",
+  "title": "Jump Game II",
+  "difficulty": "Medium",
+  "pattern": "Greedy",
+  "statement_short": "Given a 0-indexed array of non-negative integers nums where nums[i] represents your max jump length at index i, return the minimum number of jumps required to reach the last index.",
+  "constraints": "1 &lt;= nums.length &lt;= 10^4, 0 &lt;= nums[i] &lt;= 1000, answer is guaranteed",
+  "hint": "Input size up to 10^4 requires O(n) time, reachable by updating jump range boundaries greedily.",
+  "keywords": [
+    "minimum number of jumps",
+    "max jump length at index i",
+    "1 &lt;= nums.length &lt;= 10^4"
+  ],
+  "options": [
+    "Greedy",
+    "1D DP",
+    "Graph DFS",
+    "Binary Search"
+  ],
+  "answer": "Greedy",
+  "why_not": "Right: Greedy tracks current jump range end and furthest reachable index to increment jump count in O(n) time and O(1) space. Not 1D DP: DP computing min jumps to each index takes O(n^2) time in the worst case. Not Graph DFS: DFS explores all paths to the end, resulting in exponential search overhead. Not Binary Search: Jump boundaries are non-monotonic, so binary search cannot find min jumps directly.",
+  "complexity": "O(n) time, O(1) space",
+  "solution_link": "[suspicious link removed]",
+  "tags": [
+    "array",
+    "greedy"
+  ]
+}

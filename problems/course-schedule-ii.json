@@ -1,0 +1,32 @@
+{
+  "id": "course-schedule-ii",
+  "leetcode_number": 210,
+  "leetcode_url": "https://leetcode.com/problems/course-schedule-ii/",
+  "title": "Course Schedule II",
+  "difficulty": "Medium",
+  "pattern": "Topological Sort",
+  "statement_short": "Given the total number of courses numCourses and a list of prerequisite pairs, return the ordering of courses you should take to finish all courses. Return an empty array if it is impossible to finish all courses.",
+  "constraints": "1 &lt;= numCourses &lt;= 2000, 0 &lt;= prerequisites.length &lt;= 5000, prerequisites[i].length == 2, all pairs are unique",
+  "hint": "Dependencies up to 2000 nodes require constructing a valid linear order of directed graph nodes.",
+  "keywords": [
+    "ordering of courses",
+    "empty array if it is impossible",
+    "1 &lt;= numCourses &lt;= 2000"
+  ],
+  "options": [
+    "Topological Sort",
+    "Graph DFS",
+    "Tree BFS",
+    "Backtracking"
+  ],
+  "answer": "Topological Sort",
+  "why_not": "Right: Topological Sort uses Kahn's algorithm (in-degree queue) to output a valid linear ordering of graph nodes in O(V + E) time. Not Graph DFS: Standard DFS traverses graph paths but requires post-order stack reversal to produce topological node ordering. Not Tree BFS: Level-order tree traversal assumes hierarchical parent-child nodes rather than arbitrary directed graph edges. Not Backtracking: Permutating all node sequences causes TLE compared to linear topological sorting.",
+  "complexity": "O(V + E) time, O(V + E) space",
+  "solution_link": "[suspicious link removed]",
+  "tags": [
+    "depth-first-search",
+    "breadth-first-search",
+    "graph",
+    "topological-sort"
+  ]
+}

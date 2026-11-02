@@ -1,0 +1,31 @@
+{
+  "id": "evaluate-reverse-polish-notation",
+  "leetcode_number": 150,
+  "leetcode_url": "https://leetcode.com/problems/evaluate-reverse-polish-notation/",
+  "title": "Evaluate Reverse Polish Notation",
+  "difficulty": "Medium",
+  "pattern": "Stack",
+  "statement_short": "Evaluate the value of an arithmetic expression in Reverse Polish Notation (postfix notation). Valid operators are '+', '-', '\\*', and '/'. Division between two integers truncates toward zero.",
+  "constraints": "1 &lt;= tokens.length &lt;= 10^4, tokens[i] is an operator '+', '-', '\\*', '/' or an integer in range [-200, 200]",
+  "hint": "Token array length up to 10^4 allows an O(n) single pass, evaluating operands using a stack.",
+  "keywords": [
+    "Reverse Polish Notation",
+    "truncates toward zero",
+    "1 &lt;= tokens.length &lt;= 10^4"
+  ],
+  "options": [
+    "1D DP",
+    "Math / Geometry",
+    "Stack",
+    "Tree DFS"
+  ],
+  "answer": "Stack",
+  "why_not": "Right: Stack pushes numeric operands and pops the top two numbers whenever an operator is encountered to compute results in O(n) time and O(n) space. Not 1D DP: Dynamic programming caches subproblem results, whereas postfix evaluation requires immediate stack-based evaluation. Not Math / Geometry: Arithmetic evaluation follows postfix order stack rules rather than static geometric formulas. Not Tree DFS: Expression tree traversal works, but flat stack processing avoids building explicit tree nodes.",
+  "complexity": "O(n) time, O(n) space",
+  "solution_link": "[suspicious link removed]",
+  "tags": [
+    "array",
+    "math",
+    "stack"
+  ]
+}

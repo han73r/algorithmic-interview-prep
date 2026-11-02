@@ -1,0 +1,10 @@
+{
+  "file": "1d-dp.cs",
+  "pattern": "1d-dp",
+  "specification": null,
+  "from_the_list": true,
+  "time": "O(amount * n)",
+  "space": "O(amount)",
+  "optimal": true,
+  "note": "Computes the minimum coins needed for each amount up to the target using bottom-up DP."
+}

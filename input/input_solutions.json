@@ -1,0 +1,142 @@
+[
+    {
+        "file": "math-geometry.cs",
+        "pattern": "math-geometry",
+        "specification": null,
+        "from_the_list": true,
+        "time": "O(n^2)",
+        "space": "O(n)",
+        "optimal": true,
+        "note": "Computes slopes relative to each point using greatest common divisors to avoid floating-point precision issues."
+    },
+    {
+        "file": "1d-dp.cs",
+        "pattern": "1d-dp",
+        "specification": null,
+        "from_the_list": true,
+        "time": "O(n)",
+        "space": "O(1)",
+        "optimal": true,
+        "note": "Computes the number of ways to climb stairs using an iterative Fibonacci-like DP approach."
+    },
+    {
+        "file": "1d-dp.cs",
+        "pattern": "1d-dp",
+        "specification": null,
+        "from_the_list": true,
+        "time": "O(n)",
+        "space": "O(1)",
+        "optimal": true,
+        "note": "Finds the maximum non-adjacent sum using dynamic programming with constant extra space."
+    },
+    {
+        "file": "1d-dp.cs",
+        "pattern": "1d-dp",
+        "specification": null,
+        "from_the_list": true,
+        "time": "O(n^2)",
+        "space": "O(n)",
+        "optimal": true,
+        "note": "Determines if a string can be segmented into space-separated dictionary words using DP."
+    },
+    {
+        "file": "1d-dp.cs",
+        "pattern": "1d-dp",
+        "specification": null,
+        "from_the_list": true,
+        "time": "O(amount * n)",
+        "space": "O(amount)",
+        "optimal": true,
+        "note": "Computes the minimum coins needed for each amount up to the target using bottom-up DP."
+    },
+    {
+        "file": "binary-search.cs",
+        "pattern": "binary-search",
+        "specification": null,
+        "from_the_list": true,
+        "time": "O(n log n)",
+        "space": "O(n)",
+        "optimal": true,
+        "note": "Maintains a patience-sorting tail array using binary search to find the LIS length."
+    },
+    {
+        "file": "2d-dp.cs",
+        "pattern": "2d-dp",
+        "specification": null,
+        "from_the_list": true,
+        "time": "O(n^2)",
+        "space": "O(n)",
+        "optimal": true,
+        "note": "Computes the minimum path sum from bottom to top using space-optimized DP."
+    },
+    {
+        "file": "2d-dp.cs",
+        "pattern": "2d-dp",
+        "specification": null,
+        "from_the_list": true,
+        "time": "O(m * n)",
+        "space": "O(n)",
+        "optimal": true,
+        "note": "Finds the minimum path sum in a grid from top-left to bottom-right using 1D space optimization."
+    },
+    {
+        "file": "2d-dp.cs",
+        "pattern": "2d-dp",
+        "specification": null,
+        "from_the_list": true,
+        "time": "O(m * n)",
+        "space": "O(n)",
+        "optimal": true,
+        "note": "Calculates unique paths in a grid with obstacles using a rolling array DP approach."
+    },
+    {
+        "file": "2d-dp.cs",
+        "pattern": "2d-dp",
+        "specification": null,
+        "from_the_list": true,
+        "time": "O(n^2)",
+        "space": "O(1)",
+        "optimal": true,
+        "note": "Finds the longest palindromic substring by expanding around all possible centers."
+    },
+    {
+        "file": "2d-dp.cs",
+        "pattern": "2d-dp",
+        "specification": null,
+        "from_the_list": true,
+        "time": "O(m * n)",
+        "space": "O(n)",
+        "optimal": true,
+        "note": "Determines if s3 is formed by interleaving s1 and s2 using space-optimized DP."
+    },
+    {
+        "file": "2d-dp.cs",
+        "pattern": "2d-dp",
+        "specification": null,
+        "from_the_list": true,
+        "time": "O(m * n)",
+        "space": "O(n)",
+        "optimal": true,
+        "note": "Computes the Levenshtein distance between two strings using 1D space optimization."
+    },
+    {
+        "file": "2d-dp.cs",
+        "pattern": "2d-dp",
+        "specification": null,
+        "from_the_list": true,
+        "time": "O(n * k)",
+        "space": "O(k)",
+        "optimal": true,
+        "note": "Computes the maximum profit with at most k transactions using state transition arrays."
+    },
+    {
+        "file": "2d-dp.cs",
+        "pattern": "2d-dp",
+        "specification": null,
+        "from_the_list": true,
+        "time": "O(m * n)",
+        "space": "O(n)",
+        "optimal": true,
+        "note": "Finds the largest square of ones in a binary matrix using space-optimized DP."
+    }
+]

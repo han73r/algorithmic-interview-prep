@@ -1,0 +1,32 @@
+{
+  "id": "construct-quad-tree",
+  "leetcode_number": 427,
+  "leetcode_url": "[suspicious link removed]",
+  "title": "Construct Quad-Tree",
+  "difficulty": "Medium",
+  "pattern": "Tree DFS",
+  "statement_short": "Given a n x n matrix of 0's and 1's, construct a Quad-Tree representing the matrix. If a grid block contains uniform values, create a leaf node; otherwise, divide the grid into four equal quadrant sub-blocks recursively.",
+  "constraints": "n == grid.length == grid[i].length, n == 2^x where 0 &lt;= x &lt;= 6, grid[i][j] is 0 or 1",
+  "hint": "Grid dimension n = 2^x (n &lt;= 64) permits 4-way recursive divide-and-conquer region checks.",
+  "keywords": [
+    "Quad-Tree representing the matrix",
+    "divide the grid into four equal quadrant sub-blocks",
+    "0 &lt;= x &lt;= 6"
+  ],
+  "options": [
+    "Tree DFS",
+    "2D DP",
+    "Tree BFS",
+    "Union-Find"
+  ],
+  "answer": "Tree DFS",
+  "why_not": "Right: Tree DFS recursively checks region uniformity and constructs four quad-children in O(n^2 log n) time. Not 2D DP: Dynamic programming caches subproblems, but grid region partitioning requires top-down tree construction. Not Tree BFS: Level-order traversal builds tree levels, but top-down recursive quad-splitting naturally uses DFS. Not Union-Find: Disjoint sets merge connected cells, but Quad-Trees represent hierarchical spatial grid partitioning.",
+  "complexity": "O(n^2 log n) time, O(log n) space",
+  "solution_link": "[suspicious link removed]",
+  "tags": [
+    "array",
+    "tree",
+    "matrix",
+    "divide-and-conquer"
+  ]
+}

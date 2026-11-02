@@ -1,0 +1,31 @@
+{
+  "id": "longest-consecutive-sequence",
+  "leetcode_number": 128,
+  "leetcode_url": "https://leetcode.com/problems/longest-consecutive-sequence/",
+  "title": "Longest Consecutive Sequence",
+  "difficulty": "Medium",
+  "pattern": "HashMap / Hash Set",
+  "statement_short": "Given an unsorted array of integers nums, return the length of the longest consecutive elements sequence. You must write an algorithm that runs in O(n) time.",
+  "constraints": "0 <= nums.length <= 10^5, -10^9 <= nums[i] <= 10^9",
+  "hint": "Strict O(n) time requirement prevents sorting, mandating O(1) set lookups to find sequence starts.",
+  "keywords": [
+    "longest consecutive elements sequence",
+    "runs in O(n) time",
+    "0 <= nums.length <= 10^5"
+  ],
+  "options": [
+    "Sorting",
+    "HashMap / Hash Set",
+    "Union-Find",
+    "Sliding Window"
+  ],
+  "answer": "HashMap / Hash Set",
+  "why_not": "Right: HashMap / Hash Set stores elements in a hash set, starting length counting only when (num - 1) is absent, achieving O(n) time. Not Sorting: Sorting numbers finds consecutive elements easily but costs O(n log n) time, violating the strict O(n) constraint. Not Union-Find: Union-Find connects adjacent elements in O(n * alpha(n)) time, which is slightly more complex than set lookups. Not Sliding Window: Numbers are unsorted and non-contiguous in memory, preventing sliding subsegment windows.",
+  "complexity": "O(n) time, O(n) space",
+  "solution_link": "",
+  "tags": [
+    "array",
+    "hash-table",
+    "union-find"
+  ]
+}

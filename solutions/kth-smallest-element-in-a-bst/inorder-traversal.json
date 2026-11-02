@@ -1,0 +1,10 @@
+{
+  "file": "inorder-traversal.cs",
+  "pattern": "tree-dfs",
+  "specification": "inorder-traversal",
+  "from_the_list": true,
+  "time": "O(h + k)",
+  "space": "O(h)",
+  "optimal": true,
+  "note": "Finds the kth smallest element using an iterative in-order traversal."
+}

@@ -1,0 +1,10 @@
+{
+  "file": "1d-dp.cs",
+  "pattern": "1d-dp",
+  "specification": null,
+  "from_the_list": true,
+  "time": "O(n)",
+  "space": "O(1)",
+  "optimal": true,
+  "note": "Computes the number of ways to climb stairs using an iterative Fibonacci-like DP approach."
+}

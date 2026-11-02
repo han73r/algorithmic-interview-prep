@@ -1,0 +1,31 @@
+{
+  "id": "trapping-rain-water",
+  "leetcode_number": 42,
+  "leetcode_url": "[suspicious link removed]",
+  "title": "Trapping Rain Water",
+  "difficulty": "Hard",
+  "pattern": "Two Pointers",
+  "statement_short": "Given n non-negative integers representing an elevation map where the width of each bar is 1, compute how much water it can trap after raining.",
+  "constraints": "n == height.length, 1 &lt;= n &lt;= 2 \\* 10^4, 0 &lt;= height[i] &lt;= 10^5",
+  "hint": "n up to 2 \\* 10^4 requires O(n) time, which two pointers achieve by tracking max left and right boundaries inward in O(1) space.",
+  "keywords": [
+    "elevation map",
+    "how much water it can trap",
+    "1 &lt;= n &lt;= 2 \\* 10^4"
+  ],
+  "options": [
+    "Monotonic Stack",
+    "Two Pointers",
+    "Sliding Window",
+    "Binary Search on Answer"
+  ],
+  "answer": "Two Pointers",
+  "why_not": "Right: Two Pointers inward scan calculates trapped water based on min(left_max, right_max) in O(n) time and O(1) space. Not Monotonic Stack: Monotonic stack also solves this in O(n) time by bounded horizontal layers, but uses O(n) auxiliary space. Not Sliding Window: The trapped water depends on global maximum boundaries rather than a fixed sliding window size. Not Binary Search on Answer: The total water volume cannot be verified easily using binary search on a target result.",
+  "complexity": "O(n) time, O(1) space",
+  "solution_link": "[suspicious link removed]",
+  "tags": [
+    "array",
+    "two-pointers",
+    "stack"
+  ]
+}

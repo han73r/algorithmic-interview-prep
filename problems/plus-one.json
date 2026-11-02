@@ -1,0 +1,30 @@
+{
+  "id": "plus-one",
+  "leetcode_number": 66,
+  "leetcode_url": "[suspicious link removed]",
+  "title": "Plus One",
+  "difficulty": "Easy",
+  "pattern": "Math / Geometry",
+  "statement_short": "Given a large integer represented as an integer array digits, increment the large integer by one and return the resulting array of digits. The digits are ordered from most significant to least significant in left-to-right order.",
+  "constraints": "1 &lt;= digits.length &lt;= 100, 0 &lt;= digits[i] &lt;= 9",
+  "hint": "Small array length allows right-to-left single pass carrying value 1.",
+  "keywords": [
+    "increment the large integer by one",
+    "array digits",
+    "1 &lt;= digits.length &lt;= 100"
+  ],
+  "options": [
+    "Math / Geometry",
+    "Two Pointers",
+    "Stack",
+    "Bit Manipulation"
+  ],
+  "answer": "Math / Geometry",
+  "why_not": "Right: Math / Geometry adds 1 to the least significant digit and propagates carries leftward in O(n) time and O(1) extra space. Not Two Pointers: Scanning pointers inspect positions, but column addition arithmetic is fundamental math. Not Stack: Pushing digits onto a stack reverses order, but scanning right-to-left directly avoids extra memory. Not Bit Manipulation: Bitwise operations apply to binary representations rather than decimal digit arrays.",
+  "complexity": "O(n) time, O(1) space",
+  "solution_link": "[suspicious link removed]",
+  "tags": [
+    "array",
+    "math"
+  ]
+}

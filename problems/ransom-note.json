@@ -1,0 +1,31 @@
+{
+  "id": "ransom-note",
+  "leetcode_number": 383,
+  "leetcode_url": "[suspicious link removed]",
+  "title": "Ransom Note",
+  "difficulty": "Easy",
+  "pattern": "HashMap / Hash Set",
+  "statement_short": "Given two strings ransomNote and magazine, return true if ransomNote can be constructed by using the letters from magazine and false otherwise. Each letter in magazine can only be used once.",
+  "constraints": "1 &lt;= ransomNote.length, magazine.length &lt;= 10^5, ransomNote and magazine consist of lowercase English letters",
+  "hint": "Lengths up to 10^5 allow an O(n + m) solution using character frequency counts.",
+  "keywords": [
+    "constructed by using the letters",
+    "each letter in magazine can only be used once",
+    "1 &lt;= ransomNote.length, magazine.length &lt;= 10^5"
+  ],
+  "options": [
+    "HashMap / Hash Set",
+    "Two Pointers",
+    "Sorting",
+    "Trie"
+  ],
+  "answer": "HashMap / Hash Set",
+  "why_not": "Right: HashMap / Hash Set tallies magazine letter frequencies in a hash map or 26-element array and decrements counts for ransomNote in O(n+m) time. Not Two Pointers: Characters in both strings are unsorted, preventing two-pointer linear matching. Not Sorting: Sorting both strings takes O(n log n + m log m) time, which is slower than hash map frequency counting. Not Trie: Building a prefix tree uses extra pointer overhead for simple single-character counts.",
+  "complexity": "O(n + m) time, O(1) space",
+  "solution_link": "[suspicious link removed]",
+  "tags": [
+    "hash-table",
+    "string",
+    "counting"
+  ]
+}

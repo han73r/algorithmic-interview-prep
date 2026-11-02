@@ -1,0 +1,31 @@
+{
+  "id": "lowest-common-ancestor-of-a-binary-tree",
+  "leetcode_number": 236,
+  "leetcode_url": "https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/",
+  "title": "Lowest Common Ancestor of a Binary Tree",
+  "difficulty": "Medium",
+  "pattern": "Tree DFS",
+  "statement_short": "Given a binary tree, find the lowest common ancestor of two given nodes p and q. The lowest common ancestor is defined as the lowest node in the tree that has both p and q as descendants.",
+  "constraints": "2 &lt;= number of nodes in tree &lt;= 10^5, -10^9 &lt;= Node.val &lt;= 10^9, p != q, p and q exist in the tree",
+  "hint": "Node count up to 10^5 requires an O(n) post-order recursion, returning the current node when p or q is found.",
+  "keywords": [
+    "lowest common ancestor",
+    "has both p and q as descendants",
+    "2 &lt;= number of nodes in tree &lt;= 10^5"
+  ],
+  "options": [
+    "Tree DFS",
+    "Tree BFS",
+    "Union-Find",
+    "Binary Search"
+  ],
+  "answer": "Tree DFS",
+  "why_not": "Right: Tree DFS recursively checks left and right subtrees post-order, returning the root when p and q match opposite subtrees in O(n) time and O(h) space. Not Tree BFS: Level-order traversal using queue tracking requires storing parent pointers for all nodes using extra O(n) memory. Not Union-Find: Disjoint-set forest algorithms solve offline query batches, but post-order DFS directly finds LCA for single queries. Not Binary Search: The input is a general binary tree rather than a sorted binary search tree.",
+  "complexity": "O(n) time, O(h) space",
+  "solution_link": "[suspicious link removed]",
+  "tags": [
+    "tree",
+    "depth-first-search",
+    "binary-tree"
+  ]
+}

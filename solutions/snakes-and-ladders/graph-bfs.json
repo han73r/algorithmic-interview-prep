@@ -1,0 +1,10 @@
+{
+  "file": "graph-bfs.cs",
+  "pattern": "graph-bfs",
+  "specification": null,
+  "from_the_list": true,
+  "time": "O(n^2)",
+  "space": "O(n^2)",
+  "optimal": true,
+  "note": "Finds the shortest path on the board grid using breadth-first search."
+}

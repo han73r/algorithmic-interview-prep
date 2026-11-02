@@ -1,0 +1,32 @@
+{
+  "id": "game-of-life",
+  "leetcode_number": 289,
+  "leetcode_url": "[suspicious link removed]",
+  "title": "Game of Life",
+  "difficulty": "Medium",
+  "pattern": "Bit Manipulation",
+  "statement_short": "Given an m x n grid of cells, each live or dead, update the board to its next state according to Conway's Game of Life rules, where transitions happen simultaneously.",
+  "constraints": "m == board.length, n == board[i].length, 1 &lt;= m, n &lt;= 25, board[i][j] is 0 or 1",
+  "hint": "Simultaneous cell transitions require encoding the next state alongside the current state in-place using bit flags.",
+  "keywords": [
+    "update the board to its next state",
+    "transitions happen simultaneously",
+    "1 &lt;= m, n &lt;= 25"
+  ],
+  "options": [
+    "Bit Manipulation",
+    "2D DP",
+    "Graph BFS",
+    "HashMap / Hash Set"
+  ],
+  "answer": "Bit Manipulation",
+  "why_not": "Right: Bit Manipulation uses 2-bit state encoding (or state flags) to compute simultaneous cell transitions in-place in O(m \\* n) time and O(1) space. Not 2D DP: Subproblem state caching is unnecessary when board transitions depend only on immediate 8-neighbor counts. Not Graph BFS: Queue traversal is unneeded because all grid cells are updated simultaneously. Not HashMap / Hash Set: Storing modified cell coordinates uses O(m \\* n) extra memory instead of in-place bit manipulation.",
+  "complexity": "O(m \\* n) time, O(1) space",
+  "solution_link": "[suspicious link removed]",
+  "tags": [
+    "array",
+    "matrix",
+    "bit-manipulation",
+    "simulation"
+  ]
+}

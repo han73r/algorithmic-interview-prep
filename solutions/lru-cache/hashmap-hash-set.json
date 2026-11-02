@@ -1,0 +1,10 @@
+{
+  "file": "hashmap-hash-set.cs",
+  "pattern": "hashmap-hash-set",
+  "specification": null,
+  "from_the_list": true,
+  "time": "O(1)",
+  "space": "O(capacity)",
+  "optimal": true,
+  "note": "Implements an LRU cache using a hash map combined with a doubly linked list for O(1) operations."
+}

@@ -1,0 +1,10 @@
+{
+  "file": "heap-priority-queue.cs",
+  "pattern": "heap-priority-queue",
+  "specification": null,
+  "from_the_list": true,
+  "time": "O(n log k)",
+  "space": "O(k)",
+  "optimal": true,
+  "note": "Finds the kth largest element in an array using a min-heap of size k."
+}

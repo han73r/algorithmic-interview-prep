@@ -1,0 +1,31 @@
+{
+  "id": "spiral-matrix",
+  "leetcode_number": 54,
+  "leetcode_url": "https://leetcode.com/problems/spiral-matrix/",
+  "title": "Spiral Matrix",
+  "difficulty": "Medium",
+  "pattern": "Two Pointers",
+  "statement_short": "Given an m x n matrix, return all elements of the matrix in spiral order.",
+  "constraints": "m == matrix.length, n == matrix[i].length, 1 &lt;= m, n &lt;= 10, -100 &lt;= matrix[i][j] &lt;= 100",
+  "hint": "Small matrix size (&lt;= 10x10) allows simulating spiral traversal by shrinking four boundary pointers.",
+  "keywords": [
+    "spiral order",
+    "1 &lt;= m, n &lt;= 10",
+    "m == matrix.length"
+  ],
+  "options": [
+    "Two Pointers",
+    "2D DP",
+    "Graph DFS",
+    "Math / Geometry"
+  ],
+  "answer": "Two Pointers",
+  "why_not": "Right: Two Pointers (four boundary pointers: top, bottom, left, right) shrink inward to traverse all matrix elements in O(m \\* n) time and O(1) extra space. Not 2D DP: Dynamic programming subproblem state memoization does not apply to sequential traversal order. Not Graph DFS: DFS requires tracking visited cells with extra O(m \\* n) memory, whereas boundary pointers use O(1) space. Not Math / Geometry: While direction vectors simulate turning, boundary pointers provide a cleaner deterministic loop condition without direction state management.",
+  "complexity": "O(m \\* n) time, O(1) space",
+  "solution_link": "[suspicious link removed]",
+  "tags": [
+    "array",
+    "matrix",
+    "simulation"
+  ]
+}

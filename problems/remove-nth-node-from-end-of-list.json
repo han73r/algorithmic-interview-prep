@@ -1,0 +1,30 @@
+{
+  "id": "remove-nth-node-from-end-of-list",
+  "leetcode_number": 19,
+  "leetcode_url": "https://leetcode.com/problems/remove-nth-node-from-end-of-list/",
+  "title": "Remove Nth Node From End of List",
+  "difficulty": "Medium",
+  "pattern": "Two Pointers",
+  "statement_short": "Given the head of a linked list, remove the n-th node from the end of the list and return its head in a single pass.",
+  "constraints": "1 &lt;= sz &lt;= 30, 0 &lt;= Node.val &lt;= 100, 1 &lt;= n &lt;= sz",
+  "hint": "Small list size (&lt;= 30) allows single-pass removal using two pointers spaced n nodes apart.",
+  "keywords": [
+    "n-th node from the end",
+    "in a single pass",
+    "1 &lt;= n &lt;= sz"
+  ],
+  "options": [
+    "Two Pointers",
+    "Stack",
+    "HashMap / Hash Set",
+    "Linked List (Fast &amp; Slow)"
+  ],
+  "answer": "Two Pointers",
+  "why_not": "Right: Two Pointers with a fast pointer offset by n steps locates the target node's predecessor in a single O(sz) pass with O(1) space. Not Stack: Pushing all nodes onto a stack allows popping n nodes to find the predecessor, but uses O(sz) extra memory. Not HashMap / Hash Set: Mapping node indices to references allows O(1) lookups but uses O(sz) auxiliary space. Not Linked List (Fast &amp; Slow): Fast and slow cycle detection pointers advance at different speeds (1x vs 2x) rather than maintaining a fixed offset gap of n.",
+  "complexity": "O(sz) time, O(1) space",
+  "solution_link": "[suspicious link removed]",
+  "tags": [
+    "linked-list",
+    "two-pointers"
+  ]
+}

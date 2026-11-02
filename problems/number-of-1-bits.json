@@ -1,0 +1,30 @@
+{
+  "id": "number-of-1-bits",
+  "leetcode_number": 191,
+  "leetcode_url": "[suspicious link removed]",
+  "title": "Number of 1 Bits",
+  "difficulty": "Easy",
+  "pattern": "Bit Manipulation",
+  "statement_short": "Write a function that takes the binary representation of a positive integer and returns the number of set bits it has (also known as the Hamming weight).",
+  "constraints": "1 &lt;= n &lt;= 2^31 - 1",
+  "hint": "32-bit integer range permits O(1) Brian Kernighan bit clearing (n &amp; (n - 1)) to count set bits.",
+  "keywords": [
+    "number of set bits",
+    "Hamming weight",
+    "1 &lt;= n &lt;= 2^31 - 1"
+  ],
+  "options": [
+    "Bit Manipulation",
+    "Math / Geometry",
+    "HashMap / Hash Set",
+    "1D DP"
+  ],
+  "answer": "Bit Manipulation",
+  "why_not": "Right: Bit Manipulation clears the lowest set bit repeatedly using n &amp; (n - 1) in O(number of set bits) time and O(1) space. Not Math / Geometry: Repeated division by 2 counts bits, but bitwise operations perform native CPU set bit clearing. Not HashMap / Hash Set: Using a lookup table caches bit counts, but direct bitwise operations require zero memory. Not 1D DP: Memoizing bit counts applies to range counting (0 to n), whereas a single integer count uses bit manipulation.",
+  "complexity": "O(1) time, O(1) space",
+  "solution_link": "[suspicious link removed]",
+  "tags": [
+    "divide-and-conquer",
+    "bit-manipulation"
+  ]
+}

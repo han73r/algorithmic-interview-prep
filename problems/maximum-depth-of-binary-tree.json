@@ -1,0 +1,31 @@
+{
+  "id": "maximum-depth-of-binary-tree",
+  "leetcode_number": 104,
+  "leetcode_url": "[suspicious link removed]",
+  "title": "Maximum Depth of Binary Tree",
+  "difficulty": "Easy",
+  "pattern": "Tree DFS",
+  "statement_short": "Given the root of a binary tree, return its maximum depth. The maximum depth is the number of nodes along the longest path from the root node down to the farthest leaf node.",
+  "constraints": "0 &lt;= number of nodes in tree &lt;= 10^4, -100 &lt;= Node.val &lt;= 100",
+  "hint": "Tree node count up to 10^4 allows a recursive bottom-up depth calculation in O(n) time.",
+  "keywords": [
+    "maximum depth",
+    "longest path from the root node",
+    "0 &lt;= number of nodes in tree &lt;= 10^4"
+  ],
+  "options": [
+    "Tree DFS",
+    "Tree BFS",
+    "1D DP",
+    "Union-Find"
+  ],
+  "answer": "Tree DFS",
+  "why_not": "Right: Tree DFS recursively computes max(depth(left), depth(right)) + 1 in O(n) time and O(h) call stack space. Not Tree BFS: Level-order traversal using a queue also finds tree depth in O(n) time, but requires O(w) queue space for tree width. Not 1D DP: Dynamic programming table caching is unnecessary for tree post-order depth aggregation. Not Union-Find: Disjoint sets track connected component graphs rather than hierarchical tree depth.",
+  "complexity": "O(n) time, O(h) space",
+  "solution_link": "[suspicious link removed]",
+  "tags": [
+    "tree",
+    "depth-first-search",
+    "binary-tree"
+  ]
+}

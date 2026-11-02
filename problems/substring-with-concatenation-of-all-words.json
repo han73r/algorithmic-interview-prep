@@ -1,0 +1,31 @@
+{
+  "id": "substring-with-concatenation-of-all-words",
+  "leetcode_number": 30,
+  "leetcode_url": "https://leetcode.com/problems/substring-with-concatenation-of-all-words/",
+  "title": "Substring with Concatenation of All Words",
+  "difficulty": "Hard",
+  "pattern": "Sliding Window",
+  "statement_short": "Given a string s and an array of strings words of equal length, find all starting indices of substrings in s that are a concatenation of each word in words exactly once.",
+  "constraints": "1 &lt;= s.length &lt;= 10^4, 1 &lt;= words.length &lt;= 5000, 1 &lt;= words[i].length &lt;= 30",
+  "hint": "Fixed word length allows running k sliding windows of step size k to check word frequency matches.",
+  "keywords": [
+    "starting indices of substrings",
+    "concatenation of each word",
+    "1 &lt;= s.length &lt;= 10^4"
+  ],
+  "options": [
+    "Sliding Window",
+    "Trie",
+    "HashMap / Hash Set",
+    "Backtracking"
+  ],
+  "answer": "Sliding Window",
+  "why_not": "Right: Sliding Window over word-length steps tracks word frequency matches in O(n \\* k) time using a frequency map. Not Trie: Prefix trees store string dictionaries, but do not handle multi-word sliding frequency counts efficiently. Not HashMap / Hash Set: Checking every substring independently with hash maps takes O(n \\* m \\* k) time without sliding window reuse. Not Backtracking: Permutating all words recursively causes TLE due to exponential search space.",
+  "complexity": "O(n \\* k) time, O(m \\* k) space",
+  "solution_link": "[suspicious link removed]",
+  "tags": [
+    "string",
+    "sliding-window",
+    "hash-table"
+  ]
+}

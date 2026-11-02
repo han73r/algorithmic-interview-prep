@@ -1,0 +1,31 @@
+{
+  "id": "maximal-square",
+  "leetcode_number": 221,
+  "leetcode_url": "[suspicious link removed]",
+  "title": "Maximal Square",
+  "difficulty": "Medium",
+  "pattern": "2D DP",
+  "statement_short": "Given an m x n binary matrix filled with 0's and 1's, find the largest square containing only 1's and return its area.",
+  "constraints": "m == matrix.length, n == matrix[i].length, 1 &lt;= m, n &lt;= 300, matrix[i][j] is '0' or '1'",
+  "hint": "Grid dimensions up to 300x300 favor 2D DP computing min(top, left, top-left) + 1 square side lengths.",
+  "keywords": [
+    "largest square containing only 1's",
+    "return its area",
+    "1 &lt;= m, n &lt;= 300"
+  ],
+  "options": [
+    "2D DP",
+    "Monotonic Stack",
+    "Graph BFS",
+    "Two Pointers"
+  ],
+  "answer": "2D DP",
+  "why_not": "Right: 2D DP calculates max square side ending at (r, c) using min(dp[r-1][c], dp[r][c-1], dp[r-1][c-1]) + 1 in O(m \\* n) time and O(n) space. Not Monotonic Stack: Monotonic stack finds largest rectangle in histogram in O(m \\* n) time, but square bounds are solved more cleanly with 2D DP. Not Graph BFS: Connected component traversal checks island shapes, but does not calculate max square side length. Not Two Pointers: Scanning pointer pairs from grid borders cannot verify internal square 1s fill efficiently.",
+  "complexity": "O(m \\* n) time, O(n) space",
+  "solution_link": "[suspicious link removed]",
+  "tags": [
+    "array",
+    "dynamic-programming",
+    "matrix"
+  ]
+}

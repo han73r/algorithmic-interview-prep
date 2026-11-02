@@ -1,0 +1,10 @@
+{
+  "file": "trie.cs",
+  "pattern": "trie",
+  "specification": null,
+  "from_the_list": true,
+  "time": "O(m)",
+  "space": "O(n * m)",
+  "optimal": true,
+  "note": "Implements prefix tree operations for efficient string insertion and lookup."
+}

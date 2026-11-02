@@ -1,0 +1,10 @@
+{
+  "file": "bit-manipulation.cs",
+  "pattern": "bit-manipulation",
+  "specification": null,
+  "from_the_list": true,
+  "time": "O(1)",
+  "space": "O(1)",
+  "optimal": true,
+  "note": "Iterates through all 32 bits, shifting the result left and appending each bit of n."
+}

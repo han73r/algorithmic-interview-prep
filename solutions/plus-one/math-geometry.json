@@ -1,0 +1,10 @@
+{
+  "file": "math-geometry.cs",
+  "pattern": "math-geometry",
+  "specification": null,
+  "from_the_list": true,
+  "time": "O(n)",
+  "space": "O(n)",
+  "optimal": true,
+  "note": "Iterates backwards from the least significant digit, handling carry-overs."
+}

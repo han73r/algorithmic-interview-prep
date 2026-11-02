@@ -1,0 +1,31 @@
+{
+  "id": "invert-binary-tree",
+  "leetcode_number": 226,
+  "leetcode_url": "[suspicious link removed]",
+  "title": "Invert Binary Tree",
+  "difficulty": "Easy",
+  "pattern": "Tree DFS",
+  "statement_short": "Given the root of a binary tree, invert the tree by swapping the left and right subtrees of every node, and return its root.",
+  "constraints": "0 &lt;= number of nodes in tree &lt;= 100, -100 &lt;= Node.val &lt;= 100",
+  "hint": "Small tree size (&lt;= 100) allows a simple post-order or pre-order recursive child swap in O(n) time.",
+  "keywords": [
+    "swapping the left and right subtrees",
+    "invert the tree",
+    "0 &lt;= number of nodes in tree &lt;= 100"
+  ],
+  "options": [
+    "Two Pointers",
+    "Tree BFS",
+    "Tree DFS",
+    "1D DP"
+  ],
+  "answer": "Tree DFS",
+  "why_not": "Right: Tree DFS recursively swaps left and right child pointers for every node in O(n) time and O(h) space. Not Tree BFS: Level-order traversal using a queue also swaps child pointers level by level in O(n) time, but requires extra queue space. Not Two Pointers: Linear pointer comparisons do not natively traverse hierarchical binary tree structures. Not 1D DP: Storing state subproblems is unnecessary for structural node child swapping.",
+  "complexity": "O(n) time, O(h) space",
+  "solution_link": "[suspicious link removed]",
+  "tags": [
+    "tree",
+    "depth-first-search",
+    "binary-tree"
+  ]
+}

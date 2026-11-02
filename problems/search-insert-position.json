@@ -1,0 +1,30 @@
+{
+  "id": "search-insert-position",
+  "leetcode_number": 35,
+  "leetcode_url": "[suspicious link removed]",
+  "title": "Search Insert Position",
+  "difficulty": "Easy",
+  "pattern": "Binary Search",
+  "statement_short": "Given a sorted array of distinct integers and a target value, return the index if the target is found. If not, return the index where it would be if it were inserted in order. You must write an algorithm with O(log n) runtime complexity.",
+  "constraints": "1 &lt;= nums.length &lt;= 10^4, -10^4 &lt;= nums[i] &lt;= 10^4, nums contains distinct values sorted in ascending order, -10^4 &lt;= target &lt;= 10^4",
+  "hint": "Strict O(log n) time mandate on a sorted array dictates halve-and-check search range logic.",
+  "keywords": [
+    "inserted in order",
+    "O(log n) runtime complexity",
+    "1 &lt;= nums.length &lt;= 10^4"
+  ],
+  "options": [
+    "Binary Search",
+    "Two Pointers",
+    "HashMap / Hash Set",
+    "1D DP"
+  ],
+  "answer": "Binary Search",
+  "why_not": "Right: Binary Search halves the sorted search space each step to find target or insertion index in O(log n) time and O(1) space. Not Two Pointers: Scanning pointers linearly inspect items in O(n) time, failing the strict O(log n) mandate. Not HashMap / Hash Set: Hash sets look up target existence in O(1) time, but cannot identify insertion index positions for missing items. Not 1D DP: Dynamic programming subproblem memoization does not apply to simple sorted array range halving.",
+  "complexity": "O(log n) time, O(1) space",
+  "solution_link": "[suspicious link removed]",
+  "tags": [
+    "array",
+    "binary-search"
+  ]
+}

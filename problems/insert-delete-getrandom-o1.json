@@ -1,0 +1,31 @@
+{
+  "id": "insert-delete-getrandom-o1",
+  "leetcode_number": 380,
+  "leetcode_url": "[suspicious link removed]",
+  "title": "Insert Delete GetRandom O(1)",
+  "difficulty": "Medium",
+  "pattern": "HashMap / Hash Set",
+  "statement_short": "Design a data structure that supports inserting a value, removing a value, and obtaining a random element, all in average O(1) time. Each element must have an equal probability of being returned by the random operation.",
+  "constraints": "-2^31 &lt;= val &lt;= 2^31 - 1, at most 2 \\* 10^5 calls will be made to insert, remove, and getRandom",
+  "hint": "The O(1) average time requirement for search combined with uniform random selection mandates combining a hash map with a dynamic array.",
+  "keywords": [
+    "average O(1) time",
+    "equal probability",
+    "2 \\* 10^5 calls"
+  ],
+  "options": [
+    "Heap / Priority Queue",
+    "Binary Search",
+    "HashMap / Hash Set",
+    "Two Pointers"
+  ],
+  "answer": "HashMap / Hash Set",
+  "why_not": "Right: HashMap / Hash Set maps values to array indices, enabling O(1) deletion via swap-with-last element and O(1) random array access. Not Heap / Priority Queue: Deleting an arbitrary value or getting a random element from a heap takes O(n) time. Not Binary Search: Binary search requires a sorted structure, making O(1) arbitrary insertion and random sampling impossible. Not Two Pointers: Two pointers require linear scanning for value lookups and deletions.",
+  "complexity": "O(1) time, O(n) space",
+  "solution_link": "[suspicious link removed]",
+  "tags": [
+    "array",
+    "hash-table",
+    "design"
+  ]
+}

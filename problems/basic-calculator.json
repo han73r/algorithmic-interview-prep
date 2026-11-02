@@ -1,0 +1,31 @@
+{
+  "id": "basic-calculator",
+  "leetcode_number": 224,
+  "leetcode_url": "[suspicious link removed]",
+  "title": "Basic Calculator",
+  "difficulty": "Hard",
+  "pattern": "Stack",
+  "statement_short": "Given a string s representing a valid mathematical expression containing non-negative integers, '+', '-', '(', ')', and spaces ' ', evaluate the expression and return its result.",
+  "constraints": "1 &lt;= s.length &lt;= 3 \\* 10^5, s consists of digits, '+', '-', '(', ')', and ' '",
+  "hint": "String length up to 3 \\* 10^5 demands an O(n) time solution, using a stack to manage parenthesis sign changes.",
+  "keywords": [
+    "valid mathematical expression",
+    "non-negative integers",
+    "1 &lt;= s.length &lt;= 3 \\* 10^5"
+  ],
+  "options": [
+    "Backtracking",
+    "1D DP",
+    "Two Pointers",
+    "Stack"
+  ],
+  "answer": "Stack",
+  "why_not": "Right: Stack tracks signs and running evaluation sums across nested parenthesis sub-expressions in O(n) time and O(n) space. Not Backtracking: Recursive branch exploration causes redundant work and potential call-stack overflow on deep expressions. Not 1D DP: Dynamic programming state caching does not apply to sequential expression evaluation. Not Two Pointers: Scanning pointer pairs cannot track nested parenthesis operator precedence and sign flips.",
+  "complexity": "O(n) time, O(n) space",
+  "solution_link": "[suspicious link removed]",
+  "tags": [
+    "math",
+    "string",
+    "stack"
+  ]
+}

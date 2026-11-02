@@ -1,0 +1,10 @@
+{
+  "file": "math-geometry.cs",
+  "pattern": "math-geometry",
+  "specification": null,
+  "from_the_list": true,
+  "time": "O(n^2)",
+  "space": "O(1)",
+  "optimal": true,
+  "note": "Rotates a square matrix 90 degrees clockwise by transposing it and then reversing each row."
+}

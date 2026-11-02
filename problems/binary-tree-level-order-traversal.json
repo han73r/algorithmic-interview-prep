@@ -1,0 +1,31 @@
+{
+  "id": "binary-tree-level-order-traversal",
+  "leetcode_number": 102,
+  "leetcode_url": "https://leetcode.com/problems/binary-tree-level-order-traversal/",
+  "title": "Binary Tree Level Order Traversal",
+  "difficulty": "Medium",
+  "pattern": "Tree BFS",
+  "statement_short": "Given the root of a binary tree, return the level order traversal of its nodes' values (i.e., from left to right, level by level).",
+  "constraints": "0 &lt;= number of nodes in tree &lt;= 2000, -1000 &lt;= Node.val &lt;= 1000",
+  "hint": "Small node count (&lt;= 2000) permits queue-based breadth-first traversal grouping nodes by level depth.",
+  "keywords": [
+    "level order traversal",
+    "left to right, level by level",
+    "0 &lt;= number of nodes in tree &lt;= 2000"
+  ],
+  "options": [
+    "Tree BFS",
+    "Tree DFS",
+    "Stack",
+    "1D DP"
+  ],
+  "answer": "Tree BFS",
+  "why_not": "Right: Tree BFS uses a queue to collect node values level by level from left to right in O(n) time and O(w) space. Not Tree DFS: Recursive DFS requires passing a level index to append values to sub-lists, whereas BFS visits levels sequentially. Not Stack: LIFO processing reverses node traversal order rather than preserving level order. Not 1D DP: Dynamic programming state caching does not apply to sequential tree level traversal.",
+  "complexity": "O(n) time, O(w) space",
+  "solution_link": "[suspicious link removed]",
+  "tags": [
+    "tree",
+    "breadth-first-search",
+    "binary-tree"
+  ]
+}

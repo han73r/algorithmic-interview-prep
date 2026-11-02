@@ -1,0 +1,10 @@
+{
+  "file": "two-pointers-backward-traversal.cs",
+  "pattern": "two-pointers",
+  "specification": "two-pointers-backward-traversal",
+  "from_the_list": true,
+  "time": "O(n)",
+  "space": "O(1)",
+  "optimal": true,
+  "note": "Traverses the string backwards from the end, skipping trailing spaces and counting the length of the last word in a single pass."
+}

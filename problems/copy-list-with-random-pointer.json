@@ -1,0 +1,30 @@
+{
+  "id": "copy-list-with-random-pointer",
+  "leetcode_number": 138,
+  "leetcode_url": "[suspicious link removed]",
+  "title": "Copy List with Random Pointer",
+  "difficulty": "Medium",
+  "pattern": "HashMap / Hash Set",
+  "statement_short": "Construct a deep copy of a linked list of length n where each node contains an additional random pointer that could point to any node in the list or null. None of the pointers in the new list should point to nodes in the original list.",
+  "constraints": "0 &lt;= n &lt;= 1000, -10^4 &lt;= Node.val &lt;= 10^4, random is null or points to some node in the linked list",
+  "hint": "Node count up to 1000 permits an O(n) time solution, mapping original nodes to cloned nodes using a hash map.",
+  "keywords": [
+    "deep copy of a linked list",
+    "additional random pointer",
+    "0 &lt;= n &lt;= 1000"
+  ],
+  "options": [
+    "Two Pointers",
+    "Graph BFS",
+    "Linked List (Fast &amp; Slow)",
+    "HashMap / Hash Set"
+  ],
+  "answer": "HashMap / Hash Set",
+  "why_not": "Right: HashMap / Hash Set maps original node references to newly created cloned nodes in O(n) time and O(n) space (or interweaving nodes to achieve O(1) extra space). Not Two Pointers: Scanning pointer pairs alone cannot locate arbitrary random pointer targets without map lookups or node interweaving. Not Graph BFS: Treating nodes as a general graph and performing BFS works, but hash map key-value association directly captures random links. Not Linked List (Fast &amp; Slow): Fast and slow pointers detect cycles, but do not assist with deep cloning node references.",
+  "complexity": "O(n) time, O(n) space",
+  "solution_link": "[suspicious link removed]",
+  "tags": [
+    "linked-list",
+    "hash-table"
+  ]
+}

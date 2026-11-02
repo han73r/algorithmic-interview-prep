@@ -1,0 +1,10 @@
+{
+  "file": "intervals.cs",
+  "pattern": "intervals",
+  "specification": null,
+  "from_the_list": true,
+  "time": "O(n log n)",
+  "space": "O(log n)",
+  "optimal": true,
+  "note": "Sorts intervals by start time and merges overlapping bounds sequentially."
+}

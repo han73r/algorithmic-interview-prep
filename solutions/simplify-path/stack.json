@@ -1,0 +1,10 @@
+{
+  "file": "stack.cs",
+  "pattern": "stack",
+  "specification": null,
+  "from_the_list": true,
+  "time": "O(n)",
+  "space": "O(n)",
+  "optimal": true,
+  "note": "Processes directory path components with a stack to resolve relative navigation tokens."
+}

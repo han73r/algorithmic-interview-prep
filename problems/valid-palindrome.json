@@ -1,0 +1,30 @@
+{
+  "id": "valid-palindrome",
+  "leetcode_number": 125,
+  "leetcode_url": "https://leetcode.com/problems/valid-palindrome/",
+  "title": "Valid Palindrome",
+  "difficulty": "Easy",
+  "pattern": "Two Pointers",
+  "statement_short": "Given a string s, determine if it is a palindrome after converting all uppercase letters into lowercase letters and removing all non-alphanumeric characters. Read forwards and backwards identically.",
+  "constraints": "1 &lt;= s.length &lt;= 2 \\* 10^5, s consists only of printable ASCII characters",
+  "hint": "String length up to 2 \\* 10^5 mandates an O(n) time solution, achieved by inward scanning pointers.",
+  "keywords": [
+    "converting all uppercase letters",
+    "removing all non-alphanumeric characters",
+    "1 &lt;= s.length &lt;= 2 \\* 10^5"
+  ],
+  "options": [
+    "Two Pointers",
+    "Stack",
+    "Sliding Window",
+    "HashMap / Hash Set"
+  ],
+  "answer": "Two Pointers",
+  "why_not": "Right: Two Pointers compare valid alphanumeric characters inward from opposite string ends in O(n) time and O(1) space. Not Stack: Pushing valid characters onto a stack reverses the string but uses O(n) extra space. Not Sliding Window: Palindrome checking evaluates boundary characters moving inward rather than maintaining a fixed subsegment. Not HashMap / Hash Set: Character frequency tables verify anagrams, not palindrome character ordering.",
+  "complexity": "O(n) time, O(1) space",
+  "solution_link": "[suspicious link removed]",
+  "tags": [
+    "two-pointers",
+    "string"
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "id": "average-of-levels-in-binary-tree",
+  "leetcode_number": 637,
+  "leetcode_url": "https://leetcode.com/problems/average-of-levels-in-binary-tree/",
+  "title": "Average of Levels in Binary Tree",
+  "difficulty": "Easy",
+  "pattern": "Tree BFS",
+  "statement_short": "Given the root of a binary tree, return the average value of the nodes on each level in the form of an array. Answers within 10^-5 of the actual answer will be accepted.",
+  "constraints": "1 &lt;= number of nodes in tree &lt;= 10^4, -2^31 &lt;= Node.val &lt;= 2^31 - 1",
+  "hint": "Node count up to 10^4 permits level-by-level summation using a level-order queue traversal.",
+  "keywords": [
+    "average value of the nodes on each level",
+    "within 10^-5",
+    "1 &lt;= number of nodes in tree &lt;= 10^4"
+  ],
+  "options": [
+    "Tree BFS",
+    "Tree DFS",
+    "Prefix Sum",
+    "HashMap / Hash Set"
+  ],
+  "answer": "Tree BFS",
+  "why_not": "Right: Tree BFS computes the sum of node values at each level and divides by level size in O(n) time and O(w) space. Not Tree DFS: DFS aggregates level sums using level-indexed lists, but BFS processes levels sequentially in memory. Not Prefix Sum: Prefix sums calculate range totals over arrays rather than level aggregates across binary trees. Not HashMap / Hash Set: Mapping levels to sums in a map works, but queue-based level processing is the natural BFS structure.",
+  "complexity": "O(n) time, O(w) space",
+  "solution_link": "[suspicious link removed]",
+  "tags": [
+    "tree",
+    "depth-first-search",
+    "breadth-first-search",
+    "binary-tree"
+  ]
+}

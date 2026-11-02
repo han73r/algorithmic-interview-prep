@@ -1,0 +1,30 @@
+{
+  "id": "remove-duplicates-from-sorted-list-ii",
+  "leetcode_number": 82,
+  "leetcode_url": "https://leetcode.com/problems/remove-duplicates-from-sorted-list-ii/",
+  "title": "Remove Duplicates from Sorted List II",
+  "difficulty": "Medium",
+  "pattern": "Two Pointers",
+  "statement_short": "Given the head of a sorted linked list, delete all nodes that have duplicate numbers, leaving only distinct numbers from the original list. Return the linked list sorted as well.",
+  "constraints": "0 &lt;= number of nodes &lt;= 300, -100 &lt;= Node.val &lt;= 100, list is sorted in ascending order",
+  "hint": "Small node count (&lt;= 300) permits an O(n) single pass, skipping duplicate value blocks using dummy and precursor pointers.",
+  "keywords": [
+    "delete all nodes that have duplicate numbers",
+    "leaving only distinct numbers",
+    "list is sorted in ascending order"
+  ],
+  "options": [
+    "HashMap / Hash Set",
+    "Two Pointers",
+    "Stack",
+    "Sliding Window"
+  ],
+  "answer": "Two Pointers",
+  "why_not": "Right: Two Pointers (dummy head and lookahead pointers) bypasses all nodes matching duplicate values in O(n) time and O(1) space. Not HashMap / Hash Set: Frequency counting in a hash map identifies duplicates in O(n) time but uses O(n) extra space and requires list reconstruction. Not Stack: Pushing nodes onto a stack does not inherently filter duplicate sequences without extra frequency checks. Not Sliding Window: Sliding window techniques compute subsegment properties rather than unlinking duplicate node clusters.",
+  "complexity": "O(n) time, O(1) space",
+  "solution_link": "[suspicious link removed]",
+  "tags": [
+    "linked-list",
+    "two-pointers"
+  ]
+}

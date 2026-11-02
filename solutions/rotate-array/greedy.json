@@ -1,0 +1,10 @@
+{
+  "file": "greedy.cs",
+  "pattern": "greedy",
+  "specification": null,
+  "from_the_list": true,
+  "time": "O(1)",
+  "space": "O(1)",
+  "optimal": true,
+  "note": "Greedily subtracts the largest possible Roman numeral values from the integer while appending corresponding symbols."
+}

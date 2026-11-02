@@ -1,0 +1,30 @@
+{
+  "id": "find-the-index-of-the-first-occurrence-in-a-string",
+  "leetcode_number": 28,
+  "leetcode_url": "https://leetcode.com/problems/find-the-index-of-the-first-occurrence-in-a-string/",
+  "title": "Find the Index of the First Occurrence in a String",
+  "difficulty": "Easy",
+  "pattern": "Two Pointers",
+  "statement_short": "Given two strings needle and haystack, return the index of the first occurrence of needle in haystack. Return -1 if needle is not part of haystack.",
+  "constraints": "1 &lt;= haystack.length, needle.length &lt;= 10^4, haystack and needle consist of lowercase English letters",
+  "hint": "String lengths up to 10^4 permit O(n+m) linear search using matching pointers.",
+  "keywords": [
+    "first occurrence of needle",
+    "needle is not part of haystack",
+    "1 &lt;= haystack.length"
+  ],
+  "options": [
+    "Two Pointers",
+    "Sliding Window",
+    "Binary Search",
+    "Trie"
+  ],
+  "answer": "Two Pointers",
+  "why_not": "Right: Two Pointers (or Knuth-Morris-Pratt pattern matching) finds the target occurrence in O(n+m) time and O(1) space. Not Sliding Window: Sliding a fixed window takes O(n\\*m) worst-case time without mismatch shift optimization. Not Binary Search: String characters are unsorted, preventing binary search comparisons. Not Trie: Building a prefix tree uses O(m) extra memory for a single target string.",
+  "complexity": "O(n + m) time, O(1) space",
+  "solution_link": "[suspicious link removed]",
+  "tags": [
+    "string",
+    "two-pointers"
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "id": "minimum-number-of-arrows-to-burst-balloons",
+  "leetcode_number": 452,
+  "leetcode_url": "https://leetcode.com/problems/minimum-number-of-arrows-to-burst-balloons/",
+  "title": "Minimum Number of Arrows to Burst Balloons",
+  "difficulty": "Medium",
+  "pattern": "Intervals",
+  "statement_short": "Given an array of 2D points representing spherical balloons where points[i] = [xstart, xend], find the minimum number of arrows that must be shot to burst all balloons. An arrow shot vertically upward along an x-coordinate bursts all balloons whose horizontal diameter overlaps that coordinate.",
+  "constraints": "1 &lt;= points.length &lt;= 10^5, points[i].length == 2, -2^31 &lt;= xstart &lt; xend &lt;= 2^31 - 1",
+  "hint": "Point count up to 10^5 dictates an O(n log n) algorithm by sorting interval end boundaries.",
+  "keywords": [
+    "minimum number of arrows",
+    "overlaps that coordinate",
+    "1 &lt;= points.length &lt;= 10^5"
+  ],
+  "options": [
+    "Intervals",
+    "Two Pointers",
+    "Binary Search",
+    "Heap / Priority Queue"
+  ],
+  "answer": "Intervals",
+  "why_not": "Right: Intervals sorting balloons by end coordinates shoots an arrow at the earliest ending point to greedily burst overlapping intervals in O(n log n) time. Not Two Pointers: Scanning unsorted interval boundaries with two pointers fails to identify global overlap endpoints. Not Binary Search: Point coordinates are unsorted and non-continuous, preventing binary searching on burst positions. Not Heap / Priority Queue: Storing coordinates in a min-heap costs O(n log n) time but adds unnecessary priority queue maintenance overhead.",
+  "complexity": "O(n log n) time, O(n) space",
+  "solution_link": "[suspicious link removed]",
+  "tags": [
+    "array",
+    "greedy",
+    "sorting"
+  ]
+}

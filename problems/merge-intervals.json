@@ -1,0 +1,30 @@
+{
+  "id": "merge-intervals",
+  "leetcode_number": 56,
+  "leetcode_url": "[suspicious link removed]",
+  "title": "Merge Intervals",
+  "difficulty": "Medium",
+  "pattern": "Intervals",
+  "statement_short": "Given an array of intervals where intervals[i] = [start_i, end_i], merge all overlapping intervals, and return an array of the non-overlapping intervals that cover all the intervals in the input.",
+  "constraints": "1 &lt;= intervals.length &lt;= 10^4, intervals[i].length == 2, 0 &lt;= start_i &lt;= end_i &lt;= 10^4",
+  "hint": "Interval count up to 10^4 dictates sorting by start time followed by a linear merge pass in O(n log n) time.",
+  "keywords": [
+    "merge all overlapping intervals",
+    "1 &lt;= intervals.length &lt;= 10^4",
+    "intervals[i].length == 2"
+  ],
+  "options": [
+    "Intervals",
+    "Two Pointers",
+    "Heap / Priority Queue",
+    "Greedy"
+  ],
+  "answer": "Intervals",
+  "why_not": "Right: Intervals sorting by start time allows merging overlapping adjacent ranges in O(n log n) time and O(n) space. Not Two Pointers: Scanning unsorted interval endpoints directly fails without initial sorting by start coordinates. Not Heap / Priority Queue: Storing endpoints in a min-heap takes O(n log n) time but adds unnecessary data structure overhead over array sorting. Not Greedy: Pure greedy choice without sorting by start boundaries cannot identify all overlapping interval pairs.",
+  "complexity": "O(n log n) time, O(n) space",
+  "solution_link": "[suspicious link removed]",
+  "tags": [
+    "array",
+    "sorting"
+  ]
+}

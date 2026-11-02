@@ -1,0 +1,31 @@
+{
+  "id": "minimum-genetic-mutation",
+  "leetcode_number": 433,
+  "leetcode_url": "[suspicious link removed]",
+  "title": "Minimum Genetic Mutation",
+  "difficulty": "Medium",
+  "pattern": "Graph BFS",
+  "statement_short": "Given a start gene string, an end gene string, and a gene bank array, return the minimum number of mutations needed to mutate startGene to endGene. Each mutation changes a single character and must be a valid gene in bank.",
+  "constraints": "startGene.length == endGene.length == 8, 0 &lt;= bank.length &lt;= 10, bank[i].length == 8, genes consist of 'A', 'C', 'G', 'T'",
+  "hint": "Small bank length (&lt;= 10) and fixed string length 8 allow finding the shortest path in a state graph via queue traversal.",
+  "keywords": [
+    "minimum number of mutations",
+    "valid gene in bank",
+    "bank.length &lt;= 10"
+  ],
+  "options": [
+    "Graph BFS",
+    "Backtracking",
+    "Trie",
+    "Two Pointers"
+  ],
+  "answer": "Graph BFS",
+  "why_not": "Right: Graph BFS finds the shortest transformation path in an unweighted gene state graph in O(N \\* L) time. Not Backtracking: Backtracking explores all valid gene paths recursively but does not guarantee finding the shortest path first without full state tree exhaustion. Not Trie: Trie stores string dictionaries, but does not calculate shortest mutation distances between words. Not Two Pointers: Gene strings are unordered, preventing two-pointer linear matching.",
+  "complexity": "O(N \\* L) time, O(N) space",
+  "solution_link": "[suspicious link removed]",
+  "tags": [
+    "hash-table",
+    "string",
+    "breadth-first-search"
+  ]
+}

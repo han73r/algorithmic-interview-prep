@@ -1,0 +1,31 @@
+{
+  "id": "binary-tree-zigzag-level-order-traversal",
+  "leetcode_number": 103,
+  "leetcode_url": "https://leetcode.com/problems/binary-tree-zigzag-level-order-traversal/",
+  "title": "Binary Tree Zigzag Level Order Traversal",
+  "difficulty": "Medium",
+  "pattern": "Tree BFS",
+  "statement_short": "Given the root of a binary tree, return the zigzag level order traversal of its nodes' values (i.e., from left to right, then right to left for the next level and alternate between).",
+  "constraints": "0 &lt;= number of nodes in tree &lt;= 2000, -1000 &lt;= Node.val &lt;= 1000",
+  "hint": "Small node count (&lt;= 2000) allows level-order queue traversal with alternating direction inserts.",
+  "keywords": [
+    "zigzag level order traversal",
+    "right to left for the next level and alternate",
+    "0 &lt;= number of nodes in tree &lt;= 2000"
+  ],
+  "options": [
+    "Tree BFS",
+    "Tree DFS",
+    "Two Pointers",
+    "Stack"
+  ],
+  "answer": "Tree BFS",
+  "why_not": "Right: Tree BFS uses a queue and reverses list output or uses a deque for odd-numbered levels in O(n) time and O(w) space. Not Tree DFS: DFS tracks depth and prepends elements for odd levels, but BFS maintains explicit level boundary queues. Not Two Pointers: Scanning pointer pairs cannot navigate non-linear level trees natively. Not Stack: Stack ordering handles single-direction depth traversal rather than alternating level directions.",
+  "complexity": "O(n) time, O(w) space",
+  "solution_link": "[suspicious link removed]",
+  "tags": [
+    "tree",
+    "breadth-first-search",
+    "binary-tree"
+  ]
+}

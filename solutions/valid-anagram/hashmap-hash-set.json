@@ -1,0 +1,10 @@
+{
+  "file": "hashmap-hash-set.cs",
+  "pattern": "hashmap-hash-set",
+  "specification": null,
+  "from_the_list": true,
+  "time": "O(n)",
+  "space": "O(1)",
+  "optimal": true,
+  "note": "Uses a frequency array to verify that two strings contain the exact same character counts."
+}

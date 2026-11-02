@@ -1,0 +1,10 @@
+{
+  "file": "two-pointers-same-direction.cs",
+  "pattern": "two-pointers",
+  "specification": "two-pointers-same-direction",
+  "from_the_list": true,
+  "time": "O(n)",
+  "space": "O(1)",
+  "optimal": true,
+  "note": "Partitions a linked list around value x by splitting nodes into two separate lists and concatenating them."
+}

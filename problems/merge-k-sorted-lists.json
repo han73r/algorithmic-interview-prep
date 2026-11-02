@@ -1,0 +1,32 @@
+{
+  "id": "merge-k-sorted-lists",
+  "leetcode_number": 23,
+  "leetcode_url": "[suspicious link removed]",
+  "title": "Merge k Sorted Lists",
+  "difficulty": "Hard",
+  "pattern": "Heap / Priority Queue",
+  "statement_short": "Given an array of k linked lists, where each list is sorted in ascending order, merge all the linked lists into one sorted linked list and return it.",
+  "constraints": "0 &lt;= k &lt;= 10^4, 0 &lt;= lists[i].length &lt;= 500, -10^4 &lt;= lists[i][j] &lt;= 10^4, total nodes &lt;= 10^4",
+  "hint": "Total node count up to 10^4 allows extracting minimum heads efficiently using a min-heap structure.",
+  "keywords": [
+    "array of k linked lists",
+    "sorted in ascending order",
+    "0 &lt;= k &lt;= 10^4"
+  ],
+  "options": [
+    "Heap / Priority Queue",
+    "Two Pointers",
+    "Sorting",
+    "1D DP"
+  ],
+  "answer": "Heap / Priority Queue",
+  "why_not": "Right: Heap / Priority Queue maintains a min-heap of active list heads to continuously extract the smallest element in O(N log k) time. Not Two Pointers: Two pointers merge two lists, but comparing k lists linearly takes O(N \\* k) time. Not Sorting: Dumping all node values into an array and sorting costs O(N log N) time and extra memory. Not 1D DP: Subproblem state memoization does not apply to multi-pointer node traversal.",
+  "complexity": "O(N log k) time, O(k) space",
+  "solution_link": "[suspicious link removed]",
+  "tags": [
+    "linked-list",
+    "divide-and-conquer",
+    "heap-priority-queue",
+    "merge-sort"
+  ]
+}

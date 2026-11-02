@@ -1,0 +1,10 @@
+{
+  "file": "stack.cs",
+  "pattern": "stack",
+  "specification": null,
+  "from_the_list": true,
+  "time": "O(1)",
+  "space": "O(n)",
+  "optimal": true,
+  "note": "Maintains an auxiliary minimum stack alongside the primary stack to support constant-time min queries."
+}

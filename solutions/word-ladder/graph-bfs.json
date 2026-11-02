@@ -1,0 +1,10 @@
+{
+  "file": "graph-bfs.cs",
+  "pattern": "graph-bfs",
+  "specification": null,
+  "from_the_list": true,
+  "time": "O(M * N^2)",
+  "space": "O(M * N)",
+  "optimal": true,
+  "note": "Finds the shortest word ladder transformation sequence using breadth-first search."
+}

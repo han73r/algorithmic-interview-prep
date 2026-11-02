@@ -1,0 +1,10 @@
+{
+  "file": "graph-dfs.cs",
+  "pattern": "graph-dfs",
+  "specification": null,
+  "from_the_list": true,
+  "time": "O(V + E)",
+  "space": "O(V + E)",
+  "optimal": true,
+  "note": "Evaluates division equations by modeling them as a weighted directed graph and performing DFS."
+}

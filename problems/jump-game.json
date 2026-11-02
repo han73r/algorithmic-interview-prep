@@ -1,0 +1,30 @@
+{
+  "id": "jump-game",
+  "leetcode_number": 55,
+  "leetcode_url": "[suspicious link removed]",
+  "title": "Jump Game",
+  "difficulty": "Medium",
+  "pattern": "Greedy",
+  "statement_short": "Given an integer array nums where each element represents your maximum jump length from that position, determine if you can reach the last index starting from index 0.",
+  "constraints": "1 &lt;= nums.length &lt;= 10^4, 0 &lt;= nums[i] &lt;= 10^5",
+  "hint": "Array length up to 10^4 requires an O(n) solution by continually expanding the furthest reachable index.",
+  "keywords": [
+    "maximum jump length",
+    "reach the last index",
+    "1 &lt;= nums.length &lt;= 10^4"
+  ],
+  "options": [
+    "Greedy",
+    "Graph BFS",
+    "Backtracking",
+    "2D DP"
+  ],
+  "answer": "Greedy",
+  "why_not": "Right: Greedy maintains the maximum reachable index while scanning left-to-right in O(n) time and O(1) space. Not Graph BFS: Level-by-level queue traversal visits reachable nodes but uses O(n) auxiliary memory. Not Backtracking: Trying every jump branch recursively causes TLE with O(2^n) exponential complexity. Not 2D DP: A two-dimensional state space is unnecessary for tracking a single reachability boundary.",
+  "complexity": "O(n) time, O(1) space",
+  "solution_link": "[suspicious link removed]",
+  "tags": [
+    "array",
+    "greedy"
+  ]
+}

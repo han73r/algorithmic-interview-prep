@@ -1,0 +1,10 @@
+{
+  "file": "tree-dfs.cs",
+  "pattern": "tree-dfs",
+  "specification": "tree-dfs",
+  "from_the_list": true,
+  "time": "O(n)",
+  "space": "O(h)",
+  "optimal": true,
+  "note": "Checks whether a binary tree is symmetric around its center by comparing mirrored subtrees."
+}

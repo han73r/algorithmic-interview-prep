@@ -1,0 +1,10 @@
+{
+  "file": "zigzag-level-order.cs",
+  "pattern": "tree-bfs",
+  "specification": "zigzag-level-order",
+  "from_the_list": true,
+  "time": "O(n)",
+  "space": "O(n)",
+  "optimal": true,
+  "note": "Alternates insertion direction for each level during breadth-first search."
+}

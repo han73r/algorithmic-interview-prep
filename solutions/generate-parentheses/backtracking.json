@@ -1,0 +1,10 @@
+{
+  "file": "backtracking.cs",
+  "pattern": "backtracking",
+  "specification": null,
+  "from_the_list": true,
+  "time": "O(4^n / sqrt(n))",
+  "space": "O(n)",
+  "optimal": true,
+  "note": "Generates all valid parenthesis combinations using backtracking with state tracking."
+}

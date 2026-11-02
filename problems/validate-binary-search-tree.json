@@ -1,0 +1,32 @@
+{
+  "id": "validate-binary-search-tree",
+  "leetcode_number": 98,
+  "leetcode_url": "https://leetcode.com/problems/validate-binary-search-tree/",
+  "title": "Validate Binary Search Tree",
+  "difficulty": "Medium",
+  "pattern": "Tree DFS",
+  "statement_short": "Given the root of a binary tree, determine if it is a valid binary search tree (BST). A valid BST requires that all left descendants have strictly smaller values and all right descendants have strictly larger values.",
+  "constraints": "1 &lt;= number of nodes in tree &lt;= 10^4, -2^31 &lt;= Node.val &lt;= 2^31 - 1",
+  "hint": "Node count up to 10^4 requires O(n) recursion, passing min and max valid bounds down to subtrees.",
+  "keywords": [
+    "valid binary search tree",
+    "strictly smaller values",
+    "1 &lt;= number of nodes in tree &lt;= 10^4"
+  ],
+  "options": [
+    "Tree DFS",
+    "Tree BFS",
+    "Binary Search",
+    "Monotonic Stack"
+  ],
+  "answer": "Tree DFS",
+  "why_not": "Right: Tree DFS recursively validates each node against min/max valid range boundaries (or checks strictly increasing order via in-order traversal) in O(n) time and O(h) space. Not Tree BFS: Level-order traversal checking range limits works in O(n) time, but requires extra queue memory for range tuples. Not Binary Search: Binary search locates elements, but validating full tree structure requires inspecting all nodes. Not Monotonic Stack: Monotonic stack checks array monotonicity rather than hierarchical subtree value bounds.",
+  "complexity": "O(n) time, O(h) space",
+  "solution_link": "[suspicious link removed]",
+  "tags": [
+    "tree",
+    "depth-first-search",
+    "binary-search-tree",
+    "binary-tree"
+  ]
+}

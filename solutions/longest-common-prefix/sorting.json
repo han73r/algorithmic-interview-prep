@@ -1,0 +1,10 @@
+{
+  "file": "sorting.cs",
+  "pattern": "sorting",
+  "specification": null,
+  "from_the_list": true,
+  "time": "O(n log n * m)",
+  "space": "O(1)",
+  "optimal": true,
+  "note": "Sorts the array lexicographically and compares the first and last strings to find the longest common prefix."
+}

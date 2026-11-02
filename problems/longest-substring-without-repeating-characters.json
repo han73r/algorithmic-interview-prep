@@ -1,0 +1,31 @@
+{
+  "id": "longest-substring-without-repeating-characters",
+  "leetcode_number": 3,
+  "leetcode_url": "https://leetcode.com/problems/longest-substring-without-repeating-characters/",
+  "title": "Longest Substring Without Repeating Characters",
+  "difficulty": "Medium",
+  "pattern": "Sliding Window",
+  "statement_short": "Given a string s, find the length of the longest substring without repeating characters.",
+  "constraints": "0 &lt;= s.length &lt;= 5 \\* 10^4, s consists of English letters, digits, symbols and spaces",
+  "hint": "String length up to 5 \\* 10^4 demands an O(n) time solution using a variable sliding window.",
+  "keywords": [
+    "longest substring",
+    "without repeating characters",
+    "0 &lt;= s.length &lt;= 5 \\* 10^4"
+  ],
+  "options": [
+    "Sliding Window",
+    "HashMap / Hash Set",
+    "Two Pointers",
+    "1D DP"
+  ],
+  "answer": "Sliding Window",
+  "why_not": "Right: Sliding Window maintains a range of distinct characters using a set/map, expanding right and shrinking left on duplicates in O(n) time. Not HashMap / Hash Set: Using a hash set alone without a sliding window frame requires checking all O(n^2) substrings. Not Two Pointers: Scanning fixed ends inward cannot track variable non-repeating subsegments. Not 1D DP: Dynamic programming requires O(n) space and extra state transitions compared to direct sliding window pointers.",
+  "complexity": "O(n) time, O(min(m, n)) space",
+  "solution_link": "[suspicious link removed]",
+  "tags": [
+    "string",
+    "sliding-window",
+    "hash-table"
+  ]
+}

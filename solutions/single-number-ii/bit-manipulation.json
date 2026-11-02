@@ -1,0 +1,10 @@
+{
+  "file": "bit-manipulation.cs",
+  "pattern": "bit-manipulation",
+  "specification": null,
+  "from_the_list": true,
+  "time": "O(n)",
+  "space": "O(1)",
+  "optimal": true,
+  "note": "Tracks bit frequencies modulo 3 using two bitmask variables."
+}

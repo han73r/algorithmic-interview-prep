@@ -1,0 +1,10 @@
+{
+  "file": "two-pointers-backward-traversal.cs",
+  "pattern": "two-pointers",
+  "specification": "two-pointers-backward-traversal",
+  "from_the_list": true,
+  "time": "O(n)",
+  "space": "O(n)",
+  "optimal": true,
+  "note": "Traverses the string backwards using two pointers to extract and reverse words efficiently."
+}

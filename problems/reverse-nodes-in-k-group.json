@@ -1,0 +1,30 @@
+{
+  "id": "reverse-nodes-in-k-group",
+  "leetcode_number": 25,
+  "leetcode_url": "https://leetcode.com/problems/reverse-nodes-in-k-group/",
+  "title": "Reverse Nodes in k-Group",
+  "difficulty": "Hard",
+  "pattern": "Two Pointers",
+  "statement_short": "Given the head of a linked list and a positive integer k, reverse the nodes of the list k at a time, and return the modified list. If the number of nodes is not a multiple of k, left-over nodes at the end should remain as they are.",
+  "constraints": "1 &lt;= k &lt;= n &lt;= 5000, 0 &lt;= Node.val &lt;= 1000",
+  "hint": "Node count up to 5000 requires O(n) time, reversing sub-lists of size k in-place with O(1) space.",
+  "keywords": [
+    "k at a time",
+    "remain as they are",
+    "1 &lt;= k &lt;= n &lt;= 5000"
+  ],
+  "options": [
+    "Stack",
+    "Two Pointers",
+    "HashMap / Hash Set",
+    "1D DP"
+  ],
+  "answer": "Two Pointers",
+  "why_not": "Right: Two Pointers (or iterative pointer manipulation) checks if k nodes exist and reverses each k-group in-place in O(n) time and O(1) space. Not Stack: Pushing each k-group onto a stack reverses node order but uses O(k) extra space per group. Not HashMap / Hash Set: Storing node references in a map uses unnecessary O(n) memory. Not 1D DP: Subproblem state memoization does not apply to sequential node pointer rewiring.",
+  "complexity": "O(n) time, O(1) space",
+  "solution_link": "[suspicious link removed]",
+  "tags": [
+    "linked-list",
+    "two-pointers"
+  ]
+}

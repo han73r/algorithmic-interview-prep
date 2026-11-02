@@ -1,0 +1,30 @@
+{
+  "id": "3sum",
+  "leetcode_number": 15,
+  "leetcode_url": "[suspicious link removed]",
+  "title": "3Sum",
+  "difficulty": "Medium",
+  "pattern": "Two Pointers",
+  "statement_short": "Given an integer array nums, return all unique triplets [nums[i], nums[j], nums[k]] such that i != j, i != k, and j != k, and their sum equals zero.",
+  "constraints": "3 &lt;= nums.length &lt;= 3000, -10^5 &lt;= nums[i] &lt;= 10^5",
+  "hint": "Array length up to 3000 permits an O(n^2) algorithm by sorting and fixing one number then using two pointers.",
+  "keywords": [
+    "unique triplets",
+    "sum equals zero",
+    "3 &lt;= nums.length &lt;= 3000"
+  ],
+  "options": [
+    "Two Pointers",
+    "HashMap / Hash Set",
+    "Backtracking",
+    "Binary Search"
+  ],
+  "answer": "Two Pointers",
+  "why_not": "Right: Sorting and applying Two Pointers for each fixed element finds unique triplets in O(n^2) time and O(1) extra space. Not HashMap / Hash Set: Using nested loops with a hash set takes O(n^2) time but uses O(n) space and requires complex duplicate triplet filtering. Not Backtracking: Exploring combinations recursively leads to TLE with O(2^n) time complexity. Not Binary Search: Binary search for the third element takes O(n^2 log n) time, which is slower than two pointers.",
+  "complexity": "O(n^2) time, O(1) space",
+  "solution_link": "[suspicious link removed]",
+  "tags": [
+    "two-pointers",
+    "array"
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "file": "hashmap-hash-set.cs",
+  "pattern": "hashmap-hash-set",
+  "specification": null,
+  "from_the_list": true,
+  "time": "O(n * k)",
+  "space": "O(n * k)",
+  "optimal": true,
+  "note": "Groups anagrams by building a unique frequency signature string as a dictionary key for each word."
+}

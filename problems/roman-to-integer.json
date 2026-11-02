@@ -1,0 +1,30 @@
+{
+  "id": "roman-to-integer",
+  "leetcode_number": 13,
+  "leetcode_url": "[suspicious link removed]",
+  "title": "Roman to Integer",
+  "difficulty": "Easy",
+  "pattern": "Math / Geometry",
+  "statement_short": "Given a Roman numeral string s, convert it to an integer. Roman numerals are represented by seven different symbols, where subtractive combinations occur when a smaller value precedes a larger value.",
+  "constraints": "1 &lt;= s.length &lt;= 15, s contains only characters ('I', 'V', 'X', 'L', 'C', 'D', 'M'), s is a valid roman numeral in range [1, 3999]",
+  "hint": "Extremely small string length (s.length &lt;= 15) allows a single-pass character map lookup with conditional subtraction.",
+  "keywords": [
+    "Roman numeral string",
+    "smaller value precedes a larger value",
+    "1 &lt;= s.length &lt;= 15"
+  ],
+  "options": [
+    "HashMap / Hash Set",
+    "Stack",
+    "Math / Geometry",
+    "Backtracking"
+  ],
+  "answer": "Math / Geometry",
+  "why_not": "Right: Math / Geometry applies numeral symbol values and subtractive rules (subtracting when current symbol &lt; next symbol) in O(n) time. Not HashMap / Hash Set: Using a hash table maps symbols to values, but the core logic is linear arithmetic symbol parsing. Not Stack: Pushing symbols to a stack handles nesting, but simple left-to-right symbol value comparisons require no stack frame. Not Backtracking: Roman numerals follow deterministic grammar rules, requiring no recursive branch search.",
+  "complexity": "O(n) time, O(1) space",
+  "solution_link": "[suspicious link removed]",
+  "tags": [
+    "math",
+    "string"
+  ]
+}

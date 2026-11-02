@@ -1,0 +1,10 @@
+{
+  "file": "graph-dfs.cs",
+  "pattern": "graph-dfs",
+  "specification": null,
+  "from_the_list": true,
+  "time": "O(V + E)",
+  "space": "O(V)",
+  "optimal": true,
+  "note": "Deep copies a graph using depth-first search and a visited hash map."
+}

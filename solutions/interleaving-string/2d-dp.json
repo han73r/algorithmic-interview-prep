@@ -1,0 +1,10 @@
+{
+  "file": "2d-dp.cs",
+  "pattern": "2d-dp",
+  "specification": null,
+  "from_the_list": true,
+  "time": "O(m * n)",
+  "space": "O(n)",
+  "optimal": true,
+  "note": "Determines if s3 is formed by interleaving s1 and s2 using space-optimized DP."
+}

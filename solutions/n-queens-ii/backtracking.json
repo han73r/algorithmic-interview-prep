@@ -1,0 +1,10 @@
+{
+  "file": "backtracking.cs",
+  "pattern": "backtracking",
+  "specification": null,
+  "from_the_list": true,
+  "time": "O(n!)",
+  "space": "O(n)",
+  "optimal": true,
+  "note": "Computes the total number of N-Queens solutions efficiently using bitwise operations."
+}

@@ -1,0 +1,10 @@
+{
+    "file": "greedy.cs",
+    "pattern": "greedy",
+    "specification": null,
+    "from_the_list": true,
+    "time": "O(n)",
+    "space": "O(1)",
+    "optimal": true,
+    "note": "Greedily tracks the farthest reachable index within the current jump window to minimize total jumps."
+}

@@ -1,0 +1,10 @@
+{
+  "file": "tree-dfs.cs",
+  "pattern": "tree-dfs",
+  "specification": null,
+  "from_the_list": true,
+  "time": "O(n)",
+  "space": "O(h)",
+  "optimal": true,
+  "note": "Validates BST properties by passing allowed value boundaries recursively."
+}

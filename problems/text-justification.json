@@ -1,0 +1,30 @@
+{
+  "id": "text-justification",
+  "leetcode_number": 68,
+  "leetcode_url": "https://leetcode.com/problems/text-justification/",
+  "title": "Text Justification",
+  "difficulty": "Hard",
+  "pattern": "Greedy",
+  "statement_short": "Given an array of words and a maximum line width, format the text such that each line has exactly maxWidth characters and is fully justified. Distribute extra spaces as evenly as possible between words, placing remaining spaces on the left.",
+  "constraints": "1 &lt;= words.length &lt;= 300, 1 &lt;= words[i].length &lt;= 20, 1 &lt;= maxWidth &lt;= 100",
+  "hint": "Small word count (&lt;= 300) allows line-by-line greedy word packing and explicit space distribution.",
+  "keywords": [
+    "fully justified",
+    "extra spaces as evenly as possible",
+    "1 &lt;= words.length &lt;= 300"
+  ],
+  "options": [
+    "Greedy",
+    "1D DP",
+    "Two Pointers",
+    "Backtracking"
+  ],
+  "answer": "Greedy",
+  "why_not": "Right: Greedy packs maximum possible words onto each line before formatting spaces in O(n) total time. Not 1D DP: Dynamic programming optimizes line breaks under quadratic penalty functions, but problem rules specify greedy line filling. Not Two Pointers: Scanning word indices alone does not implement space padding logic. Not Backtracking: Line construction follows explicit greedy formatting rules, requiring no recursive path search.",
+  "complexity": "O(n) time, O(n) space",
+  "solution_link": "[suspicious link removed]",
+  "tags": [
+    "string",
+    "greedy"
+  ]
+}

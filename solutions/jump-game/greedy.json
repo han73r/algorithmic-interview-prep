@@ -1,0 +1,10 @@
+{
+    "file": "greedy.cs",
+    "pattern": "greedy",
+    "specification": null,
+    "from_the_list": true,
+    "time": "O(n)",
+    "space": "O(1)",
+    "optimal": true,
+    "note": "Greedily tracks the closest reachable position from the end of the array to check if the start is reachable."
+}

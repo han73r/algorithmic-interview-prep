@@ -1,0 +1,32 @@
+{
+  "id": "word-search",
+  "leetcode_number": 79,
+  "leetcode_url": "[suspicious link removed]",
+  "title": "Word Search",
+  "difficulty": "Medium",
+  "pattern": "Backtracking",
+  "statement_short": "Given an m x n grid of characters board and a string word, return true if word exists in the grid. The word can be constructed from sequentially adjacent cells horizontally or vertically, without reusing any cell.",
+  "constraints": "m == board.length, n == board[i].length, 1 &lt;= m, n &lt;= 6, 1 &lt;= word.length &lt;= 15, board and word consist of uppercase and lowercase English letters",
+  "hint": "Small board (&lt;= 6x6) and short word length (&lt;= 15) allow 4-directional grid search with character rollback.",
+  "keywords": [
+    "sequentially adjacent cells",
+    "without reusing any cell",
+    "1 &lt;= word.length &lt;= 15"
+  ],
+  "options": [
+    "Backtracking",
+    "Graph BFS",
+    "Trie",
+    "2D DP"
+  ],
+  "answer": "Backtracking",
+  "why_not": "Right: Backtracking explores 4-directional grid paths recursively, marking visited cells and restoring them on return in O(M \\* N \\* 3^L) time. Not Graph BFS: Level-order traversal requires storing full cell path histories per queue item, taking extra memory. Not Trie: Trie prunes multi-word dictionary searches (Word Search II), but searching a single word uses grid backtracking directly. Not 2D DP: Grid DP requires directional state flow without un-visiting cell backtracking.",
+  "complexity": "O(M \\* N \\* 3^L) time, O(L) space",
+  "solution_link": "[suspicious link removed]",
+  "tags": [
+    "array",
+    "string",
+    "backtracking",
+    "matrix"
+  ]
+}

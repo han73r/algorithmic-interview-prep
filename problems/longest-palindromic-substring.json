@@ -1,0 +1,30 @@
+{
+  "id": "longest-palindromic-substring",
+  "leetcode_number": 5,
+  "leetcode_url": "[suspicious link removed]",
+  "title": "Longest Palindromic Substring",
+  "difficulty": "Medium",
+  "pattern": "Two Pointers",
+  "statement_short": "Given a string s, return the longest palindromic substring in s.",
+  "constraints": "1 &lt;= s.length &lt;= 1000, s consists of only digits and English letters",
+  "hint": "String length up to 1000 permits checking center expansion for odd and even palindrome lengths.",
+  "keywords": [
+    "longest palindromic substring",
+    "1 &lt;= s.length &lt;= 1000"
+  ],
+  "options": [
+    "Two Pointers",
+    "2D DP",
+    "Sliding Window",
+    "HashMap / Hash Set"
+  ],
+  "answer": "Two Pointers",
+  "why_not": "Right: Two Pointers expands outward from each character center (odd and even lengths) in O(n^2) time and O(1) space. Not 2D DP: 2D DP stores boolean palindrome states dp[i][j] in O(n^2) time but consumes O(n^2) auxiliary memory. Not Sliding Window: Palindromes expand symmetrically from centers rather than maintaining a monotonic window. Not HashMap / Hash Set: Hash sets check substring existence but do not verify symmetrical palindrome ordering.",
+  "complexity": "O(n^2) time, O(1) space",
+  "solution_link": "[suspicious link removed]",
+  "tags": [
+    "string",
+    "two-pointers",
+    "dynamic-programming"
+  ]
+}

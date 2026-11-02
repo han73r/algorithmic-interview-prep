@@ -1,0 +1,33 @@
+{
+  "id": "find-median-from-data-stream",
+  "leetcode_number": 295,
+  "leetcode_url": "[suspicious link removed]",
+  "title": "Find Median from Data Stream",
+  "difficulty": "Hard",
+  "pattern": "Heap / Priority Queue",
+  "statement_short": "Design a data structure that receives a stream of integers and efficiently supports adding a new number and finding the median of all elements added so far.",
+  "constraints": "-10^5 &lt;= num &lt;= 10^5, at most 5 \\* 10^4 calls will be made to addNum and findMedian",
+  "hint": "Up to 5 \\* 10^4 streaming calls require O(log n) insertion using two balanced heaps (max-heap for lower half, min-heap for upper half).",
+  "keywords": [
+    "stream of integers",
+    "finding the median",
+    "5 \\* 10^4 calls"
+  ],
+  "options": [
+    "Heap / Priority Queue",
+    "Two Pointers",
+    "Binary Search",
+    "Sorting"
+  ],
+  "answer": "Heap / Priority Queue",
+  "why_not": "Right: Heap / Priority Queue uses two balanced heaps (max-heap for left half, min-heap for right half) to support O(log n) addNum and O(1) findMedian. Not Two Pointers: Two pointers require an array insertion which takes O(n) shift time per stream addition. Not Binary Search: Binary search finds target insertion index in O(log n), but array shifting still takes O(n) time. Not Sorting: Re-sorting array on every stream addition costs O(n log n) time per insertion.",
+  "complexity": "O(log n) add, O(1) median time, O(n) space",
+  "solution_link": "[suspicious link removed]",
+  "tags": [
+    "two-pointers",
+    "design",
+    "sorting",
+    "heap-priority-queue",
+    "data-stream"
+  ]
+}

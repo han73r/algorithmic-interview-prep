@@ -1,0 +1,31 @@
+{
+  "id": "valid-anagram",
+  "leetcode_number": 242,
+  "leetcode_url": "https://leetcode.com/problems/valid-anagram/",
+  "title": "Valid Anagram",
+  "difficulty": "Easy",
+  "pattern": "HashMap / Hash Set",
+  "statement_short": "Given two strings s and t, return true if t is an anagram of s, and false otherwise. An anagram is formed by rearranging the letters of a different word using all original letters exactly once.",
+  "constraints": "1 &lt;= s.length, t.length &lt;= 5 \\* 10^4, s and t consist of lowercase English letters",
+  "hint": "Input size up to 5 \\* 10^4 demands an O(n) time solution using character frequency counting.",
+  "keywords": [
+    "rearranging the letters",
+    "using all original letters exactly once",
+    "1 &lt;= s.length, t.length &lt;= 5 \\* 10^4"
+  ],
+  "options": [
+    "Sorting",
+    "HashMap / Hash Set",
+    "Two Pointers",
+    "Bit Manipulation"
+  ],
+  "answer": "HashMap / Hash Set",
+  "why_not": "Right: HashMap / Hash Set tallies character frequencies in O(n) time and O(1) auxiliary space (26 lowercase letters). Not Sorting: Sorting both strings takes O(n log n) time, which is slower than linear frequency counting. Not Two Pointers: Linear scanning without frequency storage cannot verify unordered letter permutations. Not Bit Manipulation: Bitmasks track character presence but cannot record duplicate character frequencies.",
+  "complexity": "O(n) time, O(1) space",
+  "solution_link": "[suspicious link removed]",
+  "tags": [
+    "hash-table",
+    "string",
+    "sorting"
+  ]
+}

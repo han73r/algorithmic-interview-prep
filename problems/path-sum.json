@@ -1,0 +1,31 @@
+{
+  "id": "path-sum",
+  "leetcode_number": 112,
+  "leetcode_url": "[suspicious link removed]",
+  "title": "Path Sum",
+  "difficulty": "Easy",
+  "pattern": "Tree DFS",
+  "statement_short": "Given the root of a binary tree and an integer targetSum, return true if the tree has a root-to-leaf path such that adding up all the values along the path equals targetSum. A leaf is a node with no children.",
+  "constraints": "0 &lt;= number of nodes in tree &lt;= 5000, -1000 &lt;= Node.val &lt;= 1000, -1000 &lt;= targetSum &lt;= 1000",
+  "hint": "Node count up to 5000 allows recursive path sum subtraction from root to leaf in O(n) time.",
+  "keywords": [
+    "root-to-leaf path",
+    "adding up all the values along the path equals targetSum",
+    "0 &lt;= number of nodes in tree &lt;= 5000"
+  ],
+  "options": [
+    "Tree DFS",
+    "Tree BFS",
+    "Prefix Sum",
+    "Backtracking"
+  ],
+  "answer": "Tree DFS",
+  "why_not": "Right: Tree DFS subtracts current node value from targetSum down to leaf nodes in O(n) time and O(h) space. Not Tree BFS: Level-order queue traversal tracking running node sums also works in O(n) time, but uses extra queue space. Not Prefix Sum: Prefix sums evaluate arbitrary subsegment sums, whereas path sum evaluates whole root-to-leaf paths. Not Backtracking: Backtracking collects all matching paths, whereas checking existence requires a simple boolean recursive check.",
+  "complexity": "O(n) time, O(h) space",
+  "solution_link": "[suspicious link removed]",
+  "tags": [
+    "tree",
+    "depth-first-search",
+    "binary-tree"
+  ]
+}

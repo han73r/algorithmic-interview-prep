@@ -1,0 +1,31 @@
+{
+  "id": "contains-duplicate-ii",
+  "leetcode_number": 219,
+  "leetcode_url": "[suspicious link removed]",
+  "title": "Contains Duplicate II",
+  "difficulty": "Easy",
+  "pattern": "Sliding Window",
+  "statement_short": "Given an integer array nums and an integer k, return true if there are two distinct indices i and j in the array such that nums[i] == nums[j] and abs(i - j) &lt;= k.",
+  "constraints": "1 &lt;= nums.length &lt;= 10^5, -10^9 &lt;= nums[i] &lt;= 10^9, 0 &lt;= k &lt;= 10^5",
+  "hint": "Array length up to 10^5 requires an O(n) solution using a set of fixed maximum window size k.",
+  "keywords": [
+    "distinct indices i and j",
+    "abs(i - j) &lt;= k",
+    "1 &lt;= nums.length &lt;= 10^5"
+  ],
+  "options": [
+    "Sliding Window",
+    "HashMap / Hash Set",
+    "Two Pointers",
+    "Sorting"
+  ],
+  "answer": "Sliding Window",
+  "why_not": "Right: Sliding Window maintains a sliding hash set of at most k elements to detect duplicate values in O(n) time and O(k) space. Not HashMap / Hash Set: Storing all element-index mappings in a full hash map uses O(n) space instead of restricting window size to k. Not Two Pointers: Scanning pointer pairs across non-sorted arrays takes O(n \\* k) worst-case time without set lookups. Not Sorting: Sorting elements changes original index positions, requiring extra pair tracking and O(n log n) time.",
+  "complexity": "O(n) time, O(min(n, k)) space",
+  "solution_link": "[suspicious link removed]",
+  "tags": [
+    "array",
+    "hash-table",
+    "sliding-window"
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "file": "tree-bfs.cs",
+  "pattern": "tree-bfs",
+  "specification": "tree-bfs",
+  "from_the_list": true,
+  "time": "O(n)",
+  "space": "O(1)",
+  "optimal": true,
+  "note": "Connects next pointers across tree levels iteratively using dummy head pointers without extra memory."
+}

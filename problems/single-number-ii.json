@@ -1,0 +1,30 @@
+{
+  "id": "single-number-ii",
+  "leetcode_number": 137,
+  "leetcode_url": "[suspicious link removed]",
+  "title": "Single Number II",
+  "difficulty": "Medium",
+  "pattern": "Bit Manipulation",
+  "statement_short": "Given an integer array nums where every element appears three times except for one, which appears exactly once. Find the single element and implement a solution with linear runtime complexity and O(1) extra space.",
+  "constraints": "1 &lt;= nums.length &lt;= 3 \\* 10^4, -2^31 &lt;= nums[i] &lt;= 2^31 - 1, every element appears three times except for one",
+  "hint": "Appears three times constraint with O(1) space requires tracking bit state transitions (ones and twos) mod 3.",
+  "keywords": [
+    "appears three times except for one",
+    "O(1) extra space",
+    "1 &lt;= nums.length &lt;= 3 \\* 10^4"
+  ],
+  "options": [
+    "Bit Manipulation",
+    "HashMap / Hash Set",
+    "Sorting",
+    "Math / Geometry"
+  ],
+  "answer": "Bit Manipulation",
+  "why_not": "Right: Bit Manipulation tracks 3-state bit counts using bitwise logic (ones and twos bitmasks) in O(n) time and O(1) space. Not HashMap / Hash Set: Frequency counting tracks element occurrences in O(n) time, but uses O(n) auxiliary space violating constraints. Not Sorting: Sorting elements adjacent triplets takes O(n log n) time, violating linear time constraints. Not Math / Geometry: Formula 3\\*sum(set) - sum(array) / 2 works, but requires set allocation consuming O(n) space.",
+  "complexity": "O(n) time, O(1) space",
+  "solution_link": "[suspicious link removed]",
+  "tags": [
+    "array",
+    "bit-manipulation"
+  ]
+}

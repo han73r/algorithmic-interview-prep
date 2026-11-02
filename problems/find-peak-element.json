@@ -1,0 +1,30 @@
+{
+  "id": "find-peak-element",
+  "leetcode_number": 162,
+  "leetcode_url": "[suspicious link removed]",
+  "title": "Find Peak Element",
+  "difficulty": "Medium",
+  "pattern": "Binary Search",
+  "statement_short": "Given a 0-indexed integer array nums, find a peak element and return its index. A peak element is an element that is strictly greater than its neighbors. You must write an algorithm that runs in O(log n) time.",
+  "constraints": "1 &lt;= nums.length &lt;= 1000, -2^31 &lt;= nums[i] &lt;= 2^31 - 1, nums[i] != nums[i+1] for all valid i",
+  "hint": "Mandated O(log n) time complexity on unsorted arrays indicates binary search using slope comparison (nums[mid] vs nums[mid+1]).",
+  "keywords": [
+    "strictly greater than its neighbors",
+    "runs in O(log n) time",
+    "1 &lt;= nums.length &lt;= 1000"
+  ],
+  "options": [
+    "Binary Search",
+    "Two Pointers",
+    "Monotonic Stack",
+    "Greedy"
+  ],
+  "answer": "Binary Search",
+  "why_not": "Right: Binary Search compares mid with mid+1 to walk up the increasing slope towards a guaranteed local peak in O(log n) time. Not Two Pointers: Linear pointer scanning checks neighbor values in O(n) time, violating the strict O(log n) constraint. Not Monotonic Stack: Maintaining monotonic order tracks global mountain boundaries in O(n) space and time. Not Greedy: Pure local greedy steps without logarithmic search space halving take O(n) time.",
+  "complexity": "O(log n) time, O(1) space",
+  "solution_link": "[suspicious link removed]",
+  "tags": [
+    "array",
+    "binary-search"
+  ]
+}

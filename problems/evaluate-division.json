@@ -1,0 +1,33 @@
+{
+  "id": "evaluate-division",
+  "leetcode_number": 399,
+  "leetcode_url": "https://leetcode.com/problems/evaluate-division/",
+  "title": "Evaluate Division",
+  "difficulty": "Medium",
+  "pattern": "Graph DFS",
+  "statement_short": "Given equations of variable divisions and an array of values, answer query divisions between variables. Return -1.0 if a division query cannot be determined.",
+  "constraints": "1 &lt;= equations.length &lt;= 20, 1 &lt;= queries.length &lt;= 20, values.length == equations.length, 0.0 &lt; values[i] &lt;= 20.0",
+  "hint": "Small query limits allow constructing a weighted directed graph and evaluating path products per query.",
+  "keywords": [
+    "query divisions between variables",
+    "cannot be determined",
+    "1 &lt;= equations.length &lt;= 20"
+  ],
+  "options": [
+    "Graph DFS",
+    "Union-Find",
+    "1D DP",
+    "Two Pointers"
+  ],
+  "answer": "Graph DFS",
+  "why_not": "Right: Graph DFS traverses variable edge paths to accumulate multiplicative weight ratios in O(Q \\* (V + E)) time. Not Union-Find: Disjoint sets with weight tracking also solve query ratios in O((V + E) + Q \\* alpha(V)) time, but graph traversal directly models path multiplication. Not 1D DP: Dynamic programming state caching does not handle arbitrary graph query paths without precomputing Floyd-Warshall all-pairs matrices. Not Two Pointers: Scanning pointer pairs cannot navigate non-linear weighted ratio edges.",
+  "complexity": "O(Q \\* (V + E)) time, O(V + E) space",
+  "solution_link": "[suspicious link removed]",
+  "tags": [
+    "depth-first-search",
+    "breadth-first-search",
+    "union-find",
+    "graph",
+    "array"
+  ]
+}

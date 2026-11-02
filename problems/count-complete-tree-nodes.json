@@ -1,0 +1,31 @@
+{
+  "id": "count-complete-tree-nodes",
+  "leetcode_number": 222,
+  "leetcode_url": "[suspicious link removed]",
+  "title": "Count Complete Tree Nodes",
+  "difficulty": "Easy",
+  "pattern": "Binary Search",
+  "statement_short": "Given the root of a complete binary tree, return the number of the nodes in the tree. Design an algorithm that runs in less than O(n) time complexity.",
+  "constraints": "0 &lt;= number of nodes in tree &lt;= 5 \\* 10^4, 0 &lt;= Node.val &lt;= 5 \\* 10^4, tree is guaranteed to be complete",
+  "hint": "Less than O(n) time mandate leverages complete tree properties to binary search existence of leaf nodes in O(log^2 n) time.",
+  "keywords": [
+    "root of a complete binary tree",
+    "less than O(n) time complexity",
+    "0 &lt;= number of nodes in tree &lt;= 5 \\* 10^4"
+  ],
+  "options": [
+    "Binary Search",
+    "Tree DFS",
+    "Tree BFS",
+    "Math / Geometry"
+  ],
+  "answer": "Binary Search",
+  "why_not": "Right: Binary Search combined with tree height calculations tests leaf node existence in O(log^2 n) time, meeting the &lt; O(n) constraint. Not Tree DFS: Standard recursive traversal visits every node in O(n) time, failing the required sub-linear time limit. Not Tree BFS: Level-order traversal queue visits all nodes in O(n) time and O(w) space. Not Math / Geometry: Formula 2^h - 1 calculates full tree node count, but leaf level gaps require binary search path checking.",
+  "complexity": "O(log^2 n) time, O(log n) space",
+  "solution_link": "[suspicious link removed]",
+  "tags": [
+    "binary-search",
+    "tree",
+    "binary-tree"
+  ]
+}

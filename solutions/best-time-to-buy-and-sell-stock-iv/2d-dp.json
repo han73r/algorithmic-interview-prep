@@ -1,0 +1,10 @@
+{
+  "file": "2d-dp.cs",
+  "pattern": "2d-dp",
+  "specification": null,
+  "from_the_list": true,
+  "time": "O(n * k)",
+  "space": "O(k)",
+  "optimal": true,
+  "note": "Computes the maximum profit with at most k transactions using state transition arrays."
+}

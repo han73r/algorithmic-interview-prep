@@ -1,0 +1,30 @@
+{
+  "id": "permutations",
+  "leetcode_number": 46,
+  "leetcode_url": "[suspicious link removed]",
+  "title": "Permutations",
+  "difficulty": "Medium",
+  "pattern": "Backtracking",
+  "statement_short": "Given an array nums of distinct integers, return all the possible permutations. You can return the answer in any order.",
+  "constraints": "1 &lt;= nums.length &lt;= 6, -10 &lt;= nums[i] &lt;= 10, all integers of nums are unique",
+  "hint": "Very small array length (&lt;= 6) permits recursive search across all n! element orderings.",
+  "keywords": [
+    "distinct integers",
+    "all the possible permutations",
+    "1 &lt;= nums.length &lt;= 6"
+  ],
+  "options": [
+    "Backtracking",
+    "Sorting",
+    "Two Pointers",
+    "1D DP"
+  ],
+  "answer": "Backtracking",
+  "why_not": "Right: Backtracking builds ordering paths recursively by swapping/tracking used elements in O(n \\* n!) time. Not Sorting: Sorting orders elements value-wise, but does not enumerate all permutation orderings. Not Two Pointers: Two pointers shrink or expand sub-arrays rather than swapping elements into all permutation arrangements. Not 1D DP: State memoization counts total permutation counts, but explicit enumeration requires path backtracking.",
+  "complexity": "O(n \\* n!) time, O(n) space",
+  "solution_link": "[suspicious link removed]",
+  "tags": [
+    "array",
+    "backtracking"
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "id": "bitwise-and-of-numbers-range",
+  "leetcode_number": 201,
+  "leetcode_url": "[suspicious link removed]",
+  "title": "Bitwise AND of Numbers Range",
+  "difficulty": "Medium",
+  "pattern": "Bit Manipulation",
+  "statement_short": "Given two integers left and right that represent the range [left, right], return the bitwise AND of all numbers in this range, inclusive.",
+  "constraints": "0 &lt;= left &lt;= right &lt;= 2^31 - 1",
+  "hint": "Large range up to 2^31 - 1 forbids linear iteration, requiring finding the common binary prefix of left and right.",
+  "keywords": [
+    "bitwise AND of all numbers",
+    "range [left, right]",
+    "0 &lt;= left &lt;= right &lt;= 2^31 - 1"
+  ],
+  "options": [
+    "Bit Manipulation",
+    "Math / Geometry",
+    "Two Pointers",
+    "1D DP"
+  ],
+  "answer": "Bit Manipulation",
+  "why_not": "Right: Bit Manipulation shifts left and right rightward until they match, finding the common binary prefix in O(1) time (max 32 shifts). Not Math / Geometry: Range summation formulas do not solve bitwise AND logic across consecutive integers. Not Two Pointers: Scanning numbers between left and right directly causes TLE when (right - left) reaches 2^31\\. Not 1D DP: Range state caching is unneeded because matching highest bits determines the resulting prefix.",
+  "complexity": "O(1) time, O(1) space",
+  "solution_link": "[suspicious link removed]",
+  "tags": [
+    "bit-manipulation"
+  ]
+}

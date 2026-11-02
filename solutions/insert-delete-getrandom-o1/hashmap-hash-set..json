@@ -1,0 +1,10 @@
+{
+  "file": "hashmap-hash-set.cs",
+  "pattern": "hashmap-hash-set",
+  "specification": null,
+  "from_the_list": true,
+  "time": "O(1)",
+  "space": "O(n)",
+  "optimal": true,
+  "note": "Combines a dynamic list and a hash map to achieve average O(1) time complexity for insert, remove, and random retrieval operations."
+}

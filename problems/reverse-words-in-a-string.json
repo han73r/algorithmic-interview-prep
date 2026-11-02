@@ -1,0 +1,30 @@
+{
+  "id": "reverse-words-in-a-string",
+  "leetcode_number": 151,
+  "leetcode_url": "https://leetcode.com/problems/reverse-words-in-a-string/",
+  "title": "Reverse Words in a String",
+  "difficulty": "Medium",
+  "pattern": "Two Pointers",
+  "statement_short": "Given an input string s containing words separated by spaces, reverse the order of the words. Return a string of the words joined by a single space with no leading or trailing spaces.",
+  "constraints": "1 &lt;= s.length &lt;= 10^4, s contains English letters, digits, and spaces ' ', at least one word",
+  "hint": "String length up to 10^4 requires an O(n) algorithm, achievable in-place using two-pointer segment reversals.",
+  "keywords": [
+    "reverse the order of the words",
+    "no leading or trailing spaces",
+    "1 &lt;= s.length &lt;= 10^4"
+  ],
+  "options": [
+    "Two Pointers",
+    "Stack",
+    "Sliding Window",
+    "HashMap / Hash Set"
+  ],
+  "answer": "Two Pointers",
+  "why_not": "Right: Two Pointers reverses the whole character sequence and then reverses each individual word in-place in O(n) time and O(1) extra space. Not Stack: Pushing words onto a stack reverses word order but consumes O(n) auxiliary memory. Not Sliding Window: The task modifies word sequence order rather than maintaining a continuous subsegment. Not HashMap / Hash Set: Hash tables do not assist with word position swaps or string reversal.",
+  "complexity": "O(n) time, O(1) space",
+  "solution_link": "[suspicious link removed]",
+  "tags": [
+    "string",
+    "two-pointers"
+  ]
+}

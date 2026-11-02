@@ -1,0 +1,30 @@
+{
+  "id": "find-first-and-last-position-of-element-in-sorted-array",
+  "leetcode_number": 34,
+  "leetcode_url": "[suspicious link removed]",
+  "title": "Find First and Last Position of Element in Sorted Array",
+  "difficulty": "Medium",
+  "pattern": "Binary Search",
+  "statement_short": "Given an array of integers nums sorted in non-decreasing order, find the starting and ending position of a given target value. If target is not found in the array, return [-1, -1]. Write an algorithm with O(log n) runtime complexity.",
+  "constraints": "0 &lt;= nums.length &lt;= 10^5, -10^9 &lt;= nums[i] &lt;= 10^9, nums is sorted in non-decreasing order, -10^9 &lt;= target &lt;= 10^9",
+  "hint": "Array length up to 10^5 and strict O(log n) requirement mandate running two binary searches for left and right boundary indices.",
+  "keywords": [
+    "starting and ending position",
+    "O(log n) runtime complexity",
+    "0 &lt;= nums.length &lt;= 10^5"
+  ],
+  "options": [
+    "Binary Search",
+    "Two Pointers",
+    "Sliding Window",
+    "HashMap / Hash Set"
+  ],
+  "answer": "Binary Search",
+  "why_not": "Right: Binary Search ran twice (lower bound and upper bound) finds exact start and end target boundaries in O(log n) time and O(1) space. Not Two Pointers: Finding target and expanding outward with two pointers takes O(n) worst-case time when all elements equal target. Not Sliding Window: Sliding window techniques compute contiguous subsegment totals rather than finding exact boundary indices. Not HashMap / Hash Set: Hash maps track first/last indices in O(n) space and time.",
+  "complexity": "O(log n) time, O(1) space",
+  "solution_link": "[suspicious link removed]",
+  "tags": [
+    "array",
+    "binary-search"
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "file": "linked-list-fast-slow.cs",
+  "pattern": "linked-list-fast-slow",
+  "specification": null,
+  "from_the_list": true,
+  "time": "O(n)",
+  "space": "O(1)",
+  "optimal": true,
+  "note": "Rotates a linked list to the right by k places by computing length and rewiring pointers."
+}

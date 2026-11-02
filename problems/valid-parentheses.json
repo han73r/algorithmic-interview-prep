@@ -1,0 +1,30 @@
+{
+  "id": "valid-parentheses",
+  "leetcode_number": 20,
+  "leetcode_url": "https://leetcode.com/problems/valid-parentheses/",
+  "title": "Valid Parentheses",
+  "difficulty": "Easy",
+  "pattern": "Stack",
+  "statement_short": "Given a string s containing just the characters '(', ')', '{', '}', '[' and ']', determine if the input string is valid. Open brackets must be closed by the same type of brackets in the correct LIFO order.",
+  "constraints": "1 &lt;= s.length &lt;= 10^4, s consists of parentheses characters only '()[]{}'",
+  "hint": "String length up to 10^4 demands an O(n) single pass, pushing open brackets to match closing counterparts.",
+  "keywords": [
+    "correct LIFO order",
+    "open brackets must be closed",
+    "1 &lt;= s.length &lt;= 10^4"
+  ],
+  "options": [
+    "HashMap / Hash Set",
+    "Stack",
+    "Two Pointers",
+    "Sliding Window"
+  ],
+  "answer": "Stack",
+  "why_not": "Right: Stack pushes open bracket symbols and pops to verify matching closing symbols in exact LIFO order in O(n) time and O(n) space. Not HashMap / Hash Set: Using a hash set tracks character frequencies but loses crucial nested bracket ordering. Not Two Pointers: Inward or forward scanning with two pointers cannot validate arbitrarily deep nested bracket pairs. Not Sliding Window: Bracket validation requires dynamic push-pop nesting checks rather than evaluating a contiguous subsegment window.",
+  "complexity": "O(n) time, O(n) space",
+  "solution_link": "[suspicious link removed]",
+  "tags": [
+    "string",
+    "stack"
+  ]
+}

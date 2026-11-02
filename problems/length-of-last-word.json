@@ -1,0 +1,29 @@
+{
+  "id": "length-of-last-word",
+  "leetcode_number": 58,
+  "leetcode_url": "[suspicious link removed]",
+  "title": "Length of Last Word",
+  "difficulty": "Easy",
+  "pattern": "Two Pointers",
+  "statement_short": "Given a string s consisting of words and spaces, return the length of the last word in s. A word is a maximal substring consisting of non-space characters only.",
+  "constraints": "1 &lt;= s.length &lt;= 10^4, s consists of English letters and spaces ' ', s contains at least one word",
+  "hint": "String length up to 10^4 allows an O(n) reverse scan, skipping trailing spaces then counting word characters.",
+  "keywords": [
+    "length of the last word",
+    "non-space characters only",
+    "1 &lt;= s.length &lt;= 10^4"
+  ],
+  "options": [
+    "Two Pointers",
+    "Sliding Window",
+    "Stack",
+    "HashMap / Hash Set"
+  ],
+  "answer": "Two Pointers",
+  "why_not": "Right: Two Pointers (or reverse linear scan) skips trailing space characters and counts consecutive letter characters in O(n) time and O(1) space. Not Sliding Window: Finding the last word requires scanning backward from the end rather than managing a forward sliding subsegment. Not Stack: Pushing characters or words onto a stack uses O(n) extra memory needlessly. Not HashMap / Hash Set: Word lookup tables are irrelevant for a simple string index traversal.",
+  "complexity": "O(n) time, O(1) space",
+  "solution_link": "[suspicious link removed]",
+  "tags": [
+    "string"
+  ]
+}

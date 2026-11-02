@@ -1,0 +1,33 @@
+{
+  "id": "surrounded-regions",
+  "leetcode_number": 130,
+  "leetcode_url": "https://leetcode.com/problems/surrounded-regions/",
+  "title": "Surrounded Regions",
+  "difficulty": "Medium",
+  "pattern": "Graph BFS",
+  "statement_short": "Given an m x n matrix board containing 'X' and 'O', capture all regions that are 4-directionally surrounded by 'X'. A region is captured by flipping all 'O's into 'X's in that surrounded region.",
+  "constraints": "m == board.length, n == board[i].length, 1 &lt;= m, n &lt;= 200, board[i][j] is 'X' or 'O'",
+  "hint": "Grid up to 200x200 permits O(m \\* n) time by starting traversals from boundary 'O' cells to mark non-surrounded regions.",
+  "keywords": [
+    "4-directionally surrounded by 'X'",
+    "flipping all 'O's into 'X's",
+    "1 &lt;= m, n &lt;= 200"
+  ],
+  "options": [
+    "Graph BFS",
+    "Graph DFS",
+    "Union-Find",
+    "2D DP"
+  ],
+  "answer": "Graph BFS",
+  "why_not": "Right: Graph BFS starts from boundary 'O' cells, traversing connected un-capturable land cells into temporary markers before flipping remaining 'O's to 'X's in O(m \\* n) time. Not Graph DFS: Recursive DFS works but can cause call-stack overflow on large grids. Not Union-Find: Disjoint sets link border nodes to dummy components in O(m \\* n \\* alpha(n)) time, but uses extra parent memory. Not 2D DP: Grid DP requires directional state flow, failing for 4-directional boundary component reachability.",
+  "complexity": "O(m \\* n) time, O(m \\* n) space",
+  "solution_link": "[suspicious link removed]",
+  "tags": [
+    "array",
+    "depth-first-search",
+    "breadth-first-search",
+    "union-find",
+    "matrix"
+  ]
+}

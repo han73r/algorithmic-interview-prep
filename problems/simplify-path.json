@@ -1,0 +1,30 @@
+{
+  "id": "simplify-path",
+  "leetcode_number": 71,
+  "leetcode_url": "https://leetcode.com/problems/simplify-path/",
+  "title": "Simplify Path",
+  "difficulty": "Medium",
+  "pattern": "Stack",
+  "statement_short": "Given an absolute Unix-style file path starting with a slash, transform it into its simplified canonical path. Double dots '..' navigate up a directory, single dots '.' refer to the current directory, and multiple consecutive slashes are treated as a single slash.",
+  "constraints": "1 &lt;= path.length &lt;= 3000, path consists of English letters, digits, period '.', slash '/', or underscore '_'",
+  "hint": "Small path length (&lt;= 3000) permits splitting by slashes and processing directory tokens sequentially.",
+  "keywords": [
+    "simplified canonical path",
+    "navigate up a directory",
+    "1 &lt;= path.length &lt;= 3000"
+  ],
+  "options": [
+    "Two Pointers",
+    "Stack",
+    "HashMap / Hash Set",
+    "Trie"
+  ],
+  "answer": "Stack",
+  "why_not": "Right: Stack processes path directory tokens separated by slashes, popping when encountering '..' to navigate back up directories in O(n) time and O(n) space. Not Two Pointers: Scanning pointers cannot handle multi-level directory backtrack operations easily without LIFO history tracking. Not HashMap / Hash Set: Directory navigation depends on relative path history rather than set membership. Not Trie: Prefix trees store hierarchical filesystem structures, but parsing a single path string relies on stack token management.",
+  "complexity": "O(n) time, O(n) space",
+  "solution_link": "[suspicious link removed]",
+  "tags": [
+    "string",
+    "stack"
+  ]
+}

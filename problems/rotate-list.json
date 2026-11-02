@@ -1,0 +1,30 @@
+{
+  "id": "rotate-list",
+  "leetcode_number": 61,
+  "leetcode_url": "https://leetcode.com/problems/rotate-list/",
+  "title": "Rotate List",
+  "difficulty": "Medium",
+  "pattern": "Two Pointers",
+  "statement_short": "Given the head of a linked list, rotate the list to the right by k places. Return the modified linked list after performing the rotation.",
+  "constraints": "0 &lt;= number of nodes &lt;= 500, -100 &lt;= Node.val &lt;= 100, 0 &lt;= k &lt;= 2 \\* 10^9",
+  "hint": "Large k up to 2 \\* 10^9 requires modulo operation k % length, connecting tail to head into a ring before splitting.",
+  "keywords": [
+    "rotate the list to the right",
+    "0 &lt;= k &lt;= 2 \\* 10^9",
+    "0 &lt;= number of nodes &lt;= 500"
+  ],
+  "options": [
+    "Math / Geometry",
+    "Two Pointers",
+    "HashMap / Hash Set",
+    "1D DP"
+  ],
+  "answer": "Two Pointers",
+  "why_not": "Right: Two Pointers connects the tail to head to measure list length, then breaks the ring at (length - k % length) in O(n) time and O(1) space. Not Math / Geometry: Modulo math calculates the effective shift, but pointer manipulation rewires the actual list structure. Not HashMap / Hash Set: Mapping node indices in an array or map uses O(n) extra memory. Not 1D DP: Dynamic programming state caching does not apply to cyclic node pointer shifts.",
+  "complexity": "O(n) time, O(1) space",
+  "solution_link": "[suspicious link removed]",
+  "tags": [
+    "linked-list",
+    "two-pointers"
+  ]
+}

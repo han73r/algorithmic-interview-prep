@@ -1,0 +1,10 @@
+{
+    "file": "two-pointers-array-reversal.cs",
+    "pattern": "two-pointers",
+    "specification": "two-pointers-array-reversal",
+    "from_the_list": true,
+    "time": "O(n)",
+    "space": "O(1)",
+    "optimal": true,
+    "note": "Rotates the array in-place using three reversals powered by the two-pointer technique."
+}

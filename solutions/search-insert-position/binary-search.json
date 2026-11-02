@@ -1,0 +1,10 @@
+{
+  "file": "binary-search.cs",
+  "pattern": "binary-search",
+  "specification": null,
+  "from_the_list": true,
+  "time": "O(log n)",
+  "space": "O(1)",
+  "optimal": true,
+  "note": "Finds the target insertion index in a sorted array using binary search."
+}

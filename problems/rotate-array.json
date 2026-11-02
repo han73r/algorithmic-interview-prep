@@ -1,0 +1,30 @@
+{
+  "id": "rotate-array",
+  "leetcode_number": 189,
+  "leetcode_url": "[suspicious link removed]",
+  "title": "Rotate Array",
+  "difficulty": "Medium",
+  "pattern": "Two Pointers",
+  "statement_short": "Given an integer array nums, rotate the array to the right by k steps, where k is non-negative. Perform the rotation in-place with O(1) extra space.",
+  "constraints": "1 &lt;= nums.length &lt;= 10^5, -2^31 &lt;= nums[i] &lt;= 2^31 - 1, 0 &lt;= k &lt;= 10^5",
+  "hint": "n up to 10^5 dictates an O(n) time algorithm, and in-place requirements favor index swapping via array reversals.",
+  "keywords": [
+    "rotate the array to the right",
+    "in-place with O(1) extra space",
+    "0 &lt;= k &lt;= 10^5"
+  ],
+  "options": [
+    "Two Pointers",
+    "1D DP",
+    "HashMap / Hash Set",
+    "Sorting"
+  ],
+  "answer": "Two Pointers",
+  "why_not": "Right: Two Pointers reverses the whole array and then reverses two sub-parts using double-pointer swaps in O(n) time and O(1) space. Not 1D DP: Subproblem state caching is unnecessary for cyclic index permutations. Not HashMap / Hash Set: Mapping original indices to new locations uses O(n) extra memory. Not Sorting: Sorting alters element value ordering rather than performing cyclic shift placement.",
+  "complexity": "O(n) time, O(1) space",
+  "solution_link": "[suspicious link removed]",
+  "tags": [
+    "array",
+    "two-pointers"
+  ]
+}

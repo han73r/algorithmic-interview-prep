@@ -1,0 +1,32 @@
+{
+  "id": "course-schedule",
+  "leetcode_number": 207,
+  "leetcode_url": "https://leetcode.com/problems/course-schedule/",
+  "title": "Course Schedule",
+  "difficulty": "Medium",
+  "pattern": "Topological Sort",
+  "statement_short": "There are numCourses courses you must take, labeled from 0 to numCourses - 1\\. Given prerequisite pairs [a, b] where course b must be taken before course a, determine if it is possible to finish all courses.",
+  "constraints": "1 &lt;= numCourses &lt;= 2000, 0 &lt;= prerequisites.length &lt;= 5000, prerequisites[i].length == 2, all pairs are unique",
+  "hint": "Prerequisite constraints up to 2000 courses mandate detecting cycles in a directed dependency graph.",
+  "keywords": [
+    "course b must be taken before course a",
+    "possible to finish all courses",
+    "1 &lt;= numCourses &lt;= 2000"
+  ],
+  "options": [
+    "Topological Sort",
+    "Graph BFS",
+    "Union-Find",
+    "1D DP"
+  ],
+  "answer": "Topological Sort",
+  "why_not": "Right: Topological Sort (Kahn's in-degree BFS or DFS cycle detection) checks for directed cycles in dependency order in O(V + E) time. Not Graph BFS: Standard unweighted BFS explores reachable levels, but topological sort specifically tracks in-degree dependencies and cycle detection. Not Union-Find: Disjoint sets detect undirected graph cycles, but fail to track directed edge dependencies effectively. Not 1D DP: Linear DP memoization does not resolve cyclic dependency graph structures.",
+  "complexity": "O(V + E) time, O(V + E) space",
+  "solution_link": "[suspicious link removed]",
+  "tags": [
+    "depth-first-search",
+    "breadth-first-search",
+    "graph",
+    "topological-sort"
+  ]
+}

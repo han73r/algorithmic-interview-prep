@@ -1,0 +1,10 @@
+{
+  "file": "math-geometry.cs",
+  "pattern": "math-geometry",
+  "specification": null,
+  "from_the_list": true,
+  "time": "O(m * n)",
+  "space": "O(1)",
+  "optimal": true,
+  "note": "Traverses the matrix in spiral layers by shrinking top, bottom, left, and right boundaries."
+}

@@ -1,0 +1,10 @@
+{
+  "file": "linked-list-fast-slow.cs",
+  "pattern": "linked-list-fast-slow",
+  "specification": null,
+  "from_the_list": true,
+  "time": "O(n)",
+  "space": "O(1)",
+  "optimal": true,
+  "note": "Removes all nodes containing duplicate values from a sorted linked list using a tracking pointer."
+}

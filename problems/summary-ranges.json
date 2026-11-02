@@ -1,0 +1,29 @@
+{
+  "id": "summary-ranges",
+  "leetcode_number": 228,
+  "leetcode_url": "https://leetcode.com/problems/summary-ranges/",
+  "title": "Summary Ranges",
+  "difficulty": "Easy",
+  "pattern": "Two Pointers",
+  "statement_short": "Given a sorted unique integer array nums, return the smallest sorted list of ranges that cover all the numbers in the array exactly. Each range [a,b] should be output as \"a->b\" if a != b, or \"a\" if a == b.",
+  "constraints": "0 <= nums.length <= 20, -2^31 <= nums[i] <= 2^31 - 1, all values of nums are unique, nums is sorted in ascending order",
+  "hint": "Small length limit (<= 20) allows a single-pass linear scan with start-end pointers.",
+  "keywords": [
+    "smallest sorted list of ranges",
+    "nums is sorted in ascending order",
+    "0 <= nums.length <= 20"
+  ],
+  "options": [
+    "Two Pointers",
+    "Intervals",
+    "Sliding Window",
+    "HashMap / Hash Set"
+  ],
+  "answer": "Two Pointers",
+  "why_not": "Right: Two Pointers (or single-pass boundary pointers) tracks contiguous range start and end indices in O(n) time and O(1) space. Not Intervals: Interval merging algorithms merge overlapping ranges, whereas this input consists of sorted single numbers forming contiguous increments. Not Sliding Window: Sliding window techniques compute subsegment totals/conditions rather than partitioning contiguous consecutive numbers. Not HashMap / Hash Set: Hash sets ignore sorted sequence order, incurring unnecessary memory.",
+  "complexity": "O(n) time, O(1) space",
+  "solution_link": "",
+  "tags": [
+    "array"
+  ]
+}

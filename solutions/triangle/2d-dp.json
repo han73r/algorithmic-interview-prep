@@ -1,0 +1,10 @@
+{
+  "file": "2d-dp.cs",
+  "pattern": "2d-dp",
+  "specification": null,
+  "from_the_list": true,
+  "time": "O(n^2)",
+  "space": "O(n)",
+  "optimal": true,
+  "note": "Computes the minimum path sum from bottom to top using space-optimized DP."
+}

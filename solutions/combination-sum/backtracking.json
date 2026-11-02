@@ -1,0 +1,10 @@
+{
+  "file": "backtracking.cs",
+  "pattern": "backtracking",
+  "specification": null,
+  "from_the_list": true,
+  "time": "O(2^(t/min))",
+  "space": "O(t/min)",
+  "optimal": true,
+  "note": "Finds all unique combinations summing to target using backtracking with pruning."
+}

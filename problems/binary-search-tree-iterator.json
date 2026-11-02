@@ -1,0 +1,34 @@
+{
+  "id": "binary-search-tree-iterator",
+  "leetcode_number": 173,
+  "leetcode_url": "[suspicious link removed]",
+  "title": "Binary Search Tree Iterator",
+  "difficulty": "Medium",
+  "pattern": "Stack",
+  "statement_short": "Implement the BSTIterator class that represents an in-order iterator over a Binary Search Tree (BST). next() returns the next smallest number, and hasNext() returns whether a next number exists.",
+  "constraints": "1 &lt;= number of nodes in tree &lt;= 10^5, 0 &lt;= Node.val &lt;= 10^6, at most 10^5 calls to next and hasNext",
+  "hint": "O(h) space requirement for iterator memory forbids storing all elements, demanding a controlled stack-based in-order traversal.",
+  "keywords": [
+    "in-order iterator over a Binary Search Tree",
+    "next smallest number",
+    "1 &lt;= number of nodes in tree &lt;= 10^5"
+  ],
+  "options": [
+    "Stack",
+    "Tree DFS",
+    "Two Pointers",
+    "Heap / Priority Queue"
+  ],
+  "answer": "Stack",
+  "why_not": "Right: Stack maintains the current left-leaning path of unvisited BST nodes to achieve O(1) amortized next() time and O(h) auxiliary space. Not Tree DFS: Full recursive DFS traverses the entire tree at once rather than pausing and resuming on-demand across iterator calls. Not Two Pointers: Scanning pointer pairs requires linear indexing impossible on binary trees without array conversion. Not Heap / Priority Queue: Storing BST elements in a min-heap takes O(n) space and O(log n) next() time, ignoring BST order.",
+  "complexity": "O(1) amortized time, O(h) space",
+  "solution_link": "[suspicious link removed]",
+  "tags": [
+    "stack",
+    "tree",
+    "design",
+    "binary-search-tree",
+    "binary-tree",
+    "iterator"
+  ]
+}

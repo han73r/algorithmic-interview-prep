@@ -1,0 +1,30 @@
+{
+  "id": "reverse-bits",
+  "leetcode_number": 190,
+  "leetcode_url": "[suspicious link removed]",
+  "title": "Reverse Bits",
+  "difficulty": "Easy",
+  "pattern": "Bit Manipulation",
+  "statement_short": "Reverse bits of a given 32-bit unsigned integer.",
+  "constraints": "The input must be a binary string of length 32",
+  "hint": "Fixed 32-bit input length dictates an O(1) bitwise shift and bitwise OR extraction algorithm.",
+  "keywords": [
+    "Reverse bits",
+    "32-bit unsigned integer",
+    "binary string of length 32"
+  ],
+  "options": [
+    "Bit Manipulation",
+    "Math / Geometry",
+    "Two Pointers",
+    "Stack"
+  ],
+  "answer": "Bit Manipulation",
+  "why_not": "Right: Bit Manipulation shifts bits right and constructs the reversed integer by shifting left and applying bitwise OR in O(1) time. Not Math / Geometry: Decimal modular division works, but bitwise shifts directly operate on binary bit representations. Not Two Pointers: Converting to a string and reversing pointers takes extra allocation compared to in-place bitwise operations. Not Stack: Pushing bits onto a stack takes auxiliary memory, whereas bitwise operations run in O(1) space.",
+  "complexity": "O(1) time, O(1) space",
+  "solution_link": "[suspicious link removed]",
+  "tags": [
+    "divide-and-conquer",
+    "bit-manipulation"
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "id": "number-of-islands",
+  "leetcode_number": 200,
+  "leetcode_url": "https://leetcode.com/problems/number-of-islands/",
+  "title": "Number of Islands",
+  "difficulty": "Medium",
+  "pattern": "Graph BFS",
+  "statement_short": "Given an m x n 2D binary grid grid which represents a map of '1's (land) and '0's (water), return the number of islands. An island is surrounded by water and is formed by connecting adjacent lands horizontally or vertically.",
+  "constraints": "m == grid.length, n == grid[i].length, 1 &lt;= m, n &lt;= 300, grid[i][j] is '0' or '1'",
+  "hint": "Grid size up to 300x300 permits O(m \\* n) traversal, sinking visited land cells using BFS/DFS.",
+  "keywords": [
+    "number of islands",
+    "connecting adjacent lands horizontally or vertically",
+    "1 &lt;= m, n &lt;= 300"
+  ],
+  "options": [
+    "Graph BFS",
+    "Graph DFS",
+    "Union-Find",
+    "2D DP"
+  ],
+  "answer": "Graph BFS",
+  "why_not": "Right: Graph BFS traverses connected land cells level by level using a queue, mutating visited cells to '0' in O(m \\* n) time and O(min(m, n)) space. Not Graph DFS: DFS using recursion also sinks islands in O(m \\* n) time, but risks stack overflow on deep grid components without iterative stack. Not Union-Find: Disjoint sets track connected land components in O(m \\* n \\* alpha(m\\*n)) time, which adds auxiliary parent array memory. Not 2D DP: Dynamic programming requires directional subproblem ordering, failing for arbitrary 4-directional connected components.",
+  "complexity": "O(m \\* n) time, O(min(m, n)) space",
+  "solution_link": "[suspicious link removed]",
+  "tags": [
+    "array",
+    "depth-first-search",
+    "breadth-first-search",
+    "union-find",
+    "matrix"
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "id": "merge-two-sorted-lists",
+  "leetcode_number": 21,
+  "leetcode_url": "[suspicious link removed]",
+  "title": "Merge Two Sorted Lists",
+  "difficulty": "Easy",
+  "pattern": "Two Pointers",
+  "statement_short": "Given the heads of two sorted linked lists list1 and list2, merge the two lists into one sorted list. The list should be made by splicing together the nodes of the first two lists.",
+  "constraints": "0 &lt;= number of nodes in both lists &lt;= 50, -100 &lt;= Node.val &lt;= 100",
+  "hint": "Small list length (&lt;= 50) allows an O(m + n) linear scan, splicing nodes in-place using two pointer iteration.",
+  "keywords": [
+    "splicing together the nodes",
+    "merge the two lists into one sorted list",
+    "0 &lt;= number of nodes in both lists &lt;= 50"
+  ],
+  "options": [
+    "Sorting",
+    "Two Pointers",
+    "Heap / Priority Queue",
+    "HashMap / Hash Set"
+  ],
+  "answer": "Two Pointers",
+  "why_not": "Right: Two Pointers compares current node values of list1 and list2 to splice pointers in O(m + n) time and O(1) space. Not Sorting: Extracting all node values into an array and sorting takes O((m+n) log(m+n)) time and extra memory. Not Heap / Priority Queue: Inserting nodes into a min-heap costs O((m+n) log(m+n)) time, which is slower than linear pointer splicing. Not HashMap / Hash Set: Hash tables do not preserve node ordering and add unneeded space overhead.",
+  "complexity": "O(m + n) time, O(1) space",
+  "solution_link": "[suspicious link removed]",
+  "tags": [
+    "linked-list",
+    "two-pointers"
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "file": "topological-sort.cs",
+  "pattern": "topological-sort",
+  "specification": null,
+  "from_the_list": true,
+  "time": "O(V + E)",
+  "space": "O(V + E)",
+  "optimal": true,
+  "note": "Detects cycles in a directed graph using DFS state coloring to verify course schedule viability."
+}

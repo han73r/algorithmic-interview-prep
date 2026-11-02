@@ -1,0 +1,10 @@
+{
+  "file": "inorder-traversal.cs",
+  "pattern": "tree-dfs",
+  "specification": "inorder-traversal",
+  "from_the_list": true,
+  "time": "O(n)",
+  "space": "O(h)",
+  "optimal": true,
+  "note": "Finds the minimum absolute difference via an in-order traversal of the binary search tree."
+}

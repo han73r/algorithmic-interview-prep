@@ -1,0 +1,10 @@
+{
+  "file": "1d-dp.cs",
+  "pattern": "1d-dp",
+  "specification": null,
+  "from_the_list": true,
+  "time": "O(n^2)",
+  "space": "O(n)",
+  "optimal": true,
+  "note": "Determines if a string can be segmented into space-separated dictionary words using DP."
+}

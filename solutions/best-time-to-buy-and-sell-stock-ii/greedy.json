@@ -1,0 +1,10 @@
+{
+    "file": "greedy.cs",
+    "pattern": "greedy",
+    "specification": null,
+    "from_the_list": true,
+    "time": "O(n)",
+    "space": "O(1)",
+    "optimal": true,
+    "note": "Greedily captures every upward price movement to accumulate the maximum possible profit from multiple transactions."
+}

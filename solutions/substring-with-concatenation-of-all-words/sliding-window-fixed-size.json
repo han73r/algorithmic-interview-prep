@@ -1,0 +1,10 @@
+{
+  "file": "sliding-window-fixed-size.cs",
+  "pattern": "sliding-window",
+  "specification": "sliding-window-fixed-size",
+  "from_the_list": true,
+  "time": "O(n)",
+  "space": "O(k)",
+  "optimal": true,
+  "note": "Uses multiple sliding windows offset by word lengths to find indices of concatenated words."
+}

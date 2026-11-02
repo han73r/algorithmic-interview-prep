@@ -1,0 +1,33 @@
+{
+  "id": "construct-binary-tree-from-preorder-and-inorder-traversal",
+  "leetcode_number": 105,
+  "leetcode_url": "https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/",
+  "title": "Construct Binary Tree from Preorder and Inorder Traversal",
+  "difficulty": "Medium",
+  "pattern": "Tree DFS",
+  "statement_short": "Given two integer arrays preorder and inorder where preorder is the preorder traversal of a binary tree and inorder is the inorder traversal of the same tree, construct and return the binary tree.",
+  "constraints": "1 &lt;= preorder.length &lt;= 3000, inorder.length == preorder.length, -3000 &lt;= preorder[i], inorder[i] &lt;= 3000, preorder and inorder consist of unique values",
+  "hint": "Unique values and length &lt;= 3000 allow using a hash map for inorder index lookups to divide and conquer subtrees in O(n) time.",
+  "keywords": [
+    "preorder traversal of a binary tree",
+    "inorder traversal of the same tree",
+    "1 &lt;= preorder.length &lt;= 3000"
+  ],
+  "options": [
+    "Tree DFS",
+    "Tree BFS",
+    "HashMap / Hash Set",
+    "Backtracking"
+  ],
+  "answer": "Tree DFS",
+  "why_not": "Right: Tree DFS uses preorder elements as roots and splits inorder index segments via a hash map to recursively build left and right subtrees in O(n) time. Not Tree BFS: Level-order traversal queue logic cannot easily reconstruct tree topology from preorder root sequences. Not HashMap / Hash Set: HashMap accelerates index lookups, but the fundamental tree construction logic is recursive DFS division. Not Backtracking: Tree construction follows a deterministic split based on index lookups, requiring no exhaustive path searching.",
+  "complexity": "O(n) time, O(n) space",
+  "solution_link": "[suspicious link removed]",
+  "tags": [
+    "tree",
+    "array",
+    "hash-table",
+    "divide-and-conquer",
+    "binary-tree"
+  ]
+}

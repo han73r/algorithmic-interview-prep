@@ -1,0 +1,10 @@
+{
+  "file": "binary-search.cs",
+  "pattern": "binary-search",
+  "specification": "binary-search-on-answer",
+  "from_the_list": true,
+  "time": "O(log n)",
+  "space": "O(1)",
+  "optimal": true,
+  "note": "Finds a peak element efficiently by narrowing the search space based on slope comparison."
+}

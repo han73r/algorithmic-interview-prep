@@ -1,0 +1,10 @@
+{
+  "file": "sorting.cs",
+  "pattern": "sorting",
+  "specification": null,
+  "from_the_list": true,
+  "time": "O(n log n)",
+  "space": "O(1)",
+  "optimal": true,
+  "note": "Sorts the citations array to efficiently determine the H-index via a linear scan."
+}

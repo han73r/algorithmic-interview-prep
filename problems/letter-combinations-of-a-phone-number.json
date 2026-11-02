@@ -1,0 +1,31 @@
+{
+  "id": "letter-combinations-of-a-phone-number",
+  "leetcode_number": 17,
+  "leetcode_url": "[suspicious link removed]",
+  "title": "Letter Combinations of a Phone Number",
+  "difficulty": "Medium",
+  "pattern": "Backtracking",
+  "statement_short": "Given a string containing digits from 2-9 inclusive, return all possible letter combinations that the number could represent. Return the answer in any order, mapping each digit to its corresponding telephone keypad letters.",
+  "constraints": "0 &lt;= digits.length &lt;= 4, digits[i] is a digit from '2' to '9'",
+  "hint": "Tiny input size (digits.length &lt;= 4) implies search space is small, favoring recursive combination generation.",
+  "keywords": [
+    "digits from 2-9 inclusive",
+    "all possible letter combinations",
+    "0 &lt;= digits.length &lt;= 4"
+  ],
+  "options": [
+    "Backtracking",
+    "Tree DFS",
+    "1D DP",
+    "HashMap / Hash Set"
+  ],
+  "answer": "Backtracking",
+  "why_not": "Right: Backtracking recursively generates all decision tree paths mapping digits to letter choices in O(4^n) time. Not Tree DFS: DFS traverses fixed existing tree structures rather than building combinations dynamically. Not 1D DP: Dynamic programming caches subproblems, whereas generating all combinations requires full path exploration. Not HashMap / Hash Set: Hash tables map digits to letters, but combination generation requires recursive backtracking.",
+  "complexity": "O(4^n) time, O(n) space",
+  "solution_link": "[suspicious link removed]",
+  "tags": [
+    "hash-table",
+    "string",
+    "backtracking"
+  ]
+}

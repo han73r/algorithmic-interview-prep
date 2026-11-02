@@ -1,0 +1,10 @@
+{
+    "file": "math-geometry.cs",
+    "pattern": "math-geometry",
+    "specification": null,
+    "from_the_list": true,
+    "time": "O(n)",
+    "space": "O(1)",
+    "optimal": true,
+    "note": "Iterates through the Roman numeral string, subtracting values when a smaller numeral precedes a larger one, and adding otherwise."
+}

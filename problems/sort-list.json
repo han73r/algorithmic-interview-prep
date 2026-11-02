@@ -1,0 +1,33 @@
+{
+  "id": "sort-list",
+  "leetcode_number": 148,
+  "leetcode_url": "[suspicious link removed]",
+  "title": "Sort List",
+  "difficulty": "Medium",
+  "pattern": "Linked List (Fast &amp; Slow)",
+  "statement_short": "Given the head of a linked list, return the list after sorting it in ascending order. Write an algorithm that runs in O(n log n) time and O(1) auxiliary memory.",
+  "constraints": "0 &lt;= number of nodes in list &lt;= 5 \\* 10^4, -10^5 &lt;= Node.val &lt;= 10^5",
+  "hint": "Node count up to 5 \\* 10^4 and O(n log n) time mandate divide-and-conquer merge sort using fast/slow pointers for middle splitting.",
+  "keywords": [
+    "sorting it in ascending order",
+    "O(n log n) time",
+    "0 &lt;= number of nodes in list &lt;= 5 \\* 10^4"
+  ],
+  "options": [
+    "Linked List (Fast &amp; Slow)",
+    "Sorting",
+    "Two Pointers",
+    "Heap / Priority Queue"
+  ],
+  "answer": "Linked List (Fast &amp; Slow)",
+  "why_not": "Right: Linked List (Fast &amp; Slow) finds list midpoints to split lists for merge sort in O(n log n) time and O(log n) stack space (or O(1) bottom-up). Not Sorting: Standard array sorting algorithms require transferring nodes into an array with O(n) extra space. Not Two Pointers: Opposite-end pointer swaps require doubly linked lists or random indexing unavailable in singly linked lists. Not Heap / Priority Queue: Storing nodes in a min-heap takes O(n) auxiliary space.",
+  "complexity": "O(n log n) time, O(log n) space",
+  "solution_link": "[suspicious link removed]",
+  "tags": [
+    "linked-list",
+    "two-pointers",
+    "divide-and-conquer",
+    "merge-sort",
+    "sorting"
+  ]
+}

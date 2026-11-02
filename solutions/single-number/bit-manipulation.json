@@ -1,0 +1,10 @@
+{
+  "file": "bit-manipulation.cs",
+  "pattern": "bit-manipulation",
+  "specification": null,
+  "from_the_list": true,
+  "time": "O(n)",
+  "space": "O(1)",
+  "optimal": true,
+  "note": "XORs all elements together to cancel out duplicates, leaving the single number."
+}

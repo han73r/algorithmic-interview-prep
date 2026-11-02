@@ -1,0 +1,31 @@
+{
+  "id": "symmetric-tree",
+  "leetcode_number": 101,
+  "leetcode_url": "https://leetcode.com/problems/symmetric-tree/",
+  "title": "Symmetric Tree",
+  "difficulty": "Easy",
+  "pattern": "Tree DFS",
+  "statement_short": "Given the root of a binary tree, check whether it is a mirror of itself (i.e., symmetric around its center).",
+  "constraints": "0 &lt;= number of nodes in tree &lt;= 1000, -100 &lt;= Node.val &lt;= 100",
+  "hint": "Small node count (&lt;= 1000) permits a recursive top-down comparison of left and right subtrees in O(n) time.",
+  "keywords": [
+    "mirror of itself",
+    "symmetric around its center",
+    "0 &lt;= number of nodes in tree &lt;= 1000"
+  ],
+  "options": [
+    "Tree DFS",
+    "Tree BFS",
+    "Two Pointers",
+    "1D DP"
+  ],
+  "answer": "Tree DFS",
+  "why_not": "Right: Tree DFS recursively compares opposite subtrees (left.left with right.right and left.right with right.left) in O(n) time and O(h) space. Not Tree BFS: Level-order traversal using a queue also checks symmetric node pairs in O(n) time, but requires extra queue space for tree width. Not Two Pointers: Scanning node pointers directly does not handle recursive tree branch comparisons naturally. Not 1D DP: Storing state subproblems is unnecessary for checking structural tree symmetry.",
+  "complexity": "O(n) time, O(h) space",
+  "solution_link": "[suspicious link removed]",
+  "tags": [
+    "tree",
+    "depth-first-search",
+    "binary-tree"
+  ]
+}

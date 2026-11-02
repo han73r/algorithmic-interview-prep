@@ -1,0 +1,30 @@
+{
+  "id": "is-subsequence",
+  "leetcode_number": 392,
+  "leetcode_url": "[suspicious link removed]",
+  "title": "Is Subsequence",
+  "difficulty": "Easy",
+  "pattern": "Two Pointers",
+  "statement_short": "Given two strings s and t, return true if s is a subsequence of t, or false otherwise. A subsequence is formed by deleting some characters without disturbing the relative positions of the remaining characters.",
+  "constraints": "0 &lt;= s.length &lt;= 100, 0 &lt;= t.length &lt;= 10^4, s and t consist of lowercase English letters",
+  "hint": "Target length t up to 10^4 requires an O(|t|) single pass using two pointer matching.",
+  "keywords": [
+    "deleting some characters without disturbing",
+    "subsequence of t",
+    "0 &lt;= t.length &lt;= 10^4"
+  ],
+  "options": [
+    "Two Pointers",
+    "1D DP",
+    "Binary Search",
+    "HashMap / Hash Set"
+  ],
+  "answer": "Two Pointers",
+  "why_not": "Right: Two Pointers advance along t while matching target characters from s in O(|t|) time and O(1) space. Not 1D DP: Dynamic programming checks longest common subsequence in O(|s|\\*|t|) time, which is slower than linear matching. Not Binary Search: Binary search on character index lists optimizes multi-query s searches, but two pointers is optimal for single checks. Not HashMap / Hash Set: Hash tables track character frequencies but lose relative character ordering.",
+  "complexity": "O(|t|) time, O(1) space",
+  "solution_link": "[suspicious link removed]",
+  "tags": [
+    "two-pointers",
+    "string"
+  ]
+}

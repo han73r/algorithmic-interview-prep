@@ -1,0 +1,10 @@
+{
+  "file": "two-pointers.cs",
+  "pattern": "two-pointers",
+  "specification": null,
+  "from_the_list": true,
+  "time": "O(n * m)",
+  "space": "O(1)",
+  "optimal": true,
+  "note": "Uses a sliding window approach with two pointers to find the needle in the haystack."
+}

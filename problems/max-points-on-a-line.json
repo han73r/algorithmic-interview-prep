@@ -1,0 +1,32 @@
+{
+  "id": "max-points-on-a-line",
+  "leetcode_number": 149,
+  "leetcode_url": "[suspicious link removed]",
+  "title": "Max Points on a Line",
+  "difficulty": "Hard",
+  "pattern": "HashMap / Hash Set",
+  "statement_short": "Given an array of points where points[i] = [xi, yi] represents a point on the X-Y plane, return the maximum number of points that lie on the same straight line.",
+  "constraints": "1 &lt;= points.length &lt;= 300, points[i].length == 2, -10^4 &lt;= xi, yi &lt;= 10^4, all points are unique",
+  "hint": "Point count up to 300 allows computing pairwise slopes for each point and storing slope frequencies in a hash map in O(n^2) time.",
+  "keywords": [
+    "same straight line",
+    "X-Y plane",
+    "1 &lt;= points.length &lt;= 300"
+  ],
+  "options": [
+    "HashMap / Hash Set",
+    "Math / Geometry",
+    "Two Pointers",
+    "Sorting"
+  ],
+  "answer": "HashMap / Hash Set",
+  "why_not": "Right: HashMap / Hash Set computes slope ratios (dy/dx reduced by GCD) for every pair from a fixed point and counts frequencies in O(n^2) time. Not Math / Geometry: Slope calculation uses slope formulas, but tracking point frequencies on identical lines requires a hash map. Not Two Pointers: Sorting by coordinates alone does not group points on non-vertical/horizontal collinear lines. Not Sorting: Sorting angles around a point works, but hash map slope key counting is the standard pattern.",
+  "complexity": "O(n^2) time, O(n) space",
+  "solution_link": "[suspicious link removed]",
+  "tags": [
+    "array",
+    "hash-table",
+    "math",
+    "geometry"
+  ]
+}

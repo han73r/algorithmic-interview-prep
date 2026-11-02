@@ -1,0 +1,10 @@
+{
+  "file": "binary-search.cs",
+  "pattern": "binary-search",
+  "specification": null,
+  "from_the_list": true,
+  "time": "O(log n)",
+  "space": "O(1)",
+  "optimal": true,
+  "note": "Searches for a target in a rotated sorted array by identifying the sorted half."
+}

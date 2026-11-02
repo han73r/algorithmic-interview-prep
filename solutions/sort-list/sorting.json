@@ -1,0 +1,10 @@
+{
+  "file": "sorting.cs",
+  "pattern": "sorting",
+  "specification": null,
+  "from_the_list": true,
+  "time": "O(n log n)",
+  "space": "O(log n)",
+  "optimal": true,
+  "note": "Sorts a linked list in O(n log n) time using top-down merge sort."
+}

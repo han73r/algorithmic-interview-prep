@@ -1,0 +1,31 @@
+{
+  "id": "set-matrix-zeroes",
+  "leetcode_number": 73,
+  "leetcode_url": "[suspicious link removed]",
+  "title": "Set Matrix Zeroes",
+  "difficulty": "Medium",
+  "pattern": "HashMap / Hash Set",
+  "statement_short": "Given an m x n integer matrix, if an element is 0, set its entire row and column to 0's in-place.",
+  "constraints": "m == matrix.length, n == matrix[i].length, 1 &lt;= m, n &lt;= 200, -2^31 &lt;= matrix[i][j] &lt;= 2^31 - 1",
+  "hint": "Grid dimensions up to 200 permit O(m \\* n) time while using first row/col as flag sets to achieve O(1) extra space.",
+  "keywords": [
+    "entire row and column to 0's",
+    "1 &lt;= m, n &lt;= 200",
+    "m == matrix.length"
+  ],
+  "options": [
+    "HashMap / Hash Set",
+    "Two Pointers",
+    "2D DP",
+    "Bit Manipulation"
+  ],
+  "answer": "HashMap / Hash Set",
+  "why_not": "Right: HashMap / Hash Set records zero row and column locations in O(m \\* n) time (or uses first row/col as flag sets to achieve O(1) extra space). Not Two Pointers: Scanning inward from matrix ends does not identify arbitrary zero cell coordinates efficiently. Not 2D DP: Subproblem memoization is unnecessary for linear row/column zero propagation. Not Bit Manipulation: Bitmasks can track zero rows/cols up to 64 bits, but do not scale to general matrix sizes.",
+  "complexity": "O(m \\* n) time, O(1) space",
+  "solution_link": "[suspicious link removed]",
+  "tags": [
+    "array",
+    "hash-table",
+    "matrix"
+  ]
+}

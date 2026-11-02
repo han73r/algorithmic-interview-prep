@@ -1,0 +1,31 @@
+{
+  "id": "sum-root-to-leaf-numbers",
+  "leetcode_number": 129,
+  "leetcode_url": "[suspicious link removed]",
+  "title": "Sum Root to Leaf Numbers",
+  "difficulty": "Medium",
+  "pattern": "Tree DFS",
+  "statement_short": "Given the root of a binary tree containing digits from 0 to 9 only, each root-to-leaf path represents a number. Return the total sum of all root-to-leaf numbers.",
+  "constraints": "1 &lt;= number of nodes in tree &lt;= 1000, 0 &lt;= Node.val &lt;= 9, depth of tree will not exceed 10",
+  "hint": "Tree depth &lt;= 10 and node count &lt;= 1000 permit recursive digit accumulation (current \\* 10 + val) in O(n) time.",
+  "keywords": [
+    "digits from 0 to 9 only",
+    "total sum of all root-to-leaf numbers",
+    "1 &lt;= number of nodes in tree &lt;= 1000"
+  ],
+  "options": [
+    "Tree DFS",
+    "Tree BFS",
+    "Math / Geometry",
+    "Backtracking"
+  ],
+  "answer": "Tree DFS",
+  "why_not": "Right: Tree DFS passes running path values (val \\* 10 + node.val) down to leaf nodes and sums them in O(n) time and O(h) space. Not Tree BFS: Level-order queue traversal accumulates numbers per node in O(n) time, but requires extra queue space for node-value pairs. Not Math / Geometry: Digit shifting uses base-10 math, but the traversal backbone is tree recursion. Not Backtracking: Explicitly building and converting string digit lists adds unnecessary allocation overhead.",
+  "complexity": "O(n) time, O(h) space",
+  "solution_link": "[suspicious link removed]",
+  "tags": [
+    "tree",
+    "depth-first-search",
+    "binary-tree"
+  ]
+}

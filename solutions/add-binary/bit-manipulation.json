@@ -1,0 +1,10 @@
+{
+  "file": "bit-manipulation.cs",
+  "pattern": "bit-manipulation",
+  "specification": null,
+  "from_the_list": true,
+  "time": "O(max(n, m))",
+  "space": "O(max(n, m))",
+  "optimal": true,
+  "note": "Simulates binary addition from right to left using a carry."
+}

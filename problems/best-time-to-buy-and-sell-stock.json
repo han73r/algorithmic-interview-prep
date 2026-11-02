@@ -1,0 +1,30 @@
+{
+  "id": "best-time-to-buy-and-sell-stock",
+  "leetcode_number": 121,
+  "leetcode_url": "[suspicious link removed]",
+  "title": "Best Time to Buy and Sell Stock",
+  "difficulty": "Easy",
+  "pattern": "Greedy",
+  "statement_short": "Given an array of stock prices where prices[i] is the price on the i-th day, find the maximum profit from buying on one day and selling on a future day. Return 0 if no profit can be achieved.",
+  "constraints": "1 &lt;= prices.length &lt;= 10^5, 0 &lt;= prices[i] &lt;= 10^4",
+  "hint": "Array size up to 10^5 requires an O(n) time solution by maintaining the lowest price seen so far in a single pass.",
+  "keywords": [
+    "buying on one day and selling on a future day",
+    "maximum profit",
+    "1 &lt;= prices.length &lt;= 10^5"
+  ],
+  "options": [
+    "Greedy",
+    "2D DP",
+    "Two Pointers",
+    "Monotonic Stack"
+  ],
+  "answer": "Greedy",
+  "why_not": "Right: Greedy tracks the minimum buying price seen so far and updates maximum profit at each day in O(n) time and O(1) space. Not 2D DP: Maintaining a full state matrix is redundant for a single buy-sell transaction. Not Two Pointers: Scanning inward from both ends misses peak profit points occurring within inner subsegments. Not Monotonic Stack: Maintaining a monotonic price stack consumes unnecessary O(n) extra space.",
+  "complexity": "O(n) time, O(1) space",
+  "solution_link": "[suspicious link removed]",
+  "tags": [
+    "array",
+    "greedy"
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "file": "greedy.cs",
+  "pattern": "greedy",
+  "specification": null,
+  "from_the_list": true,
+  "time": "O(n)",
+  "space": "O(n)",
+  "optimal": true,
+  "note": "Greedily packs as many words as possible per line and distributes spaces evenly."
+}

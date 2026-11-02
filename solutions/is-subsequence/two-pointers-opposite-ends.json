@@ -1,0 +1,10 @@
+{
+  "file": "two-pointers-opposite-ends.cs",
+  "pattern": "two-pointers",
+  "specification": "two-pointers-opposite-ends",
+  "from_the_list": true,
+  "time": "O(n)",
+  "space": "O(1)",
+  "optimal": true,
+  "note": "Iterates through strings using concurrent pointers to check subsequence condition."
+}

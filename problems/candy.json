@@ -1,0 +1,30 @@
+{
+  "id": "candy",
+  "leetcode_number": 135,
+  "leetcode_url": "[suspicious link removed]",
+  "title": "Candy",
+  "difficulty": "Hard",
+  "pattern": "Greedy",
+  "statement_short": "There are n children standing in a line, each with a rating value given in an integer array ratings. Each child must receive at least one candy, and children with a higher rating than their neighbors must get more candies than their neighbors. Return the minimum total candies required.",
+  "constraints": "n == ratings.length, 1 &lt;= n &lt;= 2 \\* 10^4, 0 &lt;= ratings[i] &lt;= 2 \\* 10^4",
+  "hint": "n up to 2 \\* 10^4 requires O(n) time, achievable via left-to-right and right-to-left greedy distribution passes.",
+  "keywords": [
+    "higher rating than their neighbors",
+    "minimum total candies",
+    "1 &lt;= n &lt;= 2 \\* 10^4"
+  ],
+  "options": [
+    "Greedy",
+    "1D DP",
+    "Heap / Priority Queue",
+    "Monotonic Stack"
+  ],
+  "answer": "Greedy",
+  "why_not": "Right: Greedy satisfies neighbor rating constraints by making a left-to-right pass followed by a right-to-left pass in O(n) time and O(n) space. Not 1D DP: Dynamic programming subproblem state transitions collapse into localized neighbor comparison passes. Not Heap / Priority Queue: Processing children in increasing order of ratings takes O(n log n) time and extra space. Not Monotonic Stack: Monotonic stack tracking is unnecessary since neighbor constraints depend strictly on immediate adjacent values.",
+  "complexity": "O(n) time, O(n) space",
+  "solution_link": "[suspicious link removed]",
+  "tags": [
+    "array",
+    "greedy"
+  ]
+}

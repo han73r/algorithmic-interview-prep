@@ -1,0 +1,30 @@
+{
+  "id": "house-robber",
+  "leetcode_number": 198,
+  "leetcode_url": "[suspicious link removed]",
+  "title": "House Robber",
+  "difficulty": "Medium",
+  "pattern": "1D DP",
+  "statement_short": "Given an integer array nums representing the amount of money at each house, return the maximum amount of money you can collect without selecting two adjacent elements.",
+  "constraints": "1 &lt;= nums.length &lt;= 100, 0 &lt;= nums[i] &lt;= 400",
+  "hint": "Optimal subproblem state choice at index i is max(dp[i-1], dp[i-2] + nums[i]), demanding linear dynamic programming.",
+  "keywords": [
+    "amount of money at each house",
+    "without selecting two adjacent elements",
+    "1 &lt;= nums.length &lt;= 100"
+  ],
+  "options": [
+    "1D DP",
+    "Greedy",
+    "Backtracking",
+    "Two Pointers"
+  ],
+  "answer": "1D DP",
+  "why_not": "Right: 1D DP maintains max sum choices (selecting current element vs skipping current element) in O(n) time and O(1) space. Not Greedy: Picking the highest value element locally fails to maximize sum across non-adjacent combinations. Not Backtracking: Trying all select/skip combinations takes exponential O(2^n) time. Not Two Pointers: Scanning pointers cannot balance non-adjacent subproblem state transitions.",
+  "complexity": "O(n) time, O(1) space",
+  "solution_link": "[suspicious link removed]",
+  "tags": [
+    "array",
+    "dynamic-programming"
+  ]
+}

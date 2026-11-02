@@ -1,0 +1,10 @@
+{
+  "file": "math-geometry.cs",
+  "pattern": "math-geometry",
+  "specification": null,
+  "from_the_list": true,
+  "time": "O(m * n)",
+  "space": "O(1)",
+  "optimal": true,
+  "note": "Simulates cellular automata state transitions in-place by encoding next states using bitwise operations."
+}

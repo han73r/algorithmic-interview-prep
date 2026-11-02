@@ -1,0 +1,33 @@
+{
+  "id": "construct-binary-tree-from-inorder-and-postorder-traversal",
+  "leetcode_number": 106,
+  "leetcode_url": "https://leetcode.com/problems/construct-binary-tree-from-inorder-and-postorder-traversal/",
+  "title": "Construct Binary Tree from Inorder and Postorder Traversal",
+  "difficulty": "Medium",
+  "pattern": "Tree DFS",
+  "statement_short": "Given two integer arrays inorder and postorder where inorder is the inorder traversal of a binary tree and postorder is the postorder traversal of the same tree, construct and return the binary tree.",
+  "constraints": "1 &lt;= inorder.length &lt;= 3000, postorder.length == inorder.length, -3000 &lt;= inorder[i], postorder[i] &lt;= 3000, inorder and postorder consist of unique values",
+  "hint": "Unique values and length &lt;= 3000 allow using a hash map to locate root positions from the end of the postorder array in O(n) time.",
+  "keywords": [
+    "inorder traversal of a binary tree",
+    "postorder traversal of the same tree",
+    "1 &lt;= inorder.length &lt;= 3000"
+  ],
+  "options": [
+    "Tree DFS",
+    "Tree BFS",
+    "HashMap / Hash Set",
+    "1D DP"
+  ],
+  "answer": "Tree DFS",
+  "why_not": "Right: Tree DFS picks roots backward from postorder array and partitions inorder segments using a hash map in O(n) time and O(n) space. Not Tree BFS: Level-order queue traversal does not align with postorder root selection sequence. Not HashMap / Hash Set: Hash maps store value-to-index mappings to optimize split lookups, but recursive DFS performs tree construction. Not 1D DP: Dynamic programming subproblem caching does not apply to recursive tree building.",
+  "complexity": "O(n) time, O(n) space",
+  "solution_link": "[suspicious link removed]",
+  "tags": [
+    "tree",
+    "array",
+    "hash-table",
+    "divide-and-conquer",
+    "binary-tree"
+  ]
+}

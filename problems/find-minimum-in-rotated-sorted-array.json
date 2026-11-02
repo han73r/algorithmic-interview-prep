@@ -1,0 +1,30 @@
+{
+  "id": "find-minimum-in-rotated-sorted-array",
+  "leetcode_number": 153,
+  "leetcode_url": "[suspicious link removed]",
+  "title": "Find Minimum in Rotated Sorted Array",
+  "difficulty": "Medium",
+  "pattern": "Binary Search",
+  "statement_short": "Given a sorted rotated array nums of unique elements, return the minimum element of this array. You must write an algorithm that runs in O(log n) time.",
+  "constraints": "n == nums.length, 1 &lt;= n &lt;= 5000, -5000 &lt;= nums[i] &lt;= 5000, all values are unique, nums is rotated between 1 and n times",
+  "hint": "Rotated sorted array with unique elements and strict O(log n) requirement calls for binary search comparing mid to right endpoint.",
+  "keywords": [
+    "minimum element of this array",
+    "runs in O(log n) time",
+    "1 &lt;= n &lt;= 5000"
+  ],
+  "options": [
+    "Binary Search",
+    "Two Pointers",
+    "Monotonic Stack",
+    "Heap / Priority Queue"
+  ],
+  "answer": "Binary Search",
+  "why_not": "Right: Binary Search compares nums[mid] with nums[right] to discard the sorted half and narrow in on the inflection pivot point in O(log n) time. Not Two Pointers: Scanning pointers linearly finds the minimum in O(n) time, violating O(log n). Not Monotonic Stack: Stack tracking handles next-smaller elements in O(n) time and space. Not Heap / Priority Queue: Min-heap insertion takes O(n) time and auxiliary space.",
+  "complexity": "O(log n) time, O(1) space",
+  "solution_link": "[suspicious link removed]",
+  "tags": [
+    "array",
+    "binary-search"
+  ]
+}

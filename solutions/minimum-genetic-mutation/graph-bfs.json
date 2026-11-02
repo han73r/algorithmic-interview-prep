@@ -1,0 +1,10 @@
+{
+  "file": "graph-bfs.cs",
+  "pattern": "graph-bfs",
+  "specification": null,
+  "from_the_list": true,
+  "time": "O(b * L)",
+  "space": "O(b * L)",
+  "optimal": true,
+  "note": "Finds the minimum gene mutations using BFS across valid bank states."
+}

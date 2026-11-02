@@ -1,0 +1,10 @@
+{
+  "file": "math-geometry.cs",
+  "pattern": "math-geometry",
+  "specification": null,
+  "from_the_list": true,
+  "time": "O(log5 n)",
+  "space": "O(1)",
+  "optimal": true,
+  "note": "Counts the total number of factor 5 prime components in numbers up to n."
+}

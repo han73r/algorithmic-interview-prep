@@ -1,0 +1,10 @@
+{
+  "file": "intervals.cs",
+  "pattern": "intervals",
+  "specification": null,
+  "from_the_list": true,
+  "time": "O(n)",
+  "space": "O(n)",
+  "optimal": true,
+  "note": "Inserts a new interval by bypassing non-overlapping elements and merging overlapping ones."
+}

@@ -1,0 +1,31 @@
+{
+  "id": "minimum-path-sum",
+  "leetcode_number": 64,
+  "leetcode_url": "[suspicious link removed]",
+  "title": "Minimum Path Sum",
+  "difficulty": "Medium",
+  "pattern": "2D DP",
+  "statement_short": "Given a m x n grid filled with non-negative numbers, find a path from top left to bottom right which minimizes the sum of all numbers along its path. You can only move either down or right at any point in time.",
+  "constraints": "m == grid.length, n == grid[i].length, 1 &lt;= m, n &lt;= 200, 0 &lt;= grid[i][j] &lt;= 200",
+  "hint": "Grid bounds up to 200x200 permit 2D grid state memoization computing min incoming path totals.",
+  "keywords": [
+    "minimizes the sum of all numbers along its path",
+    "only move either down or right",
+    "1 &lt;= m, n &lt;= 200"
+  ],
+  "options": [
+    "2D DP",
+    "Graph BFS",
+    "Greedy",
+    "Backtracking"
+  ],
+  "answer": "2D DP",
+  "why_not": "Right: 2D DP tracks min path sum at each grid cell using min(dp[r-1][c], dp[r][c-1]) + grid[r][c] in O(m \\* n) time and O(n) space. Not Graph BFS: Dijkstra shortest path queue algorithm works, but 2D grid DP avoids priority queue overhead. Not Greedy: Moving to the smaller neighbor cell locally misses optimal paths with smaller future cells. Not Backtracking: Exploring all grid paths recursively takes exponential O(2^(m+n)) time.",
+  "complexity": "O(m \\* n) time, O(n) space",
+  "solution_link": "[suspicious link removed]",
+  "tags": [
+    "array",
+    "dynamic-programming",
+    "matrix"
+  ]
+}

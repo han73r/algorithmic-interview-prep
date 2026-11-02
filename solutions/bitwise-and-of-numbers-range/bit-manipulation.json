@@ -1,0 +1,10 @@
+{
+  "file": "bit-manipulation.cs",
+  "pattern": "bit-manipulation",
+  "specification": null,
+  "from_the_list": true,
+  "time": "O(1)",
+  "space": "O(1)",
+  "optimal": true,
+  "note": "Finds the common prefix of the binary representations of left and right."
+}

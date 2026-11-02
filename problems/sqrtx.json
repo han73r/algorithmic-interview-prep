@@ -1,0 +1,30 @@
+{
+  "id": "sqrtx",
+  "leetcode_number": 69,
+  "leetcode_url": "[suspicious link removed]",
+  "title": "Sqrt(x)",
+  "difficulty": "Easy",
+  "pattern": "Binary Search on Answer",
+  "statement_short": "Given a non-negative integer x, return the square root of x rounded down to the nearest integer. The returned integer should be non-negative as well. Do not use any built-in exponent function or operator.",
+  "constraints": "0 &lt;= x &lt;= 2^31 - 1",
+  "hint": "Bounded integer range allows binary searching the answer range [0, x] for the largest integer k where k\\*k &lt;= x.",
+  "keywords": [
+    "rounded down to the nearest integer",
+    "built-in exponent function",
+    "0 &lt;= x &lt;= 2^31 - 1"
+  ],
+  "options": [
+    "Binary Search on Answer",
+    "Math / Geometry",
+    "Two Pointers",
+    "1D DP"
+  ],
+  "answer": "Binary Search on Answer",
+  "why_not": "Right: Binary Search on Answer halves the search space [0, x] to find floor(sqrt(x)) in O(log x) time and O(1) space. Not Math / Geometry: Newton method works in O(log x) time, but binary search on the answer range is the standard pattern. Not Two Pointers: Linear scanning from 1 up to sqrt(x) takes O(sqrt(x)) time, which is slower than logarithmic binary search. Not 1D DP: Dynamic programming state caching does not apply to numerical square root search.",
+  "complexity": "O(log x) time, O(1) space",
+  "solution_link": "[suspicious link removed]",
+  "tags": [
+    "math",
+    "binary-search"
+  ]
+}

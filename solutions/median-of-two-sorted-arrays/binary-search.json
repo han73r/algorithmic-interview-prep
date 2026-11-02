@@ -1,0 +1,10 @@
+{
+  "file": "binary-search.cs",
+  "pattern": "binary-search",
+  "specification": null,
+  "from_the_list": true,
+  "time": "O(log(min(m, n)))",
+  "space": "O(1)",
+  "optimal": true,
+  "note": "Finds the median of two sorted arrays by partitioning both arrays using binary search."
+}

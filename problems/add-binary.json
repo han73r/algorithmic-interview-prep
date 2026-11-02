@@ -1,0 +1,31 @@
+{
+  "id": "add-binary",
+  "leetcode_number": 67,
+  "leetcode_url": "[suspicious link removed]",
+  "title": "Add Binary",
+  "difficulty": "Easy",
+  "pattern": "Math / Geometry",
+  "statement_short": "Given two binary strings a and b, return their sum as a binary string.",
+  "constraints": "1 &lt;= a.length, b.length &lt;= 10^4, a and b consist only of '0' or '1' characters, no leading zeros except '0' itself",
+  "hint": "String length up to 10^4 permits single-pass right-to-left addition using bit sums and carry handling.",
+  "keywords": [
+    "sum as a binary string",
+    "only of '0' or '1' characters",
+    "1 &lt;= a.length, b.length &lt;= 10^4"
+  ],
+  "options": [
+    "Math / Geometry",
+    "Bit Manipulation",
+    "Two Pointers",
+    "Stack"
+  ],
+  "answer": "Math / Geometry",
+  "why_not": "Right: Math / Geometry applies digit-by-digit column addition with carry propagation from right to left in O(max(N, M)) time. Not Bit Manipulation: Converting binary strings to integers for bitwise operations overflows standard integer limits when length reaches 10^4\\. Not Two Pointers: Scanning pointers track character positions, but column carry arithmetic is basic math. Not Stack: Pushing digits to a stack handles reversal, but adding from tail pointers directly avoids extra stack allocation.",
+  "complexity": "O(max(N, M)) time, O(max(N, M)) space",
+  "solution_link": "[suspicious link removed]",
+  "tags": [
+    "math",
+    "string",
+    "bit-manipulation"
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "id": "maximum-subarray",
+  "leetcode_number": 53,
+  "leetcode_url": "[suspicious link removed]",
+  "title": "Maximum Subarray",
+  "difficulty": "Medium",
+  "pattern": "1D DP",
+  "statement_short": "Given an integer array nums, find the contiguous subarray containing at least one number which has the largest sum and return its sum.",
+  "constraints": "1 &lt;= nums.length &lt;= 10^5, -10^4 &lt;= nums[i] &lt;= 10^4",
+  "hint": "Array size up to 10^5 requires an O(n) single pass, keeping or resetting the running sum dynamically.",
+  "keywords": [
+    "contiguous subarray",
+    "largest sum",
+    "1 &lt;= nums.length &lt;= 10^5"
+  ],
+  "options": [
+    "1D DP",
+    "Sliding Window",
+    "Two Pointers",
+    "Prefix Sum"
+  ],
+  "answer": "1D DP",
+  "why_not": "Right: 1D DP (Kadane's algorithm) maintains current max ending at each index by taking max(num, current + num) in O(n) time and O(1) space. Not Sliding Window: Negative numbers prevent expanding or shrinking window boundaries monotonically. Not Two Pointers: Scanning pointer pairs from ends cannot locate arbitrary contiguous max sum subsegments efficiently. Not Prefix Sum: Computing prefix sums requires an auxiliary O(n) pass or nested index min tracking.",
+  "complexity": "O(n) time, O(1) space",
+  "solution_link": "[suspicious link removed]",
+  "tags": [
+    "array",
+    "divide-and-conquer",
+    "dynamic-programming"
+  ]
+}

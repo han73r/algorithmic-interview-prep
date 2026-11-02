@@ -1,0 +1,10 @@
+{
+  "file": "hashmap-hash-set.cs",
+  "pattern": "hashmap-hash-set",
+  "specification": null,
+  "from_the_list": true,
+  "time": "O(1)",
+  "space": "O(1)",
+  "optimal": true,
+  "note": "Validates Sudoku board constraints across rows, columns, and 3x3 sub-boxes using boolean lookup tables."
+}

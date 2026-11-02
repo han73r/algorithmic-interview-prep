@@ -1,0 +1,10 @@
+{
+  "file": "binary-search.cs",
+  "pattern": "binary-search",
+  "specification": null,
+  "from_the_list": true,
+  "time": "O(log^2 n)",
+  "space": "O(log n)",
+  "optimal": true,
+  "note": "Counts nodes in a complete binary tree efficiently by comparing subtree heights."
+}

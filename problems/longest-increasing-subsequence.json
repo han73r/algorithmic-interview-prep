@@ -1,0 +1,31 @@
+{
+  "id": "longest-increasing-subsequence",
+  "leetcode_number": 300,
+  "leetcode_url": "[suspicious link removed]",
+  "title": "Longest Increasing Subsequence",
+  "difficulty": "Medium",
+  "pattern": "1D DP",
+  "statement_short": "Given an integer array nums, return the length of the longest strictly increasing subsequence. Follow up: Can you come up with an algorithm that runs in O(n log n) time complexity?",
+  "constraints": "1 &lt;= nums.length &lt;= 2500, -10^4 &lt;= nums[i] &lt;= 10^4",
+  "hint": "Array size up to 2500 can be solved in O(n^2) via 1D DP or O(n log n) by maintaining tail values with binary search.",
+  "keywords": [
+    "longest strictly increasing subsequence",
+    "runs in O(n log n) time complexity",
+    "1 &lt;= nums.length &lt;= 2500"
+  ],
+  "options": [
+    "1D DP",
+    "Binary Search",
+    "Two Pointers",
+    "Monotonic Stack"
+  ],
+  "answer": "1D DP",
+  "why_not": "Right: 1D DP (or DP with Binary Search Patience Sorting) tracks longest increasing subsequence endings in O(n log n) time and O(n) space. Not Binary Search: Binary search is used within Patience Sorting to find substitution positions, but the underlying problem is finding LIS subproblem state. Not Two Pointers: Subsequences are non-contiguous, so linear two-pointer scanning cannot evaluate non-adjacent elements. Not Monotonic Stack: Monotonic stack tracks next greater elements, but cannot handle arbitrary element replacements in LIS.",
+  "complexity": "O(n log n) time, O(n) space",
+  "solution_link": "[suspicious link removed]",
+  "tags": [
+    "array",
+    "binary-search",
+    "dynamic-programming"
+  ]
+}

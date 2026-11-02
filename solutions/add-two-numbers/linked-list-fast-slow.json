@@ -1,0 +1,10 @@
+{
+  "file": "linked-list-fast-slow.cs",
+  "pattern": "linked-list-fast-slow",
+  "specification": null,
+  "from_the_list": true,
+  "time": "O(max(n, m))",
+  "space": "O(max(n, m))",
+  "optimal": true,
+  "note": "Adds two numbers represented by linked lists digit by digit while tracking carry values."
+}

@@ -1,0 +1,10 @@
+{
+  "file": "graph-dfs.cs",
+  "pattern": "graph-dfs",
+  "specification": null,
+  "from_the_list": true,
+  "time": "O(m * n)",
+  "space": "O(m * n)",
+  "optimal": true,
+  "note": "Counts connected components of land cells using depth-first search."
+}

@@ -1,0 +1,10 @@
+{
+  "file": "backtracking.cs",
+  "pattern": "backtracking",
+  "specification": null,
+  "from_the_list": true,
+  "time": "O(N * 4^L)",
+  "space": "O(L)",
+  "optimal": true,
+  "note": "Searches for a word in a 2D grid using backtracking and temporary cell masking."
+}

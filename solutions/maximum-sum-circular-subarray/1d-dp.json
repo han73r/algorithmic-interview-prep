@@ -1,0 +1,10 @@
+{
+  "file": "1d-dp.cs",
+  "pattern": "1d-dp",
+  "specification": null,
+  "from_the_list": true,
+  "time": "O(n)",
+  "space": "O(1)",
+  "optimal": true,
+  "note": "Calculates the maximum circular subarray sum by finding standard max and min subarray sums via Kadane's algorithm."
+}

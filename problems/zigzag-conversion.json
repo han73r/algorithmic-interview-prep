@@ -1,0 +1,30 @@
+{
+  "id": "zigzag-conversion",
+  "leetcode_number": 6,
+  "leetcode_url": "https://leetcode.com/problems/zigzag-conversion/",
+  "title": "Zigzag Conversion",
+  "difficulty": "Medium",
+  "pattern": "Math / Geometry",
+  "statement_short": "Given a string s and a number of rows, write s in a zigzag pattern across the rows and read line by line. Return the concatenated string formed by reading the rows top to bottom.",
+  "constraints": "1 &lt;= s.length &lt;= 1000, 1 &lt;= numRows &lt;= 1000, s consists of English letters, commas, and periods",
+  "hint": "Small string length (&lt;= 1000) permits row-by-row character placement or direct arithmetic index mapping.",
+  "keywords": [
+    "zigzag pattern across the rows",
+    "reading the rows top to bottom",
+    "1 &lt;= numRows &lt;= 1000"
+  ],
+  "options": [
+    "2D DP",
+    "Math / Geometry",
+    "Two Pointers",
+    "Stack"
+  ],
+  "answer": "Math / Geometry",
+  "why_not": "Right: Math / Geometry calculates row character indices directly using cycle length formula 2\\*(numRows-1) in O(n) time. Not 2D DP: Grid dynamic programming is over-engineering for deterministic index arithmetic. Not Two Pointers: Scanning from both string ends does not determine row-by-row character ordering. Not Stack: LIFO processing does not preserve the top-to-bottom row sequence.",
+  "complexity": "O(n) time, O(1) space",
+  "solution_link": "[suspicious link removed]",
+  "tags": [
+    "string",
+    "math"
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "file": "greedy.cs",
+  "pattern": "greedy",
+  "specification": null,
+  "from_the_list": true,
+  "time": "O(n)",
+  "space": "O(n)",
+  "optimal": true,
+  "note": "Greedily iterates from left-to-right and right-to-left to ensure children with higher ratings receive more candies than their neighbors."
+}

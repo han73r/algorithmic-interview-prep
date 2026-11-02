@@ -1,0 +1,30 @@
+{
+  "id": "minimum-size-subarray-sum",
+  "leetcode_number": 209,
+  "leetcode_url": "[suspicious link removed]",
+  "title": "Minimum Size Subarray Sum",
+  "difficulty": "Medium",
+  "pattern": "Sliding Window",
+  "statement_short": "Given an array of positive integers nums and a positive integer target, return the minimal length of a contiguous subarray whose sum is greater than or equal to target. If there is no such subarray, return 0.",
+  "constraints": "1 &lt;= target &lt;= 10^9, 1 &lt;= nums.length &lt;= 10^5, 1 &lt;= nums[i] &lt;= 10^5",
+  "hint": "Array length up to 10^5 and positive numbers permit an O(n) variable-size sliding window.",
+  "keywords": [
+    "minimal length of a contiguous subarray",
+    "greater than or equal to target",
+    "1 &lt;= nums.length &lt;= 10^5"
+  ],
+  "options": [
+    "Sliding Window",
+    "Prefix Sum",
+    "Binary Search on Answer",
+    "Two Pointers"
+  ],
+  "answer": "Sliding Window",
+  "why_not": "Right: Sliding Window expands right pointer to reach sum &gt;= target and contracts left pointer to minimize window size in O(n) time. Not Prefix Sum: Prefix sums combined with binary search solve this in O(n log n) time, which is slower than sliding window. Not Binary Search on Answer: Binary searching window length takes O(n log n) time, which is less optimal than linear sliding window. Not Two Pointers: Scanning fixed ends doesn't handle contiguous subarray window expansion for positive arrays as naturally.",
+  "complexity": "O(n) time, O(1) space",
+  "solution_link": "[suspicious link removed]",
+  "tags": [
+    "sliding-window",
+    "array"
+  ]
+}

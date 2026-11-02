@@ -1,0 +1,31 @@
+{
+  "id": "snakes-and-ladders",
+  "leetcode_number": 909,
+  "leetcode_url": "https://leetcode.com/problems/snakes-and-ladders/",
+  "title": "Snakes and Ladders",
+  "difficulty": "Medium",
+  "pattern": "Graph BFS",
+  "statement_short": "Given an n x n board where squares are labeled 1 to n^2 in a Boustrophedon style, find the minimum number of moves to reach square n^2\\. Some squares contain snakes or ladders that destination-jump players upon landing.",
+  "constraints": "2 &lt;= n &lt;= 20, board[i][j] is -1 or between 1 and n^2",
+  "hint": "Small board dimension (n &lt;= 20) allows unweighted shortest path search from square 1 to n^2 using queue traversal.",
+  "keywords": [
+    "minimum number of moves",
+    "labeled 1 to n^2",
+    "2 &lt;= n &lt;= 20"
+  ],
+  "options": [
+    "Graph BFS",
+    "1D DP",
+    "Backtracking",
+    "Heap / Priority Queue"
+  ],
+  "answer": "Graph BFS",
+  "why_not": "Right: Graph BFS finds the shortest path on an unweighted game board grid in O(n^2) time and O(n^2) space. Not 1D DP: Board moves contain snakes that create backward edges (cycles), causing infinite loops in standard DP. Not Backtracking: Exploring all dice roll sequences causes exponential TLE. Not Heap / Priority Queue: Priority queues add O(log N) overhead when edge weights are all uniformly equal to 1.",
+  "complexity": "O(n^2) time, O(n^2) space",
+  "solution_link": "[suspicious link removed]",
+  "tags": [
+    "array",
+    "breadth-first-search",
+    "matrix"
+  ]
+}

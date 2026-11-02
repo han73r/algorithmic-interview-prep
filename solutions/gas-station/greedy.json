@@ -1,0 +1,10 @@
+{
+  "file": "greedy.cs",
+  "pattern": "greedy",
+  "specification": null,
+  "from_the_list": true,
+  "time": "O(n)",
+  "space": "O(1)",
+  "optimal": true,
+  "note": "Greedily tracks running fuel balance to find the valid starting gas station in a single pass."
+}

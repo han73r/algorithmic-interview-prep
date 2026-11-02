@@ -1,0 +1,10 @@
+{
+  "file": "two-pointers-opposite-ends.cs",
+  "pattern": "two-pointers",
+  "specification": "two-pointers-opposite-ends",
+  "from_the_list": true,
+  "time": "O(n)",
+  "space": "O(1)",
+  "optimal": true,
+  "note": "Uses converging left and right pointers in a sorted array to find the target sum."
+}

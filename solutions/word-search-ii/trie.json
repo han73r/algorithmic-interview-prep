@@ -1,0 +1,10 @@
+{
+  "file": "trie.cs",
+  "pattern": "trie",
+  "specification": null,
+  "from_the_list": true,
+  "time": "O(m * n * 4^l)",
+  "space": "O(sum of lengths of all words)",
+  "optimal": true,
+  "note": "Finds multiple words on a board simultaneously using a Trie combined with backtracking DFS."
+}

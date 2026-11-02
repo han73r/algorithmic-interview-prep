@@ -1,0 +1,10 @@
+{
+  "file": "sliding-window-variable-size.cs",
+  "pattern": "sliding-window",
+  "specification": "sliding-window-variable-size",
+  "from_the_list": true,
+  "time": "O(n)",
+  "space": "O(min(n, m))",
+  "optimal": true,
+  "note": "Maintains a sliding window of unique characters by tracking character indices using a hash map."
+}

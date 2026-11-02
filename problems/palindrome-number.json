@@ -1,0 +1,29 @@
+{
+  "id": "palindrome-number",
+  "leetcode_number": 9,
+  "leetcode_url": "[suspicious link removed]",
+  "title": "Palindrome Number",
+  "difficulty": "Easy",
+  "pattern": "Math / Geometry",
+  "statement_short": "Given an integer x, return true if x is a palindrome, and false otherwise. Solve it without converting the integer to a string.",
+  "constraints": "-2^31 &lt;= x &lt;= 2^31 - 1",
+  "hint": "No-string conversion follow-up calls for reversing the back half of the integer via modulo 10 digit extraction.",
+  "keywords": [
+    "x is a palindrome",
+    "without converting the integer to a string",
+    "-2^31 &lt;= x &lt;= 2^31 - 1"
+  ],
+  "options": [
+    "Math / Geometry",
+    "Two Pointers",
+    "Stack",
+    "Bit Manipulation"
+  ],
+  "answer": "Math / Geometry",
+  "why_not": "Right: Math / Geometry extracts and reverses the second half of the integer using modulo 10 arithmetic in O(log10 n) time and O(1) space. Not Two Pointers: Converting to a string allows two pointers inward scan, but violates the explicit no-string conversion constraint. Not Stack: Digit stack pushing handles reversal, but consumes extra memory violating O(1) space. Not Bit Manipulation: Bitwise shifts operate on base-2 representations, whereas decimal palindrome rules rely on base-10 digits.",
+  "complexity": "O(log10 n) time, O(1) space",
+  "solution_link": "[suspicious link removed]",
+  "tags": [
+    "math"
+  ]
+}

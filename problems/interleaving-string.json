@@ -1,0 +1,30 @@
+{
+  "id": "interleaving-string",
+  "leetcode_number": 97,
+  "leetcode_url": "[suspicious link removed]",
+  "title": "Interleaving String",
+  "difficulty": "Medium",
+  "pattern": "2D DP",
+  "statement_short": "Given strings s1, s2, and s3, find whether s3 is formed by an interleaving of s1 and s2\\. An interleaving of two strings preserves the relative order of characters from each string.",
+  "constraints": "0 &lt;= s1.length, s2.length &lt;= 100, 0 &lt;= s3.length &lt;= 200, s1, s2, and s3 consist of lowercase English letters",
+  "hint": "Lengths up to 100 allow 2D DP grid state dp[i][j] tracking prefix character matches of s1 and s2 against s3.",
+  "keywords": [
+    "formed by an interleaving of s1 and s2",
+    "preserves the relative order of characters",
+    "0 &lt;= s1.length, s2.length &lt;= 100"
+  ],
+  "options": [
+    "2D DP",
+    "Two Pointers",
+    "Backtracking",
+    "HashMap / Hash Set"
+  ],
+  "answer": "2D DP",
+  "why_not": "Right: 2D DP memoizes whether s1[0..i] and s2[0..j] interleave into s3[0..i+j] in O(m \\* n) time and O(n) space. Not Two Pointers: Greedy pointer matching fails when both s1 and s2 contain matching characters, requiring backtracking state choices. Not Backtracking: Exploring string matching choices recursively without memoization causes TLE with exponential time complexity. Not HashMap / Hash Set: Character frequency counts verify anagrams but lose relative sequence ordering.",
+  "complexity": "O(m \\* n) time, O(n) space",
+  "solution_link": "[suspicious link removed]",
+  "tags": [
+    "string",
+    "dynamic-programming"
+  ]
+}

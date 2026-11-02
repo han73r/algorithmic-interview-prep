@@ -1,0 +1,29 @@
+{
+  "id": "n-queens-ii",
+  "leetcode_number": 52,
+  "leetcode_url": "[suspicious link removed]",
+  "title": "N-Queens II",
+  "difficulty": "Hard",
+  "pattern": "Backtracking",
+  "statement_short": "The n-queens puzzle is the problem of placing n queens on an n x n chessboard such that no two queens attack each other. Given an integer n, return the number of distinct solutions to the n-queens puzzle.",
+  "constraints": "1 &lt;= n &lt;= 9",
+  "hint": "Extremely small board dimension (n &lt;= 9) allows recursive row-by-row placement with diagonal conflict checks.",
+  "keywords": [
+    "placing n queens",
+    "no two queens attack each other",
+    "1 &lt;= n &lt;= 9"
+  ],
+  "options": [
+    "Backtracking",
+    "Bit Manipulation",
+    "2D DP",
+    "Graph DFS"
+  ],
+  "answer": "Backtracking",
+  "why_not": "Right: Backtracking places queens row by row, pruning invalid column and diagonal placements in O(n!) time. Not Bit Manipulation: Bitmasks optimize conflict checking speed, but the core placement algorithm is backtracking search. Not 2D DP: Grid state caching fails because queen attack paths depend on global column and diagonal constraints. Not Graph DFS: DFS explores graph vertices, but N-Queens placement relies on row-level branch pruning.",
+  "complexity": "O(n!) time, O(n) space",
+  "solution_link": "[suspicious link removed]",
+  "tags": [
+    "backtracking"
+  ]
+}

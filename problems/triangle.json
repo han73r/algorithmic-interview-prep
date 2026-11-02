@@ -1,0 +1,30 @@
+{
+  "id": "triangle",
+  "leetcode_number": 120,
+  "leetcode_url": "[suspicious link removed]",
+  "title": "Triangle",
+  "difficulty": "Medium",
+  "pattern": "2D DP",
+  "statement_short": "Given a triangle array, return the minimum path sum from top to bottom. For each step, you may move to adjacent numbers on the row below.",
+  "constraints": "1 &lt;= triangle.length &lt;= 200, triangle[i].length == i + 1, -10^4 &lt;= triangle[i][j] &lt;= 10^4",
+  "hint": "Triangle length up to 200 permits bottom-up grid state transitions to compute min path sum.",
+  "keywords": [
+    "adjacent numbers on the row below",
+    "minimum path sum",
+    "1 &lt;= triangle.length &lt;= 200"
+  ],
+  "options": [
+    "2D DP",
+    "Graph BFS",
+    "Greedy",
+    "Backtracking"
+  ],
+  "answer": "2D DP",
+  "why_not": "Right: 2D DP computes minimum path sums bottom-up by taking min(dp[row+1][col], dp[row+1][col+1]) + triangle[row][col] in O(n^2) time and O(n) space. Not Graph BFS: Level-order grid queue search works, but 2D DP handles overlapping subproblem states directly. Not Greedy: Picking the smaller adjacent element locally fails when a larger node leads to smaller overall path sums later. Not Backtracking: Exploring all paths recursively takes exponential O(2^n) time.",
+  "complexity": "O(n^2) time, O(n) space",
+  "solution_link": "[suspicious link removed]",
+  "tags": [
+    "array",
+    "dynamic-programming"
+  ]
+}

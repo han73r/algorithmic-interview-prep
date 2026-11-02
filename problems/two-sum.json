@@ -1,0 +1,30 @@
+{
+  "id": "two-sum",
+  "leetcode_number": 1,
+  "leetcode_url": "https://leetcode.com/problems/two-sum/",
+  "title": "Two Sum",
+  "difficulty": "Easy",
+  "pattern": "HashMap / Hash Set",
+  "statement_short": "Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target. You may assume that each input would have exactly one solution.",
+  "constraints": "2 &lt;= nums.length &lt;= 10^4, -10^9 &lt;= nums[i] &lt;= 10^9, -10^9 &lt;= target &lt;= 10^9, exactly one valid answer exists",
+  "hint": "Array size up to 10^4 dictates an O(n) single pass, storing visited complements in a hash map.",
+  "keywords": [
+    "add up to target",
+    "exactly one solution",
+    "2 &lt;= nums.length &lt;= 10^4"
+  ],
+  "options": [
+    "Two Pointers",
+    "HashMap / Hash Set",
+    "Binary Search",
+    "Prefix Sum"
+  ],
+  "answer": "HashMap / Hash Set",
+  "why_not": "Right: HashMap / Hash Set stores complement values (target - num) and their indices to locate the pair in O(n) time and O(n) space. Not Two Pointers: The input array is unsorted; two pointers require sorting first which loses original indices unless explicitly tracked in O(n log n) time. Not Binary Search: Unsorted inputs prevent binary search unless sorted, taking O(n log n) time. Not Prefix Sum: Prefix sums calculate range totals, not pairwise complement values.",
+  "complexity": "O(n) time, O(n) space",
+  "solution_link": "https://github.com/han73r/algorithmic-interview-prep/solutions/two-sum/",
+  "tags": [
+    "array",
+    "hash-table"
+  ]
+}

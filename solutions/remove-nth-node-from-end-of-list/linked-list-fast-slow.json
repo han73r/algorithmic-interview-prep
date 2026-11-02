@@ -1,0 +1,10 @@
+{
+  "file": "linked-list-fast-slow.cs",
+  "pattern": "linked-list-fast-slow",
+  "specification": "linked-list-fast-slow",
+  "from_the_list": true,
+  "time": "O(n)",
+  "space": "O(1)",
+  "optimal": true,
+  "note": "Removes the n-th node from the end in a single pass using a fast pointer offset by n steps."
+}

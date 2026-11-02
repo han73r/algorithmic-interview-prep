@@ -1,0 +1,30 @@
+{
+  "id": "product-of-array-except-self",
+  "leetcode_number": 238,
+  "leetcode_url": "[suspicious link removed]",
+  "title": "Product of Array Except Self",
+  "difficulty": "Medium",
+  "pattern": "Prefix Sum",
+  "statement_short": "Given an integer array nums, return an array answer such that answer[i] is equal to the product of all the elements of nums except nums[i]. You must write an algorithm that runs in O(n) time without using the division operation.",
+  "constraints": "2 &lt;= nums.length &lt;= 10^5, -30 &lt;= nums[i] &lt;= 30, product of any prefix or suffix is guaranteed to fit in 32-bit integer",
+  "hint": "Array size up to 10^5 demands O(n) time, while the division ban requires accumulating prefix and suffix products.",
+  "keywords": [
+    "without using the division operation",
+    "product of all the elements",
+    "2 &lt;= nums.length &lt;= 10^5"
+  ],
+  "options": [
+    "Two Pointers",
+    "Sliding Window",
+    "Monotonic Stack",
+    "Prefix Sum"
+  ],
+  "answer": "Prefix Sum",
+  "why_not": "Right: Prefix Sum (extended to prefix and suffix products) combines left-accumulated and right-accumulated products in O(n) time and O(1) extra space. Not Two Pointers: Two pointers cannot compute products for every position except the current index in O(n) total operations. Not Sliding Window: The product excludes a single element rather than calculating range aggregates over contiguous subsegments. Not Monotonic Stack: Maintaining monotonic order does not aid in multiplying all non-current elements.",
+  "complexity": "O(n) time, O(1) space",
+  "solution_link": "[suspicious link removed]",
+  "tags": [
+    "array",
+    "prefix-sum"
+  ]
+}

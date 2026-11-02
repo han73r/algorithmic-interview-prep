@@ -1,0 +1,10 @@
+{
+  "file": "stack.cs",
+  "pattern": "stack",
+  "specification": null,
+  "from_the_list": true,
+  "time": "O(1)",
+  "space": "O(h)",
+  "optimal": true,
+  "note": "Implements a controlled-iteration BST iterator using an explicit stack for in-order traversal."
+}

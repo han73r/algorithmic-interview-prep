@@ -1,0 +1,10 @@
+{
+  "file": "heap-priority-queue.cs",
+  "pattern": "heap-priority-queue",
+  "specification": null,
+  "from_the_list": true,
+  "time": "O(log n) per insertion, O(1) for lookup",
+  "space": "O(n)",
+  "optimal": true,
+  "note": "Finds the median from a dynamic stream using two balanced heaps."
+}

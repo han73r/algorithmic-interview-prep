@@ -1,0 +1,10 @@
+{
+  "file": "tree-dfs.cs",
+  "pattern": "tree-dfs",
+  "specification": "tree-dfs",
+  "from_the_list": true,
+  "time": "O(n)",
+  "space": "O(h)",
+  "optimal": true,
+  "note": "Determines if two binary trees are identical by recursively comparing corresponding nodes."
+}

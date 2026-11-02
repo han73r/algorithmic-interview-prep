@@ -1,0 +1,32 @@
+{
+  "id": "design-add-and-search-words-data-structure",
+  "leetcode_number": 211,
+  "leetcode_url": "[suspicious link removed]",
+  "title": "Design Add and Search Words Data Structure",
+  "difficulty": "Medium",
+  "pattern": "Trie",
+  "statement_short": "Design a data structure that supports adding new words and searching if a string matches any previously added string. Search queries may contain '.' dots, where '.' can match any single letter.",
+  "constraints": "1 &lt;= word.length &lt;= 25, word in addWord consists of lowercase English letters, word in search consists of '.' or lowercase letters, at most 10^4 calls",
+  "hint": "Word length up to 25 with wildcard '.' matching favors a character trie combined with recursive DFS branch exploration.",
+  "keywords": [
+    "matches any previously added string",
+    "'.' can match any single letter",
+    "at most 10^4 calls"
+  ],
+  "options": [
+    "Trie",
+    "HashMap / Hash Set",
+    "Backtracking",
+    "Two Pointers"
+  ],
+  "answer": "Trie",
+  "why_not": "Right: Trie combined with recursive child branching for '.' dot characters evaluates wildcard prefix queries in O(L) best-case time. Not HashMap / Hash Set: Storing words in a hash set handles exact lookups in O(L), but wildcard '.' searches require checking every stored word in O(N \\* L) time. Not Backtracking: Exhaustive string pattern matching without a prefix tree requires scanning the full dictionary. Not Two Pointers: Scanning pointers cannot match character wildcards across multi-branch dictionaries natively.",
+  "complexity": "O(L) time for add, O(26^L) worst for wildcard search, O(N \\* L) space",
+  "solution_link": "[suspicious link removed]",
+  "tags": [
+    "string",
+    "depth-first-search",
+    "design",
+    "trie"
+  ]
+}

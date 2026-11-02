@@ -1,0 +1,32 @@
+{
+  "id": "binary-tree-right-side-view",
+  "leetcode_number": 199,
+  "leetcode_url": "https://leetcode.com/problems/binary-tree-right-side-view/",
+  "title": "Binary Tree Right Side View",
+  "difficulty": "Medium",
+  "pattern": "Tree BFS",
+  "statement_short": "Given the root of a binary tree, imagine yourself standing on the right side of it, return the values of the nodes you can see ordered from top to bottom.",
+  "constraints": "0 &lt;= number of nodes in tree &lt;= 100, -100 &lt;= Node.val &lt;= 100",
+  "hint": "Small node count (&lt;= 100) allows level-order traversal, capturing the last element of each queue level.",
+  "keywords": [
+    "standing on the right side",
+    "ordered from top to bottom",
+    "0 &lt;= number of nodes in tree &lt;= 100"
+  ],
+  "options": [
+    "Tree BFS",
+    "Tree DFS",
+    "Two Pointers",
+    "1D DP"
+  ],
+  "answer": "Tree BFS",
+  "why_not": "Right: Tree BFS traverses level by level, picking the last node in each level queue in O(n) time and O(w) space. Not Tree DFS: Pre-order (root-right-left) DFS works by tracking depth, but level-order BFS directly groups nodes by level. Not Two Pointers: Scanning pointer pairs cannot navigate hierarchical level structures natively. Not 1D DP: Subproblem state memoization does not apply to spatial tree view projections.",
+  "complexity": "O(n) time, O(w) space",
+  "solution_link": "[suspicious link removed]",
+  "tags": [
+    "tree",
+    "depth-first-search",
+    "breadth-first-search",
+    "binary-tree"
+  ]
+}

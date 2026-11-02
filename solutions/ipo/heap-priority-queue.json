@@ -1,0 +1,10 @@
+{
+  "file": "heap-priority-queue.cs",
+  "pattern": "heap-priority-queue",
+  "specification": null,
+  "from_the_list": true,
+  "time": "O(n log n + k log n)",
+  "space": "O(n)",
+  "optimal": true,
+  "note": "Maximizes capital by selecting profitable projects within current capital constraints using a priority queue."
+}

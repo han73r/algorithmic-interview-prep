@@ -1,0 +1,10 @@
+{
+  "file": "sliding-window-variable-size.cs",
+  "pattern": "sliding-window",
+  "specification": "sliding-window-variable-size",
+  "from_the_list": true,
+  "time": "O(n)",
+  "space": "O(1)",
+  "optimal": true,
+  "note": "Expands right bound to reach sum target and contracts left bound to minimize subarray length."
+}

@@ -1,0 +1,10 @@
+{
+  "file": "2d-dp.cs",
+  "pattern": "2d-dp",
+  "specification": null,
+  "from_the_list": true,
+  "time": "O(m * n)",
+  "space": "O(n)",
+  "optimal": true,
+  "note": "Calculates unique paths in a grid with obstacles using a rolling array DP approach."
+}

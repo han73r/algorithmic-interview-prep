@@ -1,0 +1,10 @@
+{
+  "file": "math-geometry.cs",
+  "pattern": "math-geometry",
+  "specification": null,
+  "from_the_list": true,
+  "time": "O(log |n|)",
+  "space": "O(1)",
+  "optimal": true,
+  "note": "Computes power using binary exponentiation (exponentiation by squaring)."
+}

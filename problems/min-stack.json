@@ -1,0 +1,30 @@
+{
+  "id": "min-stack",
+  "leetcode_number": 155,
+  "leetcode_url": "https://leetcode.com/problems/min-stack/",
+  "title": "Min Stack",
+  "difficulty": "Medium",
+  "pattern": "Stack",
+  "statement_short": "Design a stack structure that supports push, pop, top, and retrieving the minimum element in constant time O(1). Each operation must execute in O(1) time complexity.",
+  "constraints": "-2^31 &lt;= val &lt;= 2^31 - 1, at most 3 \\* 10^4 calls will be made to push, pop, top, and getMin",
+  "hint": "O(1) time for all operations mandates tracking running minimums alongside stack elements using an auxiliary stack.",
+  "keywords": [
+    "retrieving the minimum element",
+    "constant time O(1)",
+    "3 \\* 10^4 calls"
+  ],
+  "options": [
+    "Stack",
+    "Heap / Priority Queue",
+    "Binary Search",
+    "Two Pointers"
+  ],
+  "answer": "Stack",
+  "why_not": "Right: Stack paired with a parallel auxiliary min-stack maintains the current minimum at top for true O(1) getMin operations. Not Heap / Priority Queue: Priority queues find the minimum in O(1) time, but popping an arbitrary stack-top element takes O(n) time. Not Binary Search: Sorted search structures do not maintain LIFO push/pop element insertion ordering. Not Two Pointers: Linear scanning for minimum element lookup violates the strict O(1) time requirement.",
+  "complexity": "O(1) time, O(n) space",
+  "solution_link": "[suspicious link removed]",
+  "tags": [
+    "stack",
+    "design"
+  ]
+}

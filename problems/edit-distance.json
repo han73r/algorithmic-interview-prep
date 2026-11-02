@@ -1,0 +1,30 @@
+{
+  "id": "edit-distance",
+  "leetcode_number": 72,
+  "leetcode_url": "[suspicious link removed]",
+  "title": "Edit Distance",
+  "difficulty": "Medium",
+  "pattern": "2D DP",
+  "statement_short": "Given two strings word1 and word2, return the minimum number of operations required to convert word1 to word2\\. You can insert, delete, or replace a character.",
+  "constraints": "0 &lt;= word1.length, word2.length &lt;= 500, word1 and word2 consist of lowercase English letters",
+  "hint": "Word lengths up to 500 allow 2D DP matrix matching min operations across character prefixes.",
+  "keywords": [
+    "minimum number of operations required",
+    "insert, delete, or replace a character",
+    "0 &lt;= word1.length, word2.length &lt;= 500"
+  ],
+  "options": [
+    "2D DP",
+    "Two Pointers",
+    "Greedy",
+    "Backtracking"
+  ],
+  "answer": "2D DP",
+  "why_not": "Right: 2D DP computes Levinshtein distance matrix matching insert, delete, and replace subproblems in O(m \\* n) time and O(n) space. Not Two Pointers: Scanning pointer pairs cannot handle multi-operation insertions and deletions without state grid transitions. Not Greedy: Local character matching choices fail because early edits impact global edit distance costs. Not Backtracking: Recursive branch exploration without memoization causes TLE with 3^(m+n) exponential complexity.",
+  "complexity": "O(m \\* n) time, O(n) space",
+  "solution_link": "[suspicious link removed]",
+  "tags": [
+    "string",
+    "dynamic-programming"
+  ]
+}

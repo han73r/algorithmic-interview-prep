@@ -1,0 +1,10 @@
+{
+  "file": "tree-dfs.cs",
+  "pattern": "tree-dfs",
+  "specification": "tree-dfs",
+  "from_the_list": true,
+  "time": "O(n)",
+  "space": "O(1)",
+  "optimal": true,
+  "note": "Flattens a binary tree into a linked list in-place by threading predecessor right pointers."
+}

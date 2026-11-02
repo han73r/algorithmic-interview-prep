@@ -1,0 +1,30 @@
+{
+  "id": "search-in-rotated-sorted-array",
+  "leetcode_number": 33,
+  "leetcode_url": "[suspicious link removed]",
+  "title": "Search in Rotated Sorted Array",
+  "difficulty": "Medium",
+  "pattern": "Binary Search",
+  "statement_short": "Given an integer array nums sorted in ascending order with distinct values, which is possibly rotated, and a target value, return the index of target if it is in nums, or -1 if it is not. Run in O(log n) time.",
+  "constraints": "1 &lt;= nums.length &lt;= 5000, -10^4 &lt;= nums[i] &lt;= 10^4, all values of nums are unique, -10^4 &lt;= target &lt;= 10^4",
+  "hint": "O(log n) time mandate on a rotated sorted array requires identifying which half is normally sorted to eliminate halves.",
+  "keywords": [
+    "possibly rotated",
+    "Run in O(log n) time",
+    "1 &lt;= nums.length &lt;= 5000"
+  ],
+  "options": [
+    "Binary Search",
+    "Two Pointers",
+    "HashMap / Hash Set",
+    "1D DP"
+  ],
+  "answer": "Binary Search",
+  "why_not": "Right: Binary Search identifies whether the left or right half is sorted, checking if target falls within range to achieve O(log n) time. Not Two Pointers: Linear scanning inspects items in O(n) time, failing the O(log n) constraint. Not HashMap / Hash Set: Hash sets look up targets in O(1) time but consume O(n) auxiliary memory. Not 1D DP: Subproblem state memoization does not apply to logarithmic array search.",
+  "complexity": "O(log n) time, O(1) space",
+  "solution_link": "[suspicious link removed]",
+  "tags": [
+    "array",
+    "binary-search"
+  ]
+}

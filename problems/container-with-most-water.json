@@ -1,0 +1,30 @@
+{
+  "id": "container-with-most-water",
+  "leetcode_number": 11,
+  "leetcode_url": "[suspicious link removed]",
+  "title": "Container With Most Water",
+  "difficulty": "Medium",
+  "pattern": "Two Pointers",
+  "statement_short": "Given an integer array height of length n, find two lines that together with the x-axis form a container such that the container contains the most water. Return the maximum volume of water stored.",
+  "constraints": "n == height.length, 2 &lt;= n &lt;= 10^5, 0 &lt;= height[i] &lt;= 10^4",
+  "hint": "n up to 10^5 demands an O(n) single pass, shrinking the pointer at the shorter boundary greedily.",
+  "keywords": [
+    "form a container",
+    "maximum volume of water stored",
+    "2 &lt;= n &lt;= 10^5"
+  ],
+  "options": [
+    "Two Pointers",
+    "Monotonic Stack",
+    "Sliding Window",
+    "Greedy"
+  ],
+  "answer": "Two Pointers",
+  "why_not": "Right: Two Pointers start at outer boundaries and move the shorter height inward, evaluating max area in O(n) time and O(1) space. Not Monotonic Stack: Monotonic stack tracks trapped water between bars (LC 42), not maximum container area between two arbitrary lines. Not Sliding Window: The container width shrinks from full width inward rather than sliding a fixed/growing contiguous subsegment. Not Greedy: Pure greedy choice without boundary movement logic fails to explore all candidate area bottlenecks.",
+  "complexity": "O(n) time, O(1) space",
+  "solution_link": "[suspicious link removed]",
+  "tags": [
+    "two-pointers",
+    "array"
+  ]
+}

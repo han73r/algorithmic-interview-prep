@@ -1,0 +1,30 @@
+{
+  "id": "single-number",
+  "leetcode_number": 136,
+  "leetcode_url": "[suspicious link removed]",
+  "title": "Single Number",
+  "difficulty": "Easy",
+  "pattern": "Bit Manipulation",
+  "statement_short": "Given a non-empty array of integers nums, every element appears twice except for one. Find that single element. You must implement a solution with linear runtime complexity and use only constant extra space.",
+  "constraints": "1 &lt;= nums.length &lt;= 3 \\* 10^4, -3 \\* 10^4 &lt;= nums[i] &lt;= 3 \\* 10^4, every element appears twice except for one",
+  "hint": "Strict linear time and O(1) extra space constraints call for Bitwise XOR to cancel out paired duplicate numbers.",
+  "keywords": [
+    "appears twice except for one",
+    "constant extra space",
+    "1 &lt;= nums.length &lt;= 3 \\* 10^4"
+  ],
+  "options": [
+    "Bit Manipulation",
+    "HashMap / Hash Set",
+    "Sorting",
+    "Two Pointers"
+  ],
+  "answer": "Bit Manipulation",
+  "why_not": "Right: Bit Manipulation applies XOR accumulator (a ^ a = 0) to eliminate duplicate pairs in O(n) time and O(1) space. Not HashMap / Hash Set: Frequency counting in a set/map finds the single number in O(n) time, but consumes O(n) extra space, violating O(1). Not Sorting: Sorting elements adjacent pairs takes O(n log n) time, violating linear time requirements. Not Two Pointers: Scanning pointer pairs requires sorted array ordering, taking O(n log n) total time.",
+  "complexity": "O(n) time, O(1) space",
+  "solution_link": "[suspicious link removed]",
+  "tags": [
+    "array",
+    "bit-manipulation"
+  ]
+}

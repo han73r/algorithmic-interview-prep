@@ -1,0 +1,10 @@
+{
+  "file": "linked-list-fast-slow.cs",
+  "pattern": "linked-list-fast-slow",
+  "specification": null,
+  "from_the_list": true,
+  "time": "O(n)",
+  "space": "O(1)",
+  "optimal": true,
+  "note": "Reverses a sublist between specified positions by rearranging node pointers in-place."
+}

@@ -1,0 +1,30 @@
+{
+  "id": "partition-list",
+  "leetcode_number": 86,
+  "leetcode_url": "[suspicious link removed]",
+  "title": "Partition List",
+  "difficulty": "Medium",
+  "pattern": "Two Pointers",
+  "statement_short": "Given the head of a linked list and a value x, partition it such that all nodes less than x come before nodes greater than or equal to x. Preserve the original relative order of the nodes in each of the two partitions.",
+  "constraints": "0 &lt;= number of nodes &lt;= 200, -100 &lt;= Node.val &lt;= 100, -200 &lt;= x &lt;= 200",
+  "hint": "Small node count (&lt;= 200) allows creating two dummy chain lists to separate and combine nodes in O(n) time.",
+  "keywords": [
+    "nodes less than x come before",
+    "preserve the original relative order",
+    "0 &lt;= number of nodes &lt;= 200"
+  ],
+  "options": [
+    "Two Pointers",
+    "Sorting",
+    "Stack",
+    "HashMap / Hash Set"
+  ],
+  "answer": "Two Pointers",
+  "why_not": "Right: Two Pointers builds two separate sub-lists ('less' and 'greater_or_equal') and stitches them together in O(n) time and O(1) space. Not Sorting: General sorting algorithms reorder node values but violate the requirement to preserve original relative order. Not Stack: Pushing nodes onto stacks reorganizes nodes but uses extra O(n) space and reverses sub-list order. Not HashMap / Hash Set: Hash tables do not assist with stable sequence partitioning.",
+  "complexity": "O(n) time, O(1) space",
+  "solution_link": "[suspicious link removed]",
+  "tags": [
+    "linked-list",
+    "two-pointers"
+  ]
+}

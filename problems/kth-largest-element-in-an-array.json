@@ -1,0 +1,33 @@
+{
+  "id": "kth-largest-element-in-an-array",
+  "leetcode_number": 215,
+  "leetcode_url": "[suspicious link removed]",
+  "title": "Kth Largest Element in an Array",
+  "difficulty": "Medium",
+  "pattern": "Heap / Priority Queue",
+  "statement_short": "Given an integer array nums and an integer k, return the k-th largest element in the array. Note that it is the k-th largest element in sorted order, not the k-th distinct element.",
+  "constraints": "1 &lt;= k &lt;= nums.length &lt;= 10^5, -10^4 &lt;= nums[i] &lt;= 10^4",
+  "hint": "Array size up to 10^5 permits maintaining a min-heap of size k to track largest elements in O(n log k) time.",
+  "keywords": [
+    "k-th largest element",
+    "sorted order",
+    "1 &lt;= k &lt;= nums.length &lt;= 10^5"
+  ],
+  "options": [
+    "Heap / Priority Queue",
+    "Sorting",
+    "Two Pointers",
+    "Binary Search"
+  ],
+  "answer": "Heap / Priority Queue",
+  "why_not": "Right: Heap / Priority Queue maintains a min-heap of size k to extract the k-th largest element in O(n log k) time and O(k) space. Not Sorting: Sorting the whole array takes O(n log n) time and extra space. Not Two Pointers: Two pointers require sorted inputs to shrink boundaries rather than tracking k top elements. Not Binary Search: Binary search on answer range takes O(n log(max-min)) time, which is more complex than maintaining a min-heap.",
+  "complexity": "O(n log k) time, O(k) space",
+  "solution_link": "[suspicious link removed]",
+  "tags": [
+    "array",
+    "divide-and-conquer",
+    "sorting",
+    "heap-priority-queue",
+    "quickselect"
+  ]
+}

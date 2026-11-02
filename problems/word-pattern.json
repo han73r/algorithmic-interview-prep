@@ -1,0 +1,30 @@
+{
+  "id": "word-pattern",
+  "leetcode_number": 290,
+  "leetcode_url": "https://leetcode.com/problems/word-pattern/",
+  "title": "Word Pattern",
+  "difficulty": "Easy",
+  "pattern": "HashMap / Hash Set",
+  "statement_short": "Given a pattern string and a space-separated string s, determine if s follows the exact same pattern. Following the pattern means establishing a full bijection between a letter in pattern and a non-empty word in s.",
+  "constraints": "1 &lt;= pattern.length &lt;= 300, 1 &lt;= s.length &lt;= 3000, pattern contains lowercase letters, s contains lowercase letters and single spaces",
+  "hint": "Small length limits do not restrict time complexity, but verifying a bijection requires dual mapping validation.",
+  "keywords": [
+    "space-separated string s",
+    "full bijection",
+    "1 &lt;= pattern.length &lt;= 300"
+  ],
+  "options": [
+    "HashMap / Hash Set",
+    "Two Pointers",
+    "Trie",
+    "Sliding Window"
+  ],
+  "answer": "HashMap / Hash Set",
+  "why_not": "Right: HashMap / Hash Set maintains bi-directional character-to-word mappings in O(n) time. Not Two Pointers: Pointers compare element positions but cannot store and enforce word mapping history. Not Trie: Prefix trees store string prefixes rather than letter-to-word bijections. Not Sliding Window: The problem checks whole-string bijection alignment rather than managing a contiguous subsegment window.",
+  "complexity": "O(n) time, O(n) space",
+  "solution_link": "[suspicious link removed]",
+  "tags": [
+    "hash-table",
+    "string"
+  ]
+}

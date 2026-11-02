@@ -1,0 +1,10 @@
+{
+  "file": "hashmap-hash-set.cs",
+  "pattern": "hashmap-hash-set",
+  "specification": null,
+  "from_the_list": true,
+  "time": "O(m + n)",
+  "space": "O(1)",
+  "optimal": true,
+  "note": "Counts character frequencies in the magazine using a fixed-size array to verify ransom note construction."
+}

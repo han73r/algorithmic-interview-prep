@@ -1,0 +1,32 @@
+{
+  "id": "implement-trie-prefix-tree",
+  "leetcode_number": 208,
+  "leetcode_url": "[suspicious link removed]",
+  "title": "Implement Trie (Prefix Tree)",
+  "difficulty": "Medium",
+  "pattern": "Trie",
+  "statement_short": "Implement a Trie with insert(word), search(word), and startsWith(prefix) methods. search returns true if word is in the trie, and startsWith returns true if there is a previously inserted word with the given prefix.",
+  "constraints": "1 &lt;= word.length, prefix.length &lt;= 2000, word and prefix consist of lowercase English letters, at most 3 \\* 10^4 calls",
+  "hint": "Efficient string prefix matching and retrieval mandates a tree data structure where nodes represent individual characters.",
+  "keywords": [
+    "insert(word), search(word), and startsWith(prefix)",
+    "previously inserted word with the given prefix",
+    "3 \\* 10^4 calls"
+  ],
+  "options": [
+    "Trie",
+    "HashMap / Hash Set",
+    "Binary Search",
+    "Tree DFS"
+  ],
+  "answer": "Trie",
+  "why_not": "Right: Trie stores characters at child nodes, enabling O(L) time insertion, word search, and prefix matching. Not HashMap / Hash Set: Hash sets support O(L) exact word lookup, but cannot perform O(L) prefix matching without checking all stored keys. Not Binary Search: Binary search on a sorted string array checks prefixes in O(L log N) time, which is slower than linear Trie traversal. Not Tree DFS: General binary trees do not organize character edges for multi-child prefix branches.",
+  "complexity": "O(L) time per operation, O(N \\* L) space",
+  "solution_link": "[suspicious link removed]",
+  "tags": [
+    "hash-table",
+    "string",
+    "design",
+    "trie"
+  ]
+}

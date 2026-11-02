@@ -1,0 +1,30 @@
+{
+  "id": "powx-n",
+  "leetcode_number": 50,
+  "leetcode_url": "[suspicious link removed]",
+  "title": "Pow(x, n)",
+  "difficulty": "Medium",
+  "pattern": "Math / Geometry",
+  "statement_short": "Calculate x raised to the power n (i.e., x^n).",
+  "constraints": "-100.0 &lt; x &lt; 100.0, -2^31 &lt;= n &lt;= 2^31 - 1, n is an integer, -10^4 &lt;= x^n &lt;= 10^4",
+  "hint": "n up to 2^31 - 1 demands binary exponentiation (divide and conquer) in O(log n) time.",
+  "keywords": [
+    "x raised to the power n",
+    "n is an integer",
+    "-2^31 &lt;= n &lt;= 2^31 - 1"
+  ],
+  "options": [
+    "Math / Geometry",
+    "1D DP",
+    "Binary Search",
+    "Two Pointers"
+  ],
+  "answer": "Math / Geometry",
+  "why_not": "Right: Math / Geometry applies binary exponentiation (x^n = (x^(n/2))^2) to compute powers in O(log n) time and O(1) space. Not 1D DP: Tabulation uses O(n) space and time, causing TLE/MLE when n reaches 2^31\\. Not Binary Search: Binary search searches target ranges, whereas binary exponentiation halves power exponents recursively. Not Two Pointers: Linear multiplication loops take O(n) time, failing on large exponents.",
+  "complexity": "O(log n) time, O(1) space",
+  "solution_link": "[suspicious link removed]",
+  "tags": [
+    "math",
+    "recursion"
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "file": "topological-sort.cs",
+  "pattern": "topological-sort",
+  "specification": null,
+  "from_the_list": true,
+  "time": "O(V + E)",
+  "space": "O(V + E)",
+  "optimal": true,
+  "note": "Finds a valid topological order of courses using DFS post-order traversal."
+}

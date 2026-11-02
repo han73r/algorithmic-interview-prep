@@ -1,0 +1,10 @@
+{
+  "file": "prefix-sum.cs",
+  "pattern": "prefix-sum",
+  "specification": null,
+  "from_the_list": true,
+  "time": "O(n)",
+  "space": "O(1)",
+  "optimal": true,
+  "note": "Computes prefix and suffix products iteratively in-place to calculate the product of array except self in linear time with constant extra space (excluding the output array)."
+}

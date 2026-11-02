@@ -1,0 +1,10 @@
+{
+  "file": "backtracking.cs",
+  "pattern": "backtracking",
+  "specification": null,
+  "from_the_list": true,
+  "time": "O(k * C(n, k))",
+  "space": "O(k)",
+  "optimal": true,
+  "note": "Generates all combinations of size k using backtracking with pruning."
+}

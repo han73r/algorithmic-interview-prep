@@ -1,0 +1,10 @@
+{
+  "file": "two-pointers-opposite-ends.cs",
+  "pattern": "two-pointers",
+  "specification": "two-pointers-opposite-ends",
+  "from_the_list": true,
+  "time": "O(n^2)",
+  "space": "O(1)",
+  "optimal": true,
+  "note": "Sorts array and uses a fixed element with two inward pointers to find unique triplets summing to zero."
+}

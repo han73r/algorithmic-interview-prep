@@ -1,0 +1,31 @@
+{
+  "id": "lru-cache",
+  "leetcode_number": 146,
+  "leetcode_url": "[suspicious link removed]",
+  "title": "LRU Cache",
+  "difficulty": "Medium",
+  "pattern": "HashMap / Hash Set",
+  "statement_short": "Design a data structure that follows the constraints of a Least Recently Used (LRU) cache, supporting get(key) and put(key, value) operations in O(1) average time complexity.",
+  "constraints": "1 &lt;= capacity &lt;= 3000, 0 &lt;= key &lt;= 10^4, 0 &lt;= value &lt;= 10^5, at most 2 \\* 10^5 calls to get and put",
+  "hint": "Strict O(1) average time for both lookup and recency updates requires combining a hash map with a doubly linked list.",
+  "keywords": [
+    "Least Recently Used (LRU) cache",
+    "O(1) average time complexity",
+    "1 &lt;= capacity &lt;= 3000"
+  ],
+  "options": [
+    "HashMap / Hash Set",
+    "Heap / Priority Queue",
+    "Stack",
+    "Binary Search"
+  ],
+  "answer": "HashMap / Hash Set",
+  "why_not": "Right: HashMap / Hash Set paired with a doubly linked list provides O(1) key lookups and O(1) node recency updates. Not Heap / Priority Queue: Storing access timestamps in a min-heap allows finding the LRU item in O(1), but updating keys takes O(n) time. Not Stack: Stacks maintain access order but updating or deleting an arbitrary middle key takes O(n) time. Not Binary Search: Balanced binary search trees achieve O(log n) time per operation, which is slower than O(1).",
+  "complexity": "O(1) time, O(capacity) space",
+  "solution_link": "[suspicious link removed]",
+  "tags": [
+    "hash-table",
+    "linked-list",
+    "design"
+  ]
+}

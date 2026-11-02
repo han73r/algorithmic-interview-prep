@@ -1,0 +1,30 @@
+{
+  "id": "best-time-to-buy-and-sell-stock-ii",
+  "leetcode_number": 122,
+  "leetcode_url": "[suspicious link removed]",
+  "title": "Best Time to Buy and Sell Stock II",
+  "difficulty": "Medium",
+  "pattern": "Greedy",
+  "statement_short": "Given an integer array prices, find the maximum total profit achieved by completing as many stock transactions as you like. You may only hold at most one share of the stock at any time.",
+  "constraints": "1 &lt;= prices.length &lt;= 3 \\* 10^4, 0 &lt;= prices[i] &lt;= 10^4",
+  "hint": "Limit of 3 \\* 10^4 demands an O(n) single pass, accumulating positive price differences between consecutive days.",
+  "keywords": [
+    "as many stock transactions as you like",
+    "maximum total profit",
+    "1 &lt;= prices.length &lt;= 3 \\* 10^4"
+  ],
+  "options": [
+    "Greedy",
+    "Backtracking",
+    "Intervals",
+    "Binary Search"
+  ],
+  "answer": "Greedy",
+  "why_not": "Right: Greedy sums every positive daily price increase (prices[i] - prices[i-1]) to capture all profitable upward slopes in O(n) time. Not Backtracking: Exploring all transaction decision combinations results in O(2^n) exponential time. Not Intervals: Merging transaction intervals adds unnecessary complexity when daily differences suffice. Not Binary Search: Price values are not sorted, so binary search cannot determine transaction points.",
+  "complexity": "O(n) time, O(1) space",
+  "solution_link": "[suspicious link removed]",
+  "tags": [
+    "array",
+    "greedy"
+  ]
+}

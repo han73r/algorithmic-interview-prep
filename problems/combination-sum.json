@@ -1,0 +1,30 @@
+{
+  "id": "combination-sum",
+  "leetcode_number": 39,
+  "leetcode_url": "[suspicious link removed]",
+  "title": "Combination Sum",
+  "difficulty": "Medium",
+  "pattern": "Backtracking",
+  "statement_short": "Given an array of distinct integers candidates and a target integer target, return a list of all unique combinations of candidates where the chosen numbers sum to target. You may choose the same number an unlimited number of times.",
+  "constraints": "1 &lt;= candidates.length &lt;= 30, 2 &lt;= candidates[i] &lt;= 40, all elements are distinct, 1 &lt;= target &lt;= 40",
+  "hint": "Target value up to 40 permits exploring unbounded candidate choices using recursive decision trees.",
+  "keywords": [
+    "chosen numbers sum to target",
+    "unlimited number of times",
+    "1 &lt;= target &lt;= 40"
+  ],
+  "options": [
+    "Backtracking",
+    "1D DP",
+    "Greedy",
+    "Two Pointers"
+  ],
+  "answer": "Backtracking",
+  "why_not": "Right: Backtracking branches on choosing or skipping candidates with element reuse to collect sum paths in O(2^t) time. Not 1D DP: DP finds the minimum coin count or total ways, but generating exact combination paths requires backtracking. Not Greedy: Local optimal candidate picking fails to find all unique valid combinations. Not Two Pointers: Pointers cannot handle arbitrary unbounded element repetitions efficiently.",
+  "complexity": "O(2^t) time, O(t) space",
+  "solution_link": "[suspicious link removed]",
+  "tags": [
+    "array",
+    "backtracking"
+  ]
+}

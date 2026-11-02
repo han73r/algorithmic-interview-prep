@@ -1,0 +1,32 @@
+{
+  "id": "maximum-sum-circular-subarray",
+  "leetcode_number": 918,
+  "leetcode_url": "[suspicious link removed]",
+  "title": "Maximum Sum Circular Subarray",
+  "difficulty": "Medium",
+  "pattern": "1D DP",
+  "statement_short": "Given a circular integer array nums of length n, return the maximum possible sum of a non-empty subarray. A circular array wraps around such that the end connects back to the beginning.",
+  "constraints": "n == nums.length, 1 &lt;= n &lt;= 3 \\* 10^4, -3 \\* 10^4 &lt;= nums[i] &lt;= 3 \\* 10^4",
+  "hint": "Limit n up to 3 \\* 10^4 requires an O(n) single pass, evaluating non-wrapped max and wrapped total-min sums.",
+  "keywords": [
+    "circular integer array",
+    "maximum possible sum",
+    "1 &lt;= n &lt;= 3 \\* 10^4"
+  ],
+  "options": [
+    "1D DP",
+    "Sliding Window",
+    "Monotonic Stack",
+    "Greedy"
+  ],
+  "answer": "1D DP",
+  "why_not": "Right: 1D DP computes max linear subarray sum and total - min linear subarray sum using Kadane's algorithm in O(n) time and O(1) space. Not Sliding Window: Negative elements invalidate monotonicity needed for standard sliding windows. Not Monotonic Stack: Monotonic stack tracks element bounds rather than accumulating continuous circular subarray sums. Not Greedy: Pure local choices fail to balance wrapped boundary sum subtractions correctly.",
+  "complexity": "O(n) time, O(1) space",
+  "solution_link": "[suspicious link removed]",
+  "tags": [
+    "array",
+    "divide-and-conquer",
+    "dynamic-programming",
+    "queue"
+  ]
+}
