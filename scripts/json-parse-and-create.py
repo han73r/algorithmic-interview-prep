@@ -3,7 +3,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 
-INPUT_FILE = ROOT / "problems" / "input.json"
+INPUT_FILE = ROOT / "input" / "input.json"
 PROBLEMS_DIR = ROOT / "problems"
 
 
